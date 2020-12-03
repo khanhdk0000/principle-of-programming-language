@@ -1,0 +1,9 @@
+
+        ** A simple program **
+        Function: foo
+            Body:
+                b =  b - a;
+                Return b;
+            EndBody.
+        Parameter: a, b
+        

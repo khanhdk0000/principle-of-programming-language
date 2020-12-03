@@ -1,0 +1,7 @@
+
+        Function: main
+        Body:
+            Var: x = True, y = 9, c;
+            c = x && y;
+        EndBody.
+        

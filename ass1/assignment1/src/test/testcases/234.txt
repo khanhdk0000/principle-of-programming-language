@@ -1,0 +1,11 @@
+
+        Function: main
+        Body:
+            If a != True Then 
+                a = a + 1;
+                b = b * 2;
+                c = a \. b;
+                ans = (a + b) * c;
+            EndIf.
+        EndBody.
+        

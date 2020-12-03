@@ -1,0 +1,6 @@
+
+        Function: main
+        Body:
+            Return 100;
+        EndBody.
+        

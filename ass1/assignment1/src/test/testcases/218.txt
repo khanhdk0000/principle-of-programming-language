@@ -1,0 +1,10 @@
+
+        Var: x,y,z,t;
+        Function: main
+        Body:
+            x = 1 + 2 - 3 * 4;
+            y = 0O45 \ 0o12;
+            z = 0xABFF;
+            t = x % y;
+        EndBody.
+        

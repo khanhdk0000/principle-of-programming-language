@@ -1,0 +1,12 @@
+
+        Function: main
+        Parameter: x, y
+            Body:
+                Do 
+                    cal(x);
+                    process(y);
+                    i = 0xFF;
+                    y = 0O12;
+                While EndDo.
+            EndBody.
+        

@@ -1,0 +1,8 @@
+
+        ** A simple program **
+        Var: x;
+        Function: x = y
+            Body:
+                print(ans);
+            EndBody.
+        

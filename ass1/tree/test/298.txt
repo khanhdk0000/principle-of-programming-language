@@ -1,0 +1,25 @@
+
+        ** A simple program **
+        Var: x;
+        Function: fact
+        Parameter: n
+            Body:
+                For(i = 1, i < 10, -2) Do 
+                    For(j = 0, j < 15, 1) Do
+                        println(arr[i][j]);
+                    EndFor.
+                    writeln();
+                    While x < 5 Do
+                        writeln(x);
+                    EndWhile.
+                EndFor.
+            EndBody.
+        Function: main
+            Body:
+                Do 
+                    cal(x);
+                    process(y);
+                    ans = x + y;
+                While num == 100 EndDo.
+            EndBody.
+        

@@ -1,0 +1,12 @@
+
+        ** This is a comment **
+        Function: main
+        Parameter: x, y
+            Body:
+                foo();
+                aoo(x);
+                calculate(x, y, z);
+                foo(2 + x, 4. \. y);
+                roo(x = 9, y = 10);
+            EndBody.
+            

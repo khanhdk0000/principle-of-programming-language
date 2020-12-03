@@ -1,0 +1,21 @@
+
+        Var: a[2][3] = {{1, 2}, {3, 4}};
+
+        Function: foo
+        Body:
+            Return a;
+        EndBody.
+
+        Function: c
+        Parameter: b[2][3]
+        Body:
+            Return 15.6;
+        EndBody.
+
+        Function: main
+        Parameter: p
+        Body:
+            p = 10;
+            p = c(foo());
+        EndBody.
+        

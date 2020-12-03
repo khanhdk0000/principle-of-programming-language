@@ -1,0 +1,11 @@
+
+        ** A simple program **
+        Var: x;
+        Function: foo
+        Parameter: n
+
+        Function: main
+            Body:
+                print(ans);
+            EndBody.
+        

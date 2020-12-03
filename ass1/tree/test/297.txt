@@ -1,0 +1,15 @@
+
+        ** A simple program **
+        Var: x;
+        Function: fact
+        Parameter: n
+            Body:
+                Var: r = 10., v, t, ans;
+                x = foo(x - 5, y * 3, z + 20);
+            EndBody.
+        Function: main
+            Body:
+                x = 10;
+                fact (x);
+            EndBody.
+        

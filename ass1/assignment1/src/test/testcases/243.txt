@@ -1,0 +1,8 @@
+
+        Function: main
+        Body:
+            While x < 5 Do
+                 writeln(x);
+            EndWhile.
+        EndBody.
+        

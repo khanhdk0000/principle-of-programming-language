@@ -1,0 +1,9 @@
+
+        Function: main
+        Parameter: x, y
+            Body:
+                For(i = 1, i < 10, i = i + 1) Do
+                    print(arr[i]);
+                EndFor.    
+            EndBody.
+        

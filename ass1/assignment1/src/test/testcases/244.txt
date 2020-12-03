@@ -1,0 +1,6 @@
+
+        Function: main
+            Body:
+                While num >= 12 Do EndWhile.
+            EndBody.
+        

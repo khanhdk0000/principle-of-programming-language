@@ -1,0 +1,11 @@
+
+        Function: main
+        Parameter: x, y
+            Body:
+                Do 
+                    cal(x);
+                    process(y);
+                    ans = x + y;
+                While num = 100 EndDo.
+            EndBody.
+        

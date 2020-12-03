@@ -1,0 +1,15 @@
+
+        Function: main
+        Parameter: x, y
+            Body:
+                If a > 10 Then
+                    foo(100);
+                    cal(300.6);
+                    w = w \ 10;
+                Else
+                    print(123);
+                ElseIf b <= 988 Then
+                    func(10);
+                EndIf.    
+            EndBody.
+        

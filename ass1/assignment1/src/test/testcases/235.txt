@@ -1,0 +1,10 @@
+
+        Function: main
+        Body:
+            If x =/= 78.92 Then 
+                ans = ans * ans;
+            Else
+                ans = ans - 1;
+            EndIf.
+        EndBody.
+        

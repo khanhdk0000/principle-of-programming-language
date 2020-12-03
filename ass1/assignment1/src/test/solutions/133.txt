@@ -1,0 +1,1 @@
+Time \b of \f life \t somewhere,<EOF>

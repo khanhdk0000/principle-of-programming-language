@@ -1,0 +1,13 @@
+
+        Function: main
+            Body:
+                While num >= 12 Do
+                    While j != True Do
+                        If(a == b) Then
+                            c = a + b;
+                        EndIf.
+                    EndWhile.
+                    writeln("Hello World");
+                EndWhile.
+            EndBody.
+        

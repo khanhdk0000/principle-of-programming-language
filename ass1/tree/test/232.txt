@@ -1,0 +1,9 @@
+
+        Function: main
+        Body:
+            Var: r = 10., v, t, ans;
+            v = (4. \. 3.) *. 3.14 *. r *. r *. r;
+            t = (15.79 *. 79e13) \. 89.3;
+            ans = t =/= v;
+        EndBody.
+        

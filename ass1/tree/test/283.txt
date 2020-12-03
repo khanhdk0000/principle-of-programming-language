@@ -1,0 +1,13 @@
+
+        Function: main
+        Parameter: x, y
+            Body:
+                For(i=1, i < 10, 1) Do
+                    x = x + 1;
+                    y = z[p[x]];
+                    If y == 10 Then
+                        Continue foo(x);
+                    EndIf.
+                EndFor. 
+            EndBody.
+            

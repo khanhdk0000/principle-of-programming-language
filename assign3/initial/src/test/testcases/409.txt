@@ -1,0 +1,10 @@
+Var: a,b;
+        Function: main
+        Body:
+            Var: x;
+        EndBody.
+        Function: a
+        Body:
+            Var: y;
+        EndBody.
+        

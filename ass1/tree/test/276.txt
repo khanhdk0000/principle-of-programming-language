@@ -1,0 +1,11 @@
+
+        Function: main
+        Parameter: x, y
+            Body:
+                While Do
+                    foo (2 + x, 4. \. y);
+                    exe(x);
+                    print(x);
+                EndWhile.
+            EndBody.
+        

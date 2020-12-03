@@ -1,0 +1,8 @@
+Function: forLoop
+        Body:
+        While (i != 0) Do
+        i = i - 1;
+        writeln(i);
+        EndWhile.
+        EndBody.
+        

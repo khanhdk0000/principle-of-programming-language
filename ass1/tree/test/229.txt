@@ -1,0 +1,7 @@
+
+        Var: x,y,z;
+        Function: main
+        Body:
+            x = foo(x - 5, y * 3, z + 20);
+        EndBody.
+        

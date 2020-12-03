@@ -1,0 +1,15 @@
+
+        Function: main
+        Parameter: x, y
+            Body:
+                x = x + y;
+                Return x;
+            EndBody.
+
+        Function: foo
+        Parameter:
+            Body:
+                b =  b - a;
+                Return b;
+            EndBody.
+        

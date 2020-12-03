@@ -1,0 +1,10 @@
+
+        Function: main
+        Parameter: x, y
+            Body:
+                While x = 7 Do
+                    exe(x);
+                    print(x);
+                EndWhile.
+            EndBody.
+        

@@ -1,0 +1,13 @@
+
+        Function: main
+        Parameter: x, y
+            Body:
+                If a > 10 Then
+                    foo(100);
+                    koo(300.6);
+                    z = z * 10;
+                ElseIf Then
+                    cal(133);
+                EndIf.    
+            EndBody.
+        

@@ -1,0 +1,11 @@
+
+        Function: main
+        Parameter: x, y
+            Body:
+                If a = 2 Then 
+                    foo(100);
+                    hoo(1.5);
+                    x = x - 1;
+                EndIf.
+            EndBody.
+        

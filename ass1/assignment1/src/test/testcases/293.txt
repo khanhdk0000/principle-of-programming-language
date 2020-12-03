@@ -1,0 +1,13 @@
+
+        ** A simple program **
+        Var: x;
+        Function:
+        Parameter: n
+            Body:
+                func("yeah");
+            EndBody.
+        Function: main
+            Body:
+                print(ans);
+            EndBody.
+        

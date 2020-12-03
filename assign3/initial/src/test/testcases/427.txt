@@ -1,0 +1,16 @@
+
+        Var: a[2][2] = {{True, True}, {False, False}};
+        Var: f = 1;
+
+        Function: main
+        Parameter: p
+        Body:
+        Var: x = 1, y;
+        a[2 + 3][True] = True;
+        EndBody.
+
+        Function: c
+        Parameter: p[2][2], a
+        Body:
+        EndBody.
+        

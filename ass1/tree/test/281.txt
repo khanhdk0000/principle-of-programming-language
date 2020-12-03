@@ -1,0 +1,12 @@
+
+        Function: main
+        Parameter: x, y
+            Body:
+                 Do
+                    cal(x);
+                    z = 19.5;
+                    i = 10.e10;
+                    y = 98e-10;
+                 i <= 100 EndDo.
+            EndBody.
+        

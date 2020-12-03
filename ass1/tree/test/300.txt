@@ -1,0 +1,22 @@
+
+        ** A simple program **
+        Var: x;
+        Function: fact
+        Parameter: n
+            Body:
+                Var: ans = 10.12, x, y, z;
+                x = (4. \. 3.) *. 3.14 *. r *. r *. r;
+                If x =/= 78.92 Then 
+                    ans = ans * ans;
+                Else
+                    ans = ans - 1;
+                EndIf.
+                For(i = 1, i < 10, -2) Do print(i); EndFor.
+                While num >= 12 Do foo(num); EndWhile. 
+                Do goo(2); While num <= 100 EndDo.
+            EndBody.
+        Function: main
+            Body:
+                print(ans);
+            EndBody.
+        

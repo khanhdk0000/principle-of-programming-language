@@ -1,0 +1,10 @@
+
+            Function: main
+            Body:
+                Var: a;
+            EndBody.
+            Function: foo
+            Body:
+                a = 789;
+            EndBody.
+            

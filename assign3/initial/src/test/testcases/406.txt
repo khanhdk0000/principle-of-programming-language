@@ -1,0 +1,6 @@
+
+            Function: main
+            Body:
+                x = 10;
+            EndBody.
+            

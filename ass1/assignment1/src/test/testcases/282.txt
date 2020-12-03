@@ -1,0 +1,13 @@
+
+        Function: main
+        Parameter: x, y
+            Body:
+                 Do
+                    foo(x);
+                    z = 19.5;
+                    i = 10.e10;
+                    y = 98e-10;
+                    t = 10.7e-98;
+                 While i <= 100 
+            EndBody.
+        

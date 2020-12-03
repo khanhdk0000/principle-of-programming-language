@@ -1,0 +1,11 @@
+
+        Function: main
+        Parameter: x, y
+            Body:
+                For(i = 1, i < 10, 2)
+                    print(arr[i]);
+                    foo(ans[i]);
+                    soo(res[i]);
+                EndFor.    
+            EndBody.
+        

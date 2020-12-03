@@ -1,0 +1,7 @@
+
+        Function: main
+        Body:
+            v = (4. \. 3.) *. 3.14 *. r *. r *. r;
+            Var: r = 10., v;
+        EndBody.
+        

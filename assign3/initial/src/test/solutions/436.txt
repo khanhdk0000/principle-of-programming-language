@@ -1,0 +1,1 @@
+Type Mismatch In Statement: Dowhile([],[Assign(Id(num),BinaryOp(+,Id(num),IntLiteral(1)))],BinaryOp(*,Id(num),IntLiteral(100)))

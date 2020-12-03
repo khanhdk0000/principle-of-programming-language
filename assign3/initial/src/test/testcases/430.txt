@@ -1,0 +1,11 @@
+
+        Var: a[2][2], b = 8.9;
+        Function: main
+        Parameter: x
+        Body:
+            Var: b = 5;
+            If b + 10 Then
+                x = 15;
+            EndIf.
+        EndBody.
+        

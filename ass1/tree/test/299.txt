@@ -1,0 +1,18 @@
+
+        ** A simple program **
+        Var: x;
+        Function: fact
+        Parameter: n
+            Body:
+                y = x[a[10][2]] + b[c[2][9]];
+                x = (func(12.5) + foo(79.10e-12)) * 10; 
+                isValid = x && y;
+                isGood = x > y;
+                z = !y || exe(89465.654);
+                w = -.z;
+            EndBody.
+        Function: main
+            Body:
+                print(ans);
+            EndBody.
+        

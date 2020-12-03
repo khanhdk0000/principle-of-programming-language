@@ -1,0 +1,17 @@
+
+        Var: a[2][2];
+        Function: main
+        Parameter: p
+        Body:
+            p = a[2][1] + 5;
+            foo(1.2, 3.4);
+        EndBody.
+
+        Function: foo
+        Parameter: b, c
+        Body:
+            Var: x, y;
+            x = b +. 5.7;
+            y = c +. a[1][2];
+        EndBody.
+        

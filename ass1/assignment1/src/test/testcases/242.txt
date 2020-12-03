@@ -1,0 +1,11 @@
+
+        Function: main
+            Body:
+                For(i = 1, i < 10, -2) Do 
+                    For(j = 0, j < 15, 1) Do
+                        println(arr[i][j]);
+                    EndFor.
+                    writeln();
+                EndFor. 
+            EndBody.
+        

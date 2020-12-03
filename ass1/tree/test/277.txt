@@ -1,0 +1,10 @@
+
+        Function: main
+        Parameter: x, y
+            Body:
+                While Do
+                    foo (2 + x, 4. \. y);
+                    func(9.5 *. 10.0);
+                EndWhile.
+            EndBody.
+        

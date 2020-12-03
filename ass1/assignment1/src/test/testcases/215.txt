@@ -1,0 +1,10 @@
+
+        Var: x, y, z = 3, e, f;
+        Var: arr[10];
+        Var: age = 20;
+        Var: isValid = True;
+        Var: a[5] = {1,4,3,2,0};
+        Function: main
+            Body:
+            EndBody.
+        

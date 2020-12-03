@@ -1,0 +1,12 @@
+Var: x = 10, y = 10.e-1;
+        Var: myString = "Tham";
+        Function: main
+        Parameter: n, m[10], y, z[2][5]
+        Body:
+        If n == 0 Then
+        Return 1;
+        Else
+        Return n * fact (n - 1);
+        EndIf.
+        EndBody.
+        

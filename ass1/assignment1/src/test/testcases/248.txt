@@ -1,0 +1,12 @@
+
+        Function: main
+        Body:
+            Do 
+                Do
+                    calculate(y);
+                    z = x + y;
+                While i >= 10 EndDo.
+                print(x);
+            While num <= 100 EndDo.
+        EndBody.
+        

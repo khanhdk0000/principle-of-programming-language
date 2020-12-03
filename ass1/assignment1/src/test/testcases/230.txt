@@ -1,0 +1,13 @@
+
+        Var: x,y,z,t,w,g,h;
+        Function: main
+        Body:
+            x = foo(12.5);
+            y = x[a[10][2]] - 5.7;
+            z = -.9;
+            t = !y;
+            w = 1235 \ 5;
+            g = t && True;
+            h = x >=. y;
+        EndBody.
+        

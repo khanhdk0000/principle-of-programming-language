@@ -1,0 +1,11 @@
+
+        Var: i = 1;
+        Function: main
+        Parameter: x, y
+            Body:
+                For() Do
+                    print(arr[i]);
+                    foo(ans[i]);
+                EndFor.    
+            EndBody.
+        
