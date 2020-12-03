@@ -1,0 +1,14 @@
+
+           Function: dandelion
+           Parameter: x
+           Body:
+                If a != True Then
+                    a = a + b +. c - e -. f;
+                    f[5][6] = 10;
+                ElseIf a =/= b Then
+                    Continue;
+                Else
+                    a = b;
+                EndIf.
+           EndBody.
+           

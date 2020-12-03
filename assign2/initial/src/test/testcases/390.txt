@@ -1,0 +1,13 @@
+
+           Function: ves
+           Parameter: x
+           Body:
+                Var: story = "Defender of the Faith";
+                Do 
+                    a = a + b +. c - e;
+                    e = f -. 151.2;
+                    f[5][6] = 10;
+                While i >= 100 EndDo.
+                Return func(n + goo());
+           EndBody.
+           

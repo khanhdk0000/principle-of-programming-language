@@ -1,0 +1,14 @@
+
+           Function: vesemir
+           Parameter: x
+           Body:
+                Var: story = "Carnal Sins";
+                Do 
+                    arr[5][9] = func(1, 2, 3) + hoo(y);
+                    func(a * b + c)[5] = 0;
+                    ans = foo()[2];
+                    arr[a[2][3]-b[2][5]+c[4][5]] = 95.69;
+                While i >= 100 EndDo.
+                Return func(n + goo());
+           EndBody.
+           

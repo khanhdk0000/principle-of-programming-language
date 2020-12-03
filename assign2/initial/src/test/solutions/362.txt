@@ -1,0 +1,1 @@
+Program([VarDecl(Id("isGone"),[],BooleanLiteral(False)),FuncDecl(Id("joo"),[],([VarDecl(Id("a"),[],IntLiteral(1)),VarDecl(Id("y"),[],IntLiteral(2)),VarDecl(Id("res"),[], None)],[Assign(Id("a"),BinaryOp("*",IntLiteral(7),IntLiteral(9))),Assign(Id("res"),BinaryOp("-",Id("a"),BinaryOp("*",Id("y"),Id("x")))),Return(BooleanLiteral(True))]))])

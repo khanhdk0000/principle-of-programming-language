@@ -1,0 +1,7 @@
+
+        Var: q,w,e,r;
+        Function: goo
+        Body:
+            q = foo(w - 5, e *  0xFF, r + 0o567);
+        EndBody.
+        

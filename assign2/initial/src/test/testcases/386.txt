@@ -1,0 +1,13 @@
+
+           Function: syanna
+           Parameter: x
+           Body:
+                Var: story = "The Isle of Mists";
+                While x >=. 98e4 Do
+                    b = !c;
+                    e = !(a > d);
+                    z = !foo(a + goo(5));
+                EndWhile.
+                Return func(n + goo());
+           EndBody.
+           

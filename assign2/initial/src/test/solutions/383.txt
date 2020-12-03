@@ -1,0 +1,1 @@
+Program([FuncDecl(Id("gaunter"),[VarDecl(Id("x"),[], None)],([VarDecl(Id("story"),[],StringLiteral("Ladies of the Wood"))],[For(Id("i"),IntLiteral(100),BinaryOp(">",Id("i"),IntLiteral(0)),UnaryOp("-",IntLiteral(1)),([],[Assign(ArrayCell(Id("a"),[IntLiteral(2),IntLiteral(3)]),UnaryOp("-",Id("y"))),Assign(Id("res"),UnaryOp("-.",FloatLiteral(100.45)))])),Return(None)]))])

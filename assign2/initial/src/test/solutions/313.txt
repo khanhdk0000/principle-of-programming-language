@@ -1,0 +1,1 @@
+Program([FuncDecl(Id("goo"),[],([VarDecl(Id("age"),[],IntLiteral(20))],[]))])

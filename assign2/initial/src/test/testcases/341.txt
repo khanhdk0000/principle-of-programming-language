@@ -1,0 +1,15 @@
+
+        Function: poo
+        Parameter: x, y
+        Body:
+            Var: r = 10., v;
+            v = (4. \. 3.) *. 3.14 *. r *. r *. r;
+            If y == True Then 
+                v = v + 1;
+            ElseIf x > 12.e3 Then
+                v = 0O77;
+            Else
+                v = 120000e-1;
+            EndIf.
+        EndBody.
+        

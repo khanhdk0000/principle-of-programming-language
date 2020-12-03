@@ -1,0 +1,1 @@
+Program([VarDecl(Id("t"),[],IntLiteral(0)),FuncDecl(Id("zoo"),[VarDecl(Id("bar"),[], None)],([VarDecl(Id("a"),[2],ArrayLiteral([IntLiteral(9),IntLiteral(10)]))],[While(BinaryOp(">=",Id("x"),IntLiteral(100)),([],[])),Return(ArrayCell(Id("a"),[IntLiteral(2)]))]))])

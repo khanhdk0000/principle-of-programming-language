@@ -1,0 +1,10 @@
+
+        Function: main
+        Body:
+            If !a Then 
+                b = a + c - d + 100;
+            ElseIf b == True Then
+                a = a % 10;
+            EndIf.
+        EndBody.
+        

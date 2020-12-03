@@ -1,0 +1,12 @@
+
+           Function: gaunter
+           Parameter: x
+           Body:
+                Var: story = "Ladies of the Wood";
+                For(i = 100, i > 0, -1) Do
+                    a[2][3] = -y;
+                    res = -.100.45;
+                EndFor.
+                Return;
+           EndBody.
+           

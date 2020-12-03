@@ -1,0 +1,11 @@
+
+        Var: x,y,z,t,w;
+        Function: loo
+        Body:
+            x = y =/= 16.9e32;
+            y = x <. 15.e-52;
+            z = y >. 9e10;
+            t = z <=. 987.3456;
+            w = t >=. 0.7;
+        EndBody.
+        

@@ -1,0 +1,14 @@
+
+           Function: uoo
+           Parameter: yennefer
+           Body:
+                If a == p Then
+                    a = b[a[c[2]]];
+                    b[2][3] = 1;
+                ElseIf too(a[2][3] + hoo(1, 9.5)) || (a =/= b) Then
+                    a = !game(x)[2];
+                Else
+                    a = b;
+                EndIf.
+           EndBody.
+           

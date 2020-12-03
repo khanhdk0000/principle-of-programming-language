@@ -1,0 +1,11 @@
+
+           Var: b[3]= {0o456, 0O123, 0o711};
+           Function: joo
+           Parameter: a, c, d
+           Body:
+                Var: a = 0o753, y = 0o651,res;
+                a = 0o567 * 0O77;
+                res = a - y * x + 0o742;
+                Return res;
+           EndBody.
+           

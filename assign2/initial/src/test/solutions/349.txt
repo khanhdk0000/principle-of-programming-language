@@ -1,0 +1,1 @@
+Program([FuncDecl(Id("roo"),[],([],[Return(IntLiteral(100))]))])

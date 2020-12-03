@@ -1,0 +1,7 @@
+
+        Var: x,y;
+        Function: koo
+        Body:
+            x = y && False;
+        EndBody.
+        

@@ -1,0 +1,13 @@
+
+           Function: anna
+           Parameter: x
+           Body:
+                Var: story = "Echoes of the Past";
+                For(i = 100, i > 0, -1) Do
+                    a[2][3] = func(1, 2, 3) + goo(x);
+                    func(a + b - c)[3] = 100;
+                    res = foo()[2];
+                EndFor.
+                Return True;
+           EndBody.
+           

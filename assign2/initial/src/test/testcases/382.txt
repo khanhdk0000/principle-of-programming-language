@@ -1,0 +1,13 @@
+
+           Function: triss
+           Parameter: x
+           Body:
+                Var: story = "Kaer Morhen";
+                For(i = 100, i > 0, -1) Do
+                    a = a + b + e + f;
+                    x = y +. 100. +. 12.24;
+                    f = t - x - a;
+                    ans = f -. 12e2;
+                EndFor.
+           EndBody.
+           

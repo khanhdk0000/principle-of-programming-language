@@ -1,0 +1,10 @@
+
+           Function: regis
+           Parameter: x
+           Body:
+                Var: story = "What lies unseen";
+                For(i = 0, i < 5, 1) Do
+
+                EndFor.
+           EndBody.
+           

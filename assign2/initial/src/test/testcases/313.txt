@@ -1,0 +1,6 @@
+
+        Function: goo
+        Body:
+            Var: age = 20;
+        EndBody.
+        

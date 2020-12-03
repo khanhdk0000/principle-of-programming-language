@@ -1,0 +1,1 @@
+Program([VarDecl(Id("name"),[],StringLiteral("khanh")),FuncDecl(Id("koo"),[VarDecl(Id("ara"),[], None)],([VarDecl(Id("laptop"),[],StringLiteral("Asus"))],[Assign(Id("a"),BinaryOp("+",Id("laptop"),StringLiteral("Tuf"))),Assign(Id("res"),StringLiteral("He asked me: '"Where is John?'"")),Return(BinaryOp("+",Id("res"),Id("a")))]))])

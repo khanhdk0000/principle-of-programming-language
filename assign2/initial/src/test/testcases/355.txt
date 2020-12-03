@@ -1,0 +1,16 @@
+
+            ** This is a single-line comment. **
+           Var: a[5] = {1,4,3,2,0};
+           Function: yoo
+           Parameter: e, f
+           Body:
+                Var: app = 0, isCorrect = False;
+                For(k = 0, k < 5, 1) Do
+                    a[k] = b % a;
+                    While x >=. 78e4 Do
+                        app = f * e - 100;
+                    EndWhile.
+                    suarez(x);
+                EndFor.
+           EndBody.
+           

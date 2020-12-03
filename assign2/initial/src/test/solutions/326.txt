@@ -1,0 +1,1 @@
+Program([VarDecl(Id("q"),[], None),VarDecl(Id("w"),[], None),VarDecl(Id("e"),[], None),VarDecl(Id("r"),[], None),FuncDecl(Id("goo"),[],([],[Assign(Id("q"),CallExpr(Id("foo"),[BinaryOp("-",Id("w"),IntLiteral(5)),BinaryOp("*",Id("e"),IntLiteral(255)),BinaryOp("+",Id("r"),IntLiteral(375))]))]))])

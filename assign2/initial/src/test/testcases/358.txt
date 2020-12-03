@@ -1,0 +1,17 @@
+
+            ** This is a single-line comment. **
+           Var: b[2][3]= {{1,2,3},{4,5,6}};
+           Function: moo
+           Parameter: a, b, c
+           Body:
+                Var: food = "Ham";
+                While x >=. 78e4 Do
+                        app = goo(food);
+                        Do 
+                            i = i + 10;
+                        While i >= 100 EndDo.
+                EndWhile.
+                a[3 + foo(2)] = a[b[2][3]] + b[d[2][3]];
+                ars(x);
+           EndBody.
+           

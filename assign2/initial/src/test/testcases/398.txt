@@ -1,0 +1,21 @@
+
+            Var: x = "The Night of Long Fangs";
+            Var: a = 5;
+            Var: b[2][3] = {{2,3,4},{4,5,6}};
+            Var: c, d = 6, e, f;
+            Var: m, n[10];
+            Function: fact
+            Parameter: n
+            Body:
+                If n == 0 Then
+                    Return 1;
+                Else
+                    Return n * fact (n - 1);
+                EndIf.
+                EndBody.
+            Function: main
+            Body:
+                x = 10;
+                fact (x);
+            EndBody.
+           

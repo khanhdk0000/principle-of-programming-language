@@ -1,0 +1,1 @@
+Program([FuncDecl(Id("joo"),[],([],[Dowhile(([],[Dowhile(([],[CallStmt(Id("calculate"),[Id("x")]),Assign(Id("ans"),BinaryOp("-",BinaryOp("+",Id("x"),Id("y")),BinaryOp("*",Id("z"),IntLiteral(5))))]),BinaryOp(">=",Id("i"),IntLiteral(100))),CallStmt(Id("process"),[Id("x")])]),BinaryOp("<=",Id("num"),IntLiteral(1000)))]))])

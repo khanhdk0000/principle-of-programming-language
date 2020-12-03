@@ -1,0 +1,13 @@
+
+           Function: avallach
+           Parameter: x
+           Body:
+                Var: story = "Lilac and Gooseberries";
+                For(i = 100, i > 0, -1) Do
+                    x = a == b;
+                    y = x != d;
+                    z = y >= q;
+                    func(a)[1] = (a > b) == (c < d);  
+                EndFor.
+           EndBody.
+           

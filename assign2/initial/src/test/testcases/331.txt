@@ -1,0 +1,7 @@
+Function: condition
+        Body:
+        If (True) Then
+        random();
+        EndIf.
+        EndBody.
+        

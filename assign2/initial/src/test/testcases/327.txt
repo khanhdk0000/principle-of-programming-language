@@ -1,0 +1,14 @@
+
+        Var: a,b,c,d,e,f,g,h,t,res = 1;
+        Function: joo
+        Parameter: x, y
+        Body:
+            x = foo(30.5);
+            y = x[a[15][3]] - 9.7;
+            b = -.79;
+            d = !y;
+            f = 1235 \ 5;
+            g = t && True;
+            h = x <=. y;
+        EndBody.
+        

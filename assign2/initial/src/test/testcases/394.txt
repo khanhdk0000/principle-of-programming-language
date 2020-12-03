@@ -1,0 +1,20 @@
+
+           Function: shani
+           Parameter: x
+           Body:
+                Var: story = "Whatsoever a Man Soweth";
+                If age > 18 Then 
+                    If height < 45 Then
+                        print("Proceed");
+                    EndIf.
+                ElseIf age > 13 Then
+                    Do 
+                        Do
+                            calculate(x);
+                            ans = x + y - z * 5;
+                        While i >= 100 EndDo.
+                        process(x);
+                    While num <= 1000 EndDo.
+                EndIf.
+           EndBody.
+           

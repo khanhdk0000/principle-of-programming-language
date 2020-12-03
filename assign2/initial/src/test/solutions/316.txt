@@ -1,0 +1,1 @@
+Program([VarDecl(Id("x"),[], None),VarDecl(Id("y"),[], None),FuncDecl(Id("foo"),[],([],[Assign(Id("x"),UnaryOp("-",IntLiteral(5))),Assign(Id("y"),UnaryOp("-.",IntLiteral(10)))]))])

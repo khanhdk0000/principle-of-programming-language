@@ -1,0 +1,13 @@
+
+           Function: yoo
+           Parameter: geralt
+           Body:
+                If a == p Then
+                    a = func(a, b)[79 + func(30)] - (3 + 20) * -10 && True == 4 + 5 || False;
+                ElseIf hoo(a[2][3] + foo(1, 3.5, 0xFF)) && (a =/= b) Then
+                    a = !game(x)[2];
+                Else
+                    a = b;
+                EndIf.
+           EndBody.
+           

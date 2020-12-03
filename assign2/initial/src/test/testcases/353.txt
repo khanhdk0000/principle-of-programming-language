@@ -1,0 +1,21 @@
+
+           Var: x, z[3] = {21., 46e5, 100.e-8};
+           Function: roo
+           Parameter: c, d
+           Body:
+                Var: a = 0;
+                While x <=. 9.2 Do
+                    a = b - c;
+                    If x != 0 Then
+                       Break;
+                    ElseIf x =/= 100.1234 Then
+                       Continue;
+                    EndIf.
+                EndWhile.
+           EndBody.
+           Function: woo
+           Body:
+               z[3] = 10.45;
+               eto(x);
+           EndBody.
+           

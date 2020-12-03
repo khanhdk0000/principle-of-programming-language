@@ -1,0 +1,11 @@
+
+        Function: yoo
+        Parameter: a, b[1]
+        Body:
+            Var: x, y, arr[3] = {2, 3, 4}, res[10];
+            For(k = 0, k < 10, 1) Do
+                 res[k] = x + y;
+                 x = x - y;
+            EndFor. 
+        EndBody.
+        

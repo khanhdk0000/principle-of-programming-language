@@ -1,0 +1,7 @@
+
+        Var: j,k,l;
+        Function: eoo
+        Body:
+            j = hoo();
+        EndBody.
+        

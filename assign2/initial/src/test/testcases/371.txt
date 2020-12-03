@@ -1,0 +1,8 @@
+
+           Function: roo
+           Parameter: par
+           Body:
+                Var: b[1][2];
+                foo(a)[1] = 15 ;
+           EndBody.
+           

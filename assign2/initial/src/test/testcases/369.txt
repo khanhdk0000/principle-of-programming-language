@@ -1,0 +1,16 @@
+
+           Function: voo
+           Parameter: milan
+           Body:
+                If a == b Then
+                    b = a != c;
+                    e = f > 15;
+                    z = g >= f;
+                ElseIf b =/= 95.6 Then
+                    a = a >. 15;
+                    c = c <=. 6532e12;
+                Else
+                    a = b;
+                EndIf.
+           EndBody.
+           

@@ -1,0 +1,8 @@
+
+        Var: x, y;
+        Function: foo
+        Body:
+            x = -5;
+            y = -.10; 
+        EndBody.
+        

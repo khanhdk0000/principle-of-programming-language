@@ -1,0 +1,1 @@
+Program([VarDecl(Id("name"),[],StringLiteral("Charles")),VarDecl(Id("num"),[],FloatLiteral(8.9)),VarDecl(Id("isTrue"),[],BooleanLiteral(True)),VarDecl(Id("hexNum"),[],IntLiteral(2748))])

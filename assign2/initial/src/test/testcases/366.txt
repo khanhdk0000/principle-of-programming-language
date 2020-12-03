@@ -1,0 +1,10 @@
+
+           Var: w = 0;
+           Function: xoo
+           Parameter: real
+           Body:
+                Var: b[2] = {9,10};
+                Do While i >= 100 EndDo.
+                Return !a;
+           EndBody.
+           

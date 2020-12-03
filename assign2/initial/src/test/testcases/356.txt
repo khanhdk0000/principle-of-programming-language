@@ -1,0 +1,17 @@
+
+            ** This is a single-line comment. **
+           Var: a[5] = {1,4,3,2,0};
+           Function: yoo
+           Parameter: e, f
+           Body:
+                Var: app = 0, isCorrect = False;
+                For(k = 0, k < 5, 1) Do
+                    a[k] = b % a;
+                    Do 
+                        num = num + 3;
+                    While num <= 100 EndDo.
+                    a[3 + foo(2)] = a[b[2][3]] + 4;
+                    liv(x);
+                EndFor.
+           EndBody.
+           

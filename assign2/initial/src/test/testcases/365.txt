@@ -1,0 +1,10 @@
+
+           Var: t = 0;
+           Function: zoo
+           Parameter: bar
+           Body:
+                Var: a[2] = {9,10};
+                While x >= 100 Do  EndWhile.
+                Return a[2];
+           EndBody.
+           

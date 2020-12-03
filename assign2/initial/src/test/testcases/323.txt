@@ -1,0 +1,7 @@
+
+        Var: a,b;
+        Function: coo
+        Body:
+            x = y[10*func(15)];
+        EndBody.
+        

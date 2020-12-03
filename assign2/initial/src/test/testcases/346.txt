@@ -1,0 +1,13 @@
+
+        Var: m, n[10];
+        Function: coo
+        Parameter: x[1], y[2]
+        Body:
+            Var: res = 0, arr[2] = {1.3, 4.5};
+            While x >= 100 Do
+                 Var: isTrue = True;
+                 moo(x);
+                 m = -r;
+            EndWhile.
+        EndBody.
+        

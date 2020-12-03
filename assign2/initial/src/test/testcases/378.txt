@@ -1,0 +1,14 @@
+
+           Function: zoltan
+           Parameter: x
+           Body:
+                If a == 10 Then
+                    a = foo(b + goo(1, 2) * hoo(r));
+                    y[7][9] = 10;
+                ElseIf a =/= b Then
+                    Continue;
+                Else
+                    Break;
+                EndIf.
+           EndBody.
+           

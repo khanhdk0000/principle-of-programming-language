@@ -1,0 +1,8 @@
+
+        Function: loo
+        Body:
+            Do 
+                num = num + 1;
+            While num <= 100 EndDo.
+        EndBody.
+        

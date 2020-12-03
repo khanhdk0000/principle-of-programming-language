@@ -1,0 +1,1 @@
+Program([FuncDecl(Id("detlaff"),[VarDecl(Id("x"),[], None)],([VarDecl(Id("story"),[],StringLiteral("Va Fail, Elaine"))],[While(BinaryOp(">=.",Id("x"),FloatLiteral(780000.0)),([],[Assign(Id("app"),BinaryOp("<.",Id("t"),FloatLiteral(10.5))),Assign(Id("re"),BinaryOp(">=.",Id("a"),FloatLiteral(789.64))),Assign(Id("tr"),BinaryOp("=/=",Id("u"),FloatLiteral(8562.9985)))]))]))])

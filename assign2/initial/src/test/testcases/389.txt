@@ -1,0 +1,15 @@
+
+           Function: roche
+           Parameter: x
+           Body:
+                Var: story = "Child of the Elder Blood";
+                Do 
+                    b = !c;
+                    e = !(a > d);
+                    z = !foo(a + goo(5));
+                    r = y || x;
+                    f = r && (a > b + c);
+                While i >= 100 EndDo.
+                Return func(n + goo());
+           EndBody.
+           

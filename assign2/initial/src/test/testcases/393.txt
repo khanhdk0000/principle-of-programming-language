@@ -1,0 +1,21 @@
+
+           Function: eskiel
+           Parameter: x
+           Body:
+                Var: story = "Rose on a Red Field";
+                If age > 18 Then 
+                    If height < 45 Then
+                        print("Proceed");
+                    EndIf.
+                ElseIf age > 13 Then
+                    While num >= 79 Do
+                        While j != False Do
+                            If a == b Then
+                                c = a + b;
+                            EndIf.
+                        EndWhile.
+                        hoo("Hello World");
+                    EndWhile.
+                EndIf.
+           EndBody.
+           

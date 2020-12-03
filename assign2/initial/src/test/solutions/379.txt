@@ -1,0 +1,1 @@
+Program([FuncDecl(Id("regis"),[VarDecl(Id("x"),[], None)],([VarDecl(Id("story"),[],StringLiteral("What lies unseen"))],[For(Id("i"),IntLiteral(0),BinaryOp("<",Id("i"),IntLiteral(5)),IntLiteral(1),([],[]))]))])

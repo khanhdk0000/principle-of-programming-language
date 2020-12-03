@@ -1,0 +1,23 @@
+
+            ** This is a single-line comment. **
+           Var: a[5] = {1,4,3,2,0};
+           Function: yoo
+           Parameter: c, d
+           Body:
+                Var: a = 0;
+                Do 
+                    num = num + 1;
+                    If x != 0 Then
+                       Break;
+                    ElseIf x =/= 100.1234 Then
+                       Continue;
+                    EndIf.
+                While num <= 100 EndDo.
+           EndBody.
+           Function: uoo
+           Body:
+                Var: isCorrect = True;
+                z[3] = 10.45;
+                torress(x);
+           EndBody.
+           

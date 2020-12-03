@@ -1,0 +1,6 @@
+ Var: x = 1234, b[2] = {20.e-10, 35e3};
+                    Var: arr[2][4] = {{2,3,4,5},{78,89,100,5349}};
+                    Var: planet = "Earth";
+                    Var: pi = 3.4182354;
+                    Var: isCool = True;
+                

@@ -1,0 +1,13 @@
+
+        Function: xoo
+            Body:
+                For(i = 1, i < 10, -2) Do 
+                    For(j = 0, j < 15, 1) Do
+                        goo(arr[i][j]);
+                    EndFor.
+                    noo();
+                    i = -i;
+                    x = i + i;
+                EndFor. 
+            EndBody.
+        

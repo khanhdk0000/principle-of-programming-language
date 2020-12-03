@@ -1,0 +1,14 @@
+
+           Function: eihart
+           Parameter: x
+           Body:
+                Var: story = "Veni Vidi Vigo";
+                While x >=. 98e4 Do
+                    a[2][3] = func(1, 2, 3) + goo(x);
+                    func(a + b - c)[3] = 100;
+                    res = foo()[2];
+                    arr[a[2][3]-b[2][5]] = 95.69;
+                EndWhile.
+                Return func(n + goo());
+           EndBody.
+           

@@ -1,0 +1,15 @@
+
+        Function: ioo
+        Parameter: x, y
+        Body:
+            Var: r = 10., v, arr[2][5][6];
+            If y == True Then 
+                Var: isTrue = False;
+                x = x - 1;
+            ElseIf x > 12.e3 Then
+                isTrue = !x;
+            Else
+                isTrue = True;
+            EndIf.
+        EndBody.
+        

@@ -1,0 +1,20 @@
+
+        Var: x, y[3] = {12., 45e5, 98.e-8};
+        Function: qoo
+        Parameter: a, b
+        Body:
+            For(k = 0, k < 3, 1) Do
+                y[k] = b *. a;
+                If x == 0 Then
+                    Return 1;
+                ElseIf x =/= 100.1234 Then
+                    Return n * fact (n - 1);
+                EndIf.
+            EndFor.
+        EndBody.
+        Function: woo
+        Body:
+            y[3] = 10.45;
+            eoo(x);
+        EndBody.
+        

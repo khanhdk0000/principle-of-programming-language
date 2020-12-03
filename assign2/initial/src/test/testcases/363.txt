@@ -1,0 +1,11 @@
+
+           Var: name = "khanh";
+           Function: koo
+           Parameter: ara
+           Body:
+                Var: laptop = "Asus";
+                a = laptop + "Tuf";
+                res = "He asked me: '"Where is John?'"";
+                Return res + a;
+           EndBody.
+           

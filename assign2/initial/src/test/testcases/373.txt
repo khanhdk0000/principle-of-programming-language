@@ -1,0 +1,15 @@
+
+           Function: qoo
+           Parameter: witch
+           Body:
+                If a == b Then
+                    b = !c;
+                    e = !(a > d);
+                    z = !foo(a + goo(5));
+                ElseIf b =/= 79.6 Then
+                    a = !game(x)[2];
+                Else
+                    a = b;
+                EndIf.
+           EndBody.
+           

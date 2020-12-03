@@ -1,0 +1,1 @@
+Program([VarDecl(Id("j"),[], None),VarDecl(Id("k"),[], None),VarDecl(Id("l"),[], None),FuncDecl(Id("eoo"),[],([],[Assign(Id("j"),CallExpr(Id("hoo"),[]))]))])

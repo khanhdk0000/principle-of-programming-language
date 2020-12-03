@@ -1,0 +1,23 @@
+
+           Function: neneke
+           Parameter: x
+           Body:
+                Var: story = "La Cage au Fou";
+                For(i = 2, i < 100, 1) Do 
+                    For(j = 0, j < 15, 1) Do
+                        roo(arr[i][j][k]);
+                        While ans == 9 Do
+                            While j <=. 13.9 Do
+                                If c =/= d Then
+                                    c = ans * b - a;
+                                EndIf.
+                            EndWhile.
+                            foo("meth");
+                        EndWhile.
+                    EndFor.
+                    noo();
+                    i = -i;
+                    x = i + i;
+                EndFor. 
+           EndBody.
+           

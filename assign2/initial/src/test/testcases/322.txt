@@ -1,0 +1,7 @@
+
+        Var: a,b;
+        Function: zoo
+        Body:
+            a[7] = b[2] + 4;
+        EndBody.
+        

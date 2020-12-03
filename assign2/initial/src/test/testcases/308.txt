@@ -1,0 +1,1 @@
+Var: name = "Charles", num = 8.9, isTrue = True, hexNum = 0XABC;

@@ -1,0 +1,12 @@
+
+           Function: detlaff
+           Parameter: x
+           Body:
+                Var: story = "Va Fail, Elaine";
+                While x >=. 78e4 Do
+                    app = t <. 10.5;
+                    re = a >=. 789.64;
+                    tr = u =/= 8562.9985;
+                EndWhile.
+           EndBody.
+           

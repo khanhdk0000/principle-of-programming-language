@@ -1,0 +1,6 @@
+
+        Function: uoo
+        Body:
+            For(k = 1, k < 10, -1) Do EndFor. 
+        EndBody.
+        

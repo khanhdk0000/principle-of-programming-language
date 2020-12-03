@@ -1,0 +1,27 @@
+
+           Function: lambert
+           Parameter: x
+           Body:
+                Var: story = "Of Dairy and Darkness";
+                If age > 18 Then 
+                    If height < 20 Then
+                        print("Congratulation");
+                    EndIf.
+                ElseIf age > 13 Then
+                    writeln("Good luck");
+                    For(i = 1, i < 10, -2) Do 
+                        For(j = 0, j < 15, 1) Do
+                            goo(arr[i][j]);
+                        EndFor.
+                        noo();
+                        i = -i;
+                        x = i + i;
+                    EndFor. 
+                Else
+                    writeln("Hola");
+                    If score > 100 Then
+                        writeln("Achievement unlocked");
+                    EndIf.
+                EndIf.
+           EndBody.
+           

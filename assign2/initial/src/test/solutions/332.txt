@@ -1,0 +1,1 @@
+Program([FuncDecl(Id("main"),[VarDecl(Id("x"),[], None),VarDecl(Id("y"),[], None)],([],[If([(BinaryOp("==",Id("y"),BooleanLiteral(True)),[],[]),(BinaryOp(">",Id("x"),FloatLiteral(12000.0)),[],[])],([],[]))]))])

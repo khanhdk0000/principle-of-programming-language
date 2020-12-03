@@ -1,0 +1,10 @@
+
+           Var: isGone = False;
+           Function: joo
+           Body:
+                Var: a = 1, y = 2, res;
+                a = 7 * 9;
+                res = a - y * x;
+                Return True;
+           EndBody.
+           

@@ -1,0 +1,12 @@
+
+        Var: x,y,z,t,w,q;
+        Function: main
+        Body:
+            x = y == 5;
+            y = x != 0;
+            z = x < y;
+            t = y > z;
+            w = t >= 100;
+            q = w <= 200;
+        EndBody.
+        

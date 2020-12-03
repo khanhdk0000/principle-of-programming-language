@@ -1,0 +1,13 @@
+
+           Function: dijkstra
+           Parameter: x
+           Body:
+                Var: story = "Through Time and Space";
+                While x >=. 98e4 Do
+                    a = b[a[c[2]]];
+                    b[2][3] = 1;
+                    a[3 + foo(2)] = a[b[2][3]] + 4;
+                EndWhile.
+                Return func(n + goo());
+           EndBody.
+           

@@ -1,0 +1,1 @@
+Program([FuncDecl(Id("main"),[],([],[If([(BinaryOp("=/=",Id("x"),FloatLiteral(78.92)),[],[Assign(Id("ans"),BinaryOp("*",Id("ans"),Id("ans")))])],([],[Assign(Id("ans"),BinaryOp("-",Id("ans"),IntLiteral(1)))]))]))])

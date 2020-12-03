@@ -1,0 +1,6 @@
+
+        Function: shoo
+        Body:
+            Return foo(x);
+        EndBody.
+        

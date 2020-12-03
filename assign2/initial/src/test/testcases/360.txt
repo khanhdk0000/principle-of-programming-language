@@ -1,0 +1,11 @@
+
+           Var: b[3]= {0x123, 0XADE, 0x12AB};
+           Function: hoo
+           Parameter: q, w, e
+           Body:
+                Var: a = 0xFFFF, y = 0XABCD, res;
+                a = 0xABC + 0X1A2C;
+                res = a - y * x + 0x1A2B;
+                Return res;
+           EndBody.
+           

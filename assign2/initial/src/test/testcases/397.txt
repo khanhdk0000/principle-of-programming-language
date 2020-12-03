@@ -1,0 +1,21 @@
+
+           Function: foltest
+           Parameter: x
+           Body:
+                Var: story = "Tesham Mutna";
+                Do 
+                    Do
+                        calculate(x);
+                        ans = x + y - z * 5;
+                    While i >= 100 EndDo.
+                    While ans == 9 Do
+                        While j <=. 13.9 Do
+                            If c =/= d Then
+                                c = ans * b - a;
+                            EndIf.
+                        EndWhile.
+                        foo("meth");
+                    EndWhile.
+                While num <= 1000 EndDo.
+           EndBody.
+           

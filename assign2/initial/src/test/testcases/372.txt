@@ -1,0 +1,8 @@
+
+           Function: too
+           Parameter: ata
+           Body:
+                Var: c[1][2][3];
+                foo(3 + goo(2))[2] = 15 ;
+           EndBody.
+           
