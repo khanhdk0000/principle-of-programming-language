@@ -1,4 +1,17 @@
-Function: main
-                    Body:
-                        printStrLn(read(4));
-                    EndBody.
+
+           Var: a[2][3] = {{1, 2, 3}, {3, 4, 5}};
+
+           Function: main
+           Parameter: p
+           Body:
+               p = 12.5;
+               p = foo(a);
+           EndBody.
+
+           Function: foo
+           Parameter: p[2][3]
+           Body:
+               Var: x = 10;
+               Return x;
+           EndBody.
+           

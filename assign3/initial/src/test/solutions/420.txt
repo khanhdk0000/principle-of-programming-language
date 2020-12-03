@@ -1,1 +1,1 @@
-Type Mismatch In Expression: CallExpr(Id(read),[IntLiteral(4)])
+Type Mismatch In Expression: BinaryOp(+.,FloatLiteral(12.5),CallExpr(Id(foo),[]))

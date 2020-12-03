@@ -1,17 +1,11 @@
 
-        Var: a[2][2];
-        Function: main
-        Parameter: p
-        Body:
-            p = a[2][1] -. 9.5;
-            foo(True, False);
-        EndBody.
+           Var: a[2][3];
 
-        Function: foo
-        Parameter: b, c
-        Body:
-            Var: x, y;
-            x = b;
-            y = !a[1][2];
-        EndBody.
-        
+           Function: main
+           Parameter: p
+           Body:
+               Var: x = 10;
+               a[1][2] = x;
+               Return 12.5 + a[1][2];
+           EndBody.
+           

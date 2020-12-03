@@ -1,13 +1,15 @@
 
-        Var: x;
-        Function: foo
-        Body:
-            Var: x;
-            x = 1.5;
-        EndBody.
-        Function: main
-        Body:
-            x = 3;
-            foo(x);
-        EndBody.
-        
+           Var: a[2][3] = {{1, 2, 3}, {3, 4, 5}};
+
+           Function: foo
+           Parameter: p[2][3]
+           Body:
+           EndBody.
+
+           Function: main
+           Parameter: p
+           Body:
+               p = 12.5;
+               p = foo(a);
+           EndBody.
+           

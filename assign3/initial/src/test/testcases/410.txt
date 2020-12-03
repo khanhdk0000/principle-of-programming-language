@@ -1,7 +1,11 @@
 
-        Function: main
-        Parameter: a, b, c, a
-        Body:
-            Var: x;
-        EndBody.
-        
+           Function: main
+           Parameter: p
+           Body:
+               If True Then
+                   While True Do
+                       Var: a[2] = {1, 2}, a;
+                   EndWhile.
+               EndIf.
+           EndBody.
+           

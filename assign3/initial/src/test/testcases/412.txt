@@ -1,12 +1,7 @@
 
-        Function: foo
-        Parameter: x, y
-        Body:
-            Var: a;
-        EndBody.
-        Function: main
-        Parameter: a, b, c
-        Body:
-            foo(a);
-        EndBody.
-        
+           Var: main = 10;
+           Function: main
+           Parameter: p
+           Body:
+           EndBody.
+           

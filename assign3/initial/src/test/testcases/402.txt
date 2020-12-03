@@ -1,6 +1,15 @@
 
-            Var: a = 10;
-            Var: b = 9;
-            Var: c,d;
-            Var: a = 17;
-            
+           Var: a[2] = {1, 2};
+           Var: f = 12.5;
+
+           Function: c
+           Parameter: d
+           Body:
+           EndBody.
+
+           Function: main
+           Parameter: p
+           Body:
+               c = 10;
+           EndBody.
+           

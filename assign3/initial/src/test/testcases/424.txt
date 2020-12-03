@@ -1,5 +1,12 @@
 
-        Function: foo
-        Body:
-        EndBody.
-         
+
+           Function: a
+           Body:
+           EndBody.
+
+           Function: main
+           Parameter: p
+           Body:
+               p = a();
+           EndBody.
+           

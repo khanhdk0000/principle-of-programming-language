@@ -1,1 +1,1 @@
-Undeclared Identifier: d
+Redeclared Function: main

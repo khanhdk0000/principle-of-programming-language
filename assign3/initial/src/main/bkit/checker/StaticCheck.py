@@ -135,7 +135,8 @@ class StaticChecker(BaseVisitor):
                 self.checkRedeclare(Symbol(func_name, Unknown()), Function(), [c])
                 para = []
                 for j in i.param:
-                    para_sym = Symbol(j.variable.name, Unknown())
+                    para_sym = Symbol(j.variable.name, ArrayType(j.varDimen, Unknown())) if len(j.varDimen) > 0 \
+                        else Symbol(j.variable.name, Unknown())
                     para_tem = self.checkRedeclare(para_sym, Parameter(), [para])
                     para.append(para_tem)
                 c.append(Symbol(func_name, FunctionType(para, Unknown())))
@@ -158,20 +159,15 @@ class StaticChecker(BaseVisitor):
 
     def visitFuncDecl(self, ast, c):
         local = []
-        ret_type = None
-        # for x in ast.param:
-        #     para_sym = Symbol(x.variable.name, Unknown())
-        #     para_tem = self.checkRedeclare(para_sym, Parameter(), [local])
-        #     local.append(para_tem)
-        #     para_len += 1
         func_sym = self.search(ast.name.name, [c])
         for i in ast.body[0]:
             tem_var = i.accept(self, func_sym.mtype.param + local)
             local.append(tem_var)
         for j in ast.body[1]:
             j.accept(self, (func_sym.mtype.param + local, c, func_sym.mtype.rtype, func_sym.name))
-        # func = Symbol(ast.name.name, FunctionType(local, ret_type))
-        # return func
+        func_sym2 = self.search(ast.name.name, [c])
+        if isinstance(func_sym2.mtype.rtype, Unknown):
+            self.infer_type(func_sym2, VoidType())
 
     def visitAssign(self, ast, c):
         lhs = ast.lhs.accept(self, c)
@@ -184,7 +180,7 @@ class StaticChecker(BaseVisitor):
             lhs = lhs.eletype
         if isinstance(rhs, ArrayType):
             rhs = rhs.eletype
-        if isinstance(lhs, Unknown):
+        if isinstance(lhs, Unknown) and not isinstance(rhs, VoidType):
             sym = self.search(lhs_name, [c[0], c[1]])
             lhs = self.infer_type(sym, rhs)
         if isinstance(rhs, Unknown):
@@ -194,10 +190,9 @@ class StaticChecker(BaseVisitor):
             raise TypeMismatchInStatement(ast)
 
     def visitCallStmt(self, ast, c):
-        para_list = []
         predefine = False
         tem_call_stmt = self.search(ast.method.name, [c[1]])
-        if tem_call_stmt is None:
+        if tem_call_stmt is None or not isinstance(tem_call_stmt.mtype, (FunctionType, MType)):
             raise Undeclared(Function(), ast.method.name)
         if tem_call_stmt in self.global_envi[:12]:
             para_list = tem_call_stmt.mtype.intype
@@ -300,7 +295,7 @@ class StaticChecker(BaseVisitor):
     def get_operator_type(self, op):
         if op in ['+', '-', '*', '\\', '%', '==', '!=', '<', '>', '<=', '>=']:
             return IntType()
-        elif op in ['+,', '-.', '*.', '\\.', '=/=', '<.', '>.', '<=.', '>=.']:
+        elif op in ['+.', '-.', '*.', '\\.', '=/=', '<.', '>.', '<=.', '>=.']:
             return FloatType()
         elif op in ['!', '&&', '||']:
             return BoolType()
@@ -388,10 +383,9 @@ class StaticChecker(BaseVisitor):
             raise TypeMismatchInExpression(ast)
 
     def visitCallExpr(self, ast, c):
-        para_list = []
         predefine = False
         tem_call_stmt = self.search(ast.method.name, [c[1]])
-        if tem_call_stmt is None:
+        if tem_call_stmt is None or not isinstance(tem_call_stmt.mtype, (FunctionType, MType)):
             raise Undeclared(Function(), ast.method.name)
         if tem_call_stmt in self.global_envi[:12]:
             para_list = tem_call_stmt.mtype.intype
@@ -414,11 +408,11 @@ class StaticChecker(BaseVisitor):
             if type(ptype) != type(arg_typ):
                 raise TypeMismatchInExpression(ast)
         check = self.search(ast.method.name, [c[1]])
-        return tem_call_stmt.mtype.rtype
+        return check.mtype.rtype
 
     def visitId(self, ast, c):
         tem_id = self.search(ast.name, [c[0], c[1]])
-        if tem_id is None:
+        if tem_id is None or isinstance(tem_id.mtype, FunctionType):
             raise Undeclared(Identifier(), ast.name)
         return tem_id.mtype
 

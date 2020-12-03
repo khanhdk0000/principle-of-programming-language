@@ -1,1 +1,1 @@
-Type Mismatch In Statement: Assign(ArrayCell(Id(a),[IntLiteral(2),IntLiteral(2)]),IntLiteral(10))
+Type Cannot Be Inferred: Assign(Id(p),Id(x))
