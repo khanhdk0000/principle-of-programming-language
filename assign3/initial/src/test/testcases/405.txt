@@ -1,21 +1,7 @@
 
-           Var: a[2] = {1, 2};
-           Var: b = 12.5;
-
-           Function: main
-           Parameter: p
-           Body:
-               d = 12.0;
-           EndBody.
-
-           Function: c
-           Parameter: d
-           Body:
-               d = 15.5;
-           EndBody.
-
-           Function: f
-           Body:
-               Var: d;
-           EndBody.
-           
+            Function: main
+            Body:
+                Var: x,y;
+                Var: y;
+            EndBody.
+            

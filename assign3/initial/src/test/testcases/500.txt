@@ -1,1 +1,7 @@
-Program([FuncDecl(Id(main)[],([VarDecl(Id(x),[1],ArrayLiteral(IntLiteral(0)))][Assign(ArrayCell(Id(x),[IntLiteral(0)]),FloatLiteral(0))]))])
+
+        Function: main
+        Parameter: x, y ,z
+        Body:
+            y = x || (x>z);
+        EndBody.
+        

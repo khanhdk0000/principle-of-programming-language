@@ -1,0 +1,10 @@
+
+        Function: main
+        Body:
+            Var: i,x,z;
+            x = i -. 10.5;
+            For(i = 0, i < 10, 1) Do
+                z = z + 1;
+            EndFor.
+        EndBody.
+        

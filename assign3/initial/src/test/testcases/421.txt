@@ -1,17 +1,1 @@
-
-           Var: a[2][3];
-
-           Function: main
-           Parameter: p
-           Body:
-               p = 12.5;
-               p = 12.5 +. foo();
-           EndBody.
-
-           Function: foo
-           Body:
-               Var: b[2][3];
-               b[2][3] = 12;
-               Return b;
-           EndBody.
-           
+Program([FuncDecl(Id(main)[],([][CallStmt(Id(printStrLn),[])]))])

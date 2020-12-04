@@ -1,1 +1,1 @@
-Redeclared Function: main
+Type Mismatch In Statement: CallStmt(Id(foo),[Id(a)])

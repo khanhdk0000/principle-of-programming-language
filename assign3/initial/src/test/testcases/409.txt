@@ -1,9 +1,10 @@
-
-           Function: main
-           Parameter: p
-           Body:
-               If True Then
-                   Var: a[2] = {1, 2}, a;
-               EndIf.
-           EndBody.
-           
+Var: a,b;
+        Function: main
+        Body:
+            Var: x;
+        EndBody.
+        Function: a
+        Body:
+            Var: y;
+        EndBody.
+        

@@ -1,1 +1,1 @@
-Type Mismatch In Statement: Assign(Id(p),CallExpr(Id(a),[]))
+No Entry Point

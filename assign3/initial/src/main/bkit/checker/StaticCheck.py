@@ -68,6 +68,7 @@ class Symbol:
         self.mtype = typ
 
 
+# Function type to represent function
 class FunctionType(Type):
     def __init__(self, param: List[Symbol], rtype=None):
         self.param = param
@@ -82,7 +83,7 @@ class StaticChecker(BaseVisitor):
         self.ast = ast
         self.global_envi = [
             Symbol("int_of_float", MType([FloatType()], IntType())),
-            Symbol("float_of_int", MType([IntType()], FloatType())),
+            Symbol("float_to_int", MType([IntType()], FloatType())),
             Symbol("int_of_string", MType([StringType()], IntType())),
             Symbol("string_of_int", MType([IntType()], StringType())),
             Symbol("float_of_string", MType([StringType()], FloatType())),
@@ -91,12 +92,13 @@ class StaticChecker(BaseVisitor):
             Symbol("string_of_bool", MType([BoolType()], StringType())),
             Symbol("read", MType([], StringType())),
             Symbol("printLn", MType([], VoidType())),
-            Symbol("printStr", MType([StringType()], VoidType())),
+            Symbol("print", MType([StringType()], VoidType())),
             Symbol("printStrLn", MType([StringType()], VoidType()))]
 
     def check(self):
         return self.visit(self.ast, self.global_envi)
 
+    # Search for a symbol inside a given list with name
     def search(self, name, lst):
         for x in lst:
             for y in x:
@@ -104,6 +106,7 @@ class StaticChecker(BaseVisitor):
                     return y
         return None
 
+    # change the type of the symbol
     def infer_type(self, symbol, infer_type):
         if isinstance(symbol.mtype, ArrayType):
             symbol.mtype.set_type(infer_type)
@@ -119,34 +122,46 @@ class StaticChecker(BaseVisitor):
             symbol.set_type(infer_type)
         return symbol.mtype
 
+    # Check if a variable is redeclared and return that symbol
     def checkRedeclare(self, sym, typ, envi):
+        # The typ is the type of the symbol (Variable, Function, Parameter, Identifier)
         if self.search(sym.name, envi):
             raise Redeclared(typ, sym.name)
         return sym
 
     def visitProgram(self, ast, c):
-        name = []
+        name = []  # The list of all function declaration name
+        # Loop through all declarations first time to get the name and the parameter in case of function
+
         for i in ast.decl:
+            # If variable declaration, append to the environment
             if isinstance(i, VarDecl):
                 c.append(i.accept(self, c))
+            # If function initialize symbol with function type and parameter of unknown type
             else:
                 func_name = i.name.name
                 name.append(func_name)
+                # Check redeclare of function declaration
                 self.checkRedeclare(Symbol(func_name, Unknown()), Function(), [c])
                 para = []
                 for j in i.param:
+                    # the type of function is Unknown if there is no array type parameter, otherwise it's array type
                     para_sym = Symbol(j.variable.name, ArrayType(j.varDimen, Unknown())) if len(j.varDimen) > 0 \
                         else Symbol(j.variable.name, Unknown())
                     para_tem = self.checkRedeclare(para_sym, Parameter(), [para])
                     para.append(para_tem)
+                # Append the function with declared parameters into environment
                 c.append(Symbol(func_name, FunctionType(para, Unknown())))
+        # Check if there is function name main, if not raise no entry point
         if 'main' not in name:
             raise NoEntryPoint()
+        # Second loop is to check every part of the program
         for x in ast.decl:
             if isinstance(x, FuncDecl):
                 x.accept(self, c)
 
     def visitVarDecl(self, ast, c):
+        # Initialize a variable and check if it is redeclared
         if len(ast.varDimen) > 0:
             if ast.varInit:
                 tem = Symbol(ast.variable.name, ast.varInit.accept(self, c))
@@ -159,19 +174,30 @@ class StaticChecker(BaseVisitor):
 
     def visitFuncDecl(self, ast, c):
         local = []
+        # Search for the function symbol
         func_sym = self.search(ast.name.name, [c])
+
         for i in ast.body[0]:
+            # visit the variable declaration and append to the local env, also check if any variable
+            # declaration has same name as parameter
             tem_var = i.accept(self, func_sym.mtype.param + local)
             local.append(tem_var)
         for j in ast.body[1]:
-            j.accept(self, (func_sym.mtype.param + local, c, func_sym.mtype.rtype, func_sym.name))
+            # visit statement with
+            # c[0]: local env with parameter and variable declaration
+            # c[1]: global env
+            # c[2]: the name of function so other stmt can search for the function symbol
+            j.accept(self, (func_sym.mtype.param + local, c, func_sym.name))
+
         func_sym2 = self.search(ast.name.name, [c])
+        # If still can't infer type of function after visiting all stmt, infer type VoidType
         if isinstance(func_sym2.mtype.rtype, Unknown):
             self.infer_type(func_sym2, VoidType())
 
     def visitAssign(self, ast, c):
         lhs = ast.lhs.accept(self, c)
         rhs = ast.rhs.accept(self, c)
+        # If both side of the assignment is unknown
         if isinstance(lhs, Unknown) and isinstance(rhs, Unknown):
             raise TypeCannotBeInferred(ast)
         lhs_name = self.get_name(ast.lhs)
@@ -180,6 +206,8 @@ class StaticChecker(BaseVisitor):
             lhs = lhs.eletype
         if isinstance(rhs, ArrayType):
             rhs = rhs.eletype
+
+        # Lhs can not be void type
         if isinstance(lhs, Unknown) and not isinstance(rhs, VoidType):
             sym = self.search(lhs_name, [c[0], c[1]])
             lhs = self.infer_type(sym, rhs)
@@ -190,8 +218,11 @@ class StaticChecker(BaseVisitor):
             raise TypeMismatchInStatement(ast)
 
     def visitCallStmt(self, ast, c):
+        # variable to check if the call stmt is in the 12 predefined method
         predefine = False
+        # only search in c[1] as function reside in global
         tem_call_stmt = self.search(ast.method.name, [c[1]])
+        # raise undeclare if call sym is not of type function of mtype
         if tem_call_stmt is None or not isinstance(tem_call_stmt.mtype, (FunctionType, MType)):
             raise Undeclared(Function(), ast.method.name)
         if tem_call_stmt in self.global_envi[:12]:
@@ -199,8 +230,10 @@ class StaticChecker(BaseVisitor):
             predefine = True
         else:
             para_list = tem_call_stmt.mtype.param
+        # The length of parameter list of function and the call stmt must be the same
         if len(para_list) != len(ast.param):
             raise TypeMismatchInStatement(ast)
+        # check every element of para list and argument list
         for para_sym, arg_exp in zip(para_list, ast.param):
             ptype = para_sym.mtype if not predefine else para_sym
             arg_typ = arg_exp.accept(self, c)
@@ -235,14 +268,23 @@ class StaticChecker(BaseVisitor):
 
     def visitFor(self, ast, c):
         idx = ast.idx1.accept(self, c)
-        exp1 = ast.expr1.accept(self, c)
-        exp2 = ast.expr2.accept(self, c)
-        exp3 = ast.expr3.accept(self, c)
-        lst = [idx, exp1, exp3]
-        if any(not isinstance(x, IntType) for x in lst):
+
+        if isinstance(idx, Unknown):
+            name = self.get_name(ast.idx1)
+            sym = self.search(name, [c[0], c[1]])
+            idx = self.infer_type(sym, IntType())
+        if not isinstance(idx, IntType):
             raise TypeMismatchInStatement(ast)
+        exp1 = ast.expr1.accept(self, c)
+        if not isinstance(exp1, IntType):
+            raise TypeMismatchInStatement(ast)
+        exp2 = ast.expr2.accept(self, c)
         if not isinstance(exp2, BoolType):
             raise TypeMismatchInStatement(ast)
+        exp3 = ast.expr3.accept(self, c)
+        if not isinstance(exp3, IntType):
+            raise TypeMismatchInStatement(ast)
+
         local = []
         for i in ast.loop[0]:
             tem_var = i.accept(self, local)
@@ -280,16 +322,16 @@ class StaticChecker(BaseVisitor):
 
     def visitReturn(self, ast, c):
         exp = ast.expr.accept(self, c) if ast.expr else VoidType()
-        if isinstance(exp, Unknown) and isinstance(c[2], Unknown):
+        sym = self.search(c[2], [c[0], c[1]])
+        if isinstance(exp, Unknown) and isinstance(sym.mtype.rtype, Unknown):
             raise TypeCannotBeInferred(ast)
-        sym = self.search(c[3], [c[0], c[1]])
-        if isinstance(c[2], Unknown):
+        if isinstance(sym.mtype.rtype, Unknown):
             self.infer_type(sym, exp)
         if isinstance(exp, Unknown):
             name = self.get_name(ast.expr)
             sym = self.search(name, [c[0], c[1]])
-            exp = self.infer_type(sym, c[2])
-        if sym.mtype.rtype != exp:
+            exp = self.infer_type(sym, sym.mtype.rtype)
+        if type(sym.mtype.rtype) != type(exp):
             raise TypeMismatchInStatement(ast)
 
     def get_operator_type(self, op):
@@ -310,33 +352,29 @@ class StaticChecker(BaseVisitor):
 
     def visitBinaryOp(self, ast, c):
         # Check type
-        lhs_type = ast.left.accept(self, c)
-        rhs_type = ast.right.accept(self, c)
         op_type = self.get_operator_type(ast.op)
 
-        # Check if array type
+        lhs_type = ast.left.accept(self, c)
+        lhs_name = self.get_name(ast.left)
         if isinstance(lhs_type, ArrayType):
             lhs_type = lhs_type.eletype
-        if isinstance(rhs_type, ArrayType):
-            rhs_type = rhs_type.eletype
-
         if isinstance(lhs_type, FunctionType):
             lhs_type = lhs_type.rtype
             if isinstance(lhs_type, ArrayType):
                 lhs_type = lhs_type.eletype
+        if isinstance(lhs_type, Unknown):
+            sym = self.search(lhs_name, [c[0], c[1]])
+            lhs_type = self.infer_type(sym, op_type)
+
+        # right
+        rhs_type = ast.right.accept(self, c)
+        rhs_name = self.get_name(ast.right)
+        if isinstance(rhs_type, ArrayType):
+            rhs_type = rhs_type.eletype
         if isinstance(rhs_type, FunctionType):
             rhs_type = rhs_type.rtype
             if isinstance(rhs_type, ArrayType):
                 rhs_type = rhs_type.eletype
-
-        # get name
-        lhs_name = self.get_name(ast.left)
-        rhs_name = self.get_name(ast.right)
-
-        # Update type if unknown
-        if isinstance(lhs_type, Unknown):
-            sym = self.search(lhs_name, [c[0], c[1]])
-            lhs_type = self.infer_type(sym, op_type)
         if isinstance(rhs_type, Unknown):
             sym = self.search(rhs_name, [c[0], c[1]])
             rhs_type = self.infer_type(sym, op_type)
@@ -437,6 +475,7 @@ class StaticChecker(BaseVisitor):
 
     def visitArrayCell(self, ast, c):
         name = self.get_name(ast.arr)
+        ast.arr.accept(self, c)
         tem_arr = self.search(name, [c[0], c[1]])
         if tem_arr is None:
             raise Undeclared(Identifier(), name)

@@ -1,10 +1,2 @@
-
-           Var: a[2] = {1, 2};
-           Var: f = 12.5;
-
-           Function: main
-           Parameter: p
-           Body:
-               c = 10;
-           EndBody.
-           
+Var: a,b,c,a;
+                    

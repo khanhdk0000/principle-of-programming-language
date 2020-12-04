@@ -1,1 +1,1 @@
-Program([FuncDecl(Id("main"),[],([],[Dowhile(([],[Assign(Id("num"),BinaryOp("+",Id("num"),IntLiteral(1)))]),BinaryOp("*",Id("num"),IntLiteral(100)))]))])
+Program([FuncDecl(Id("main"),[],([],[For(Id("i"),IntLiteral(0),BinaryOp("+",Id("i"),IntLiteral(10)),IntLiteral(1),([],[Assign(Id("z"),BinaryOp("+",Id("z"),IntLiteral(1)))]))]))])

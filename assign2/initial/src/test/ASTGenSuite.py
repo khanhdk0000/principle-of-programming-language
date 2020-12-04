@@ -2517,9 +2517,9 @@ class ASTGenSuite(unittest.TestCase):
         input = """
         Function: main
         Body:
-            Do 
-                num = num + 1;
-            While num * 100 EndDo.
+            For(i = 0, i + 10, 1) Do
+                z = z + 1;
+            EndFor.
         EndBody.
         """
 

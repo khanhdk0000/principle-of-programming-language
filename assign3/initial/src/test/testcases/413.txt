@@ -1,7 +1,13 @@
 
-           Var: main[2][3] = {{1, 2, 3}, {4, 5, 6}};
-           Function: main
-           Parameter: p
-           Body:
-           EndBody.
-           
+        Function: foo
+        Parameter: x, y
+        Body:
+            Var: a;
+        EndBody.
+        Function: main
+        Parameter: a, b, c
+        Body:
+            a = 1;
+            foo(a, d);
+        EndBody.
+        
