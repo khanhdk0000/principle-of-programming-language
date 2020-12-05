@@ -1,0 +1,19 @@
+
+        Var: a[2][2] = {{1,2},{3,4}};
+        Function: main
+        Body:
+            Var: i, a, b;
+            While i Do
+                printStrLn("correct");
+            EndWhile.
+            a = foo(i) + 15;
+        EndBody.
+
+        Function: foo
+        Parameter: x
+        Body:
+            Var: y;
+            y = (x + 5) * 4;
+            Return y;
+        EndBody.
+        

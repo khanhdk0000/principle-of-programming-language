@@ -3,4 +3,7 @@
             Var: b = 9;
             Var: c,d;
             Var: a = 17;
+            Function: main
+            Body:
+            EndBody.
             

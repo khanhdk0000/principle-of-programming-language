@@ -6,7 +6,7 @@
                 Return 1;
             ElseIf x == 10 Then
                 Return 0;
-            Else 
+            Else
                 Return True;
             EndIf.
         EndBody.

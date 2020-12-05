@@ -83,7 +83,7 @@ class StaticChecker(BaseVisitor):
         self.ast = ast
         self.global_envi = [
             Symbol("int_of_float", MType([FloatType()], IntType())),
-            Symbol("float_to_int", MType([IntType()], FloatType())),
+            Symbol("float_of_int", MType([IntType()], FloatType())),
             Symbol("int_of_string", MType([StringType()], IntType())),
             Symbol("string_of_int", MType([IntType()], StringType())),
             Symbol("float_of_string", MType([StringType()], FloatType())),
@@ -128,6 +128,24 @@ class StaticChecker(BaseVisitor):
         if self.search(sym.name, envi):
             raise Redeclared(typ, sym.name)
         return sym
+
+    def get_operator_type(self, op):
+        # Get the type based on the operator
+        if op in ['+', '-', '*', '\\', '%', '==', '!=', '<', '>', '<=', '>=']:
+            return IntType()
+        elif op in ['+.', '-.', '*.', '\\.', '=/=', '<.', '>.', '<=.', '>=.']:
+            return FloatType()
+        elif op in ['!', '&&', '||']:
+            return BoolType()
+
+    def get_name(self, var):
+        # Get the name of the identifier, array of call expression
+        if isinstance(var, Id):
+            return var.name
+        elif isinstance(var, ArrayCell):
+            return var.arr.name if isinstance(var.arr, Id) else var.arr.method.name
+        elif isinstance(var, CallExpr):
+            return var.method.name
 
     def visitProgram(self, ast, c):
         name = []  # The list of all function declaration name
@@ -189,10 +207,10 @@ class StaticChecker(BaseVisitor):
             # c[2]: the name of function so other stmt can search for the function symbol
             j.accept(self, (func_sym.mtype.param + local, c, func_sym.name))
 
-        func_sym2 = self.search(ast.name.name, [c])
+        # func_sym2 = self.search(ast.name.name, [c])
         # If still can't infer type of function after visiting all stmt, infer type VoidType
-        if isinstance(func_sym2.mtype.rtype, Unknown):
-            self.infer_type(func_sym2, VoidType())
+        # if isinstance(func_sym2.mtype.rtype, Unknown):
+        #     self.infer_type(func_sym2, VoidType())
 
     def visitAssign(self, ast, c):
         lhs = ast.lhs.accept(self, c)
@@ -218,21 +236,32 @@ class StaticChecker(BaseVisitor):
             raise TypeMismatchInStatement(ast)
 
     def visitCallStmt(self, ast, c):
-        # variable to check if the call stmt is in the 12 predefined method
-        predefine = False
+        predefine = False  # variable to check if the call stmt is in the 12 predefined method
         # only search in c[1] as function reside in global
-        tem_call_stmt = self.search(ast.method.name, [c[1]])
+        func_sym = self.search(ast.method.name, [c[1]])
         # raise undeclare if call sym is not of type function of mtype
-        if tem_call_stmt is None or not isinstance(tem_call_stmt.mtype, (FunctionType, MType)):
+        if func_sym is None or not isinstance(func_sym.mtype, (FunctionType, MType)):
             raise Undeclared(Function(), ast.method.name)
-        if tem_call_stmt in self.global_envi[:12]:
-            para_list = tem_call_stmt.mtype.intype
+
+        # Check if the call stmt is in the 12 predefined functions
+        if func_sym in self.global_envi[:12]:
+            para_list = func_sym.mtype.intype
             predefine = True
+            ret_typ = func_sym.mtype.restype
         else:
-            para_list = tem_call_stmt.mtype.param
+            para_list = func_sym.mtype.param
+            ret_typ = func_sym.mtype.rtype
+
+        # Call stmt must be of void type
+        if isinstance(ret_typ, Unknown):
+            ret_typ = self.infer_type(func_sym, VoidType())
+        if not isinstance(ret_typ, VoidType):
+            raise TypeMismatchInStatement(ast)
+
         # The length of parameter list of function and the call stmt must be the same
         if len(para_list) != len(ast.param):
             raise TypeMismatchInStatement(ast)
+
         # check every element of para list and argument list
         for para_sym, arg_exp in zip(para_list, ast.param):
             ptype = para_sym.mtype if not predefine else para_sym
@@ -240,25 +269,36 @@ class StaticChecker(BaseVisitor):
             if isinstance(ptype, Unknown) and isinstance(arg_typ, Unknown):
                 raise TypeCannotBeInferred(ast)
             if isinstance(ptype, Unknown):
-                para_sym.set_type(arg_typ)
-                ptype = para_sym.mtype
+                ptype = self.infer_type(para_sym, arg_typ)
             if isinstance(arg_typ, Unknown):
-                sym = self.search(arg_exp.name, [c[0], c[1]])
+                name = self.get_name(arg_exp)
+                sym = self.search(name, [c[0], c[1]])
                 arg_typ = self.infer_type(sym, ptype)
             if type(ptype) != type(arg_typ):
                 raise TypeMismatchInStatement(ast)
 
     def visitIf(self, ast, c):
+        # loop through the if then part
         for x in ast.ifthenStmt:
             exp = x[0].accept(self, c)
+
+            # If exp is unknown, infer type unknown
+            if isinstance(exp, Unknown):
+                name = self.get_name(x[0])
+                sym = self.search(name, [c[0], c[1]])
+                exp = self.infer_type(sym, BoolType())
+
+            # Check if the first expression is of bool type
             if not isinstance(exp, BoolType):
                 raise TypeMismatchInStatement(ast)
+
             local = []
             for y in x[1]:
                 tem_var = y.accept(self, local)
                 local.append(tem_var)
             for z in x[2]:
                 z.accept(self, (local + c[0], c[1], c[2]))
+        # The else part(only 1 tuple)
         else_local = []
         for i in ast.elseStmt[0]:
             tem_else_var = i.accept(self, else_local)
@@ -269,19 +309,38 @@ class StaticChecker(BaseVisitor):
     def visitFor(self, ast, c):
         idx = ast.idx1.accept(self, c)
 
+        # If first, second and fourth expr is unknown, infer type int
         if isinstance(idx, Unknown):
             name = self.get_name(ast.idx1)
             sym = self.search(name, [c[0], c[1]])
             idx = self.infer_type(sym, IntType())
         if not isinstance(idx, IntType):
             raise TypeMismatchInStatement(ast)
+
+        # Check if expression 1 is of int type
         exp1 = ast.expr1.accept(self, c)
+        if isinstance(exp1, Unknown):
+            name = self.get_name(ast.expr1)
+            sym = self.search(name, [c[0], c[1]])
+            exp1 = self.infer_type(sym, IntType())
         if not isinstance(exp1, IntType):
             raise TypeMismatchInStatement(ast)
+
+        # Check if expression 2 is of bool type
         exp2 = ast.expr2.accept(self, c)
+        if isinstance(exp2, Unknown):
+            name = self.get_name(ast.expr2)
+            sym = self.search(name, [c[0], c[1]])
+            exp2 = self.infer_type(sym, BoolType())
         if not isinstance(exp2, BoolType):
             raise TypeMismatchInStatement(ast)
+
+        # Check if expression 3 is of int type
         exp3 = ast.expr3.accept(self, c)
+        if isinstance(exp3, Unknown):
+            name = self.get_name(ast.expr3)
+            sym = self.search(name, [c[0], c[1]])
+            exp3 = self.infer_type(sym, IntType())
         if not isinstance(exp3, IntType):
             raise TypeMismatchInStatement(ast)
 
@@ -294,6 +353,11 @@ class StaticChecker(BaseVisitor):
 
     def visitWhile(self, ast, c):
         exp = ast.exp.accept(self, c)
+        # Check if the expression is of bool type, if not update otherwise raise
+        if isinstance(exp, Unknown):
+            name = self.get_name(ast.exp)
+            sym = self.search(name, [c[0], c[1]])
+            exp = self.infer_type(sym, BoolType())
         if not isinstance(exp, BoolType):
             raise TypeMismatchInStatement(ast)
         local = []
@@ -311,22 +375,24 @@ class StaticChecker(BaseVisitor):
         for k in ast.sl[1]:
             k.accept(self, (local + c[0], c[1], c[2]))
         exp = ast.exp.accept(self, c)
+        # Check if expression of bool type after the stmt list
+        if isinstance(exp, Unknown):
+            name = self.get_name(ast.exp)
+            sym = self.search(name, [c[0], c[1]])
+            exp = self.infer_type(sym, BoolType())
         if not isinstance(exp, BoolType):
             raise TypeMismatchInStatement(ast)
-
-    def visitBreak(self, ast, c):
-        pass
-
-    def visitContinue(self, ast, c):
-        pass
 
     def visitReturn(self, ast, c):
         exp = ast.expr.accept(self, c) if ast.expr else VoidType()
         sym = self.search(c[2], [c[0], c[1]])
+        # If both of the expression and the return type is unknown raise
         if isinstance(exp, Unknown) and isinstance(sym.mtype.rtype, Unknown):
             raise TypeCannotBeInferred(ast)
+        # Infer the return type for the function if still unknown
         if isinstance(sym.mtype.rtype, Unknown):
             self.infer_type(sym, exp)
+        # Infer type for the expression if we already know function return type
         if isinstance(exp, Unknown):
             name = self.get_name(ast.expr)
             sym = self.search(name, [c[0], c[1]])
@@ -334,26 +400,11 @@ class StaticChecker(BaseVisitor):
         if type(sym.mtype.rtype) != type(exp):
             raise TypeMismatchInStatement(ast)
 
-    def get_operator_type(self, op):
-        if op in ['+', '-', '*', '\\', '%', '==', '!=', '<', '>', '<=', '>=']:
-            return IntType()
-        elif op in ['+.', '-.', '*.', '\\.', '=/=', '<.', '>.', '<=.', '>=.']:
-            return FloatType()
-        elif op in ['!', '&&', '||']:
-            return BoolType()
-
-    def get_name(self, var):
-        if isinstance(var, Id):
-            return var.name
-        elif isinstance(var, ArrayCell):
-            return var.arr.name if isinstance(var.arr, Id) else var.arr.method.name
-        elif isinstance(var, CallExpr):
-            return var.method.name
-
     def visitBinaryOp(self, ast, c):
-        # Check type
+        # Get type of operator
         op_type = self.get_operator_type(ast.op)
 
+        # Check and infer type for the left
         lhs_type = ast.left.accept(self, c)
         lhs_name = self.get_name(ast.left)
         if isinstance(lhs_type, ArrayType):
@@ -366,7 +417,7 @@ class StaticChecker(BaseVisitor):
             sym = self.search(lhs_name, [c[0], c[1]])
             lhs_type = self.infer_type(sym, op_type)
 
-        # right
+        # Check and infer type for the right
         rhs_type = ast.right.accept(self, c)
         rhs_name = self.get_name(ast.right)
         if isinstance(rhs_type, ArrayType):
@@ -454,6 +505,42 @@ class StaticChecker(BaseVisitor):
             raise Undeclared(Identifier(), ast.name)
         return tem_id.mtype
 
+    def visitArrayLiteral(self, ast, c):
+        ele_typ = ast.value[0].accept(self, c)
+        dim = [len(ast.value)] + (ele_typ.dimen if isinstance(ele_typ, ArrayType) else [])
+        if isinstance(ele_typ, ArrayType):
+            ele_typ = ele_typ.eletype
+        return ArrayType(dim, ele_typ)
+
+    def visitArrayCell(self, ast, c):
+        name = self.get_name(ast.arr)
+        ast.arr.accept(self, c)
+        func_sym = self.search(name, [c[0], c[1]])
+        if func_sym is None:
+            raise Undeclared(Identifier(), name)
+        for x in ast.idx:
+            tem = x.accept(self, c)
+            if isinstance(tem, Unknown):
+                sym = self.search(x.name, [c[0], c[1]])
+                tem = self.infer_type(sym, IntType())
+            if not isinstance(tem, IntType):
+                raise TypeMismatchInExpression(ast)
+        if isinstance(func_sym.mtype, FunctionType):
+            if isinstance(func_sym.mtype.rtype, Unknown):
+                self.infer_type(func_sym, ArrayType(ast.idx, Unknown()))
+                func_sym = self.search(name, [c[0], c[1]])
+        lst = func_sym.mtype.dimen if isinstance(func_sym.mtype, ArrayType) else func_sym.mtype.rtype.dimen
+        typ = func_sym.mtype if isinstance(func_sym.mtype, ArrayType) else func_sym.mtype.rtype
+        if len(lst) != len(ast.idx) or not isinstance(typ, ArrayType):
+            raise TypeMismatchInExpression(ast)
+        return typ.eletype
+
+    def visitBreak(self, ast, c):
+        pass
+
+    def visitContinue(self, ast, c):
+        pass
+
     def visitIntLiteral(self, ast, c):
         return IntType()
 
@@ -465,29 +552,3 @@ class StaticChecker(BaseVisitor):
 
     def visitStringLiteral(self, ast, c):
         return StringType()
-
-    def visitArrayLiteral(self, ast, c):
-        ele_typ = ast.value[0].accept(self, c)
-        dim = [len(ast.value)] + (ele_typ.dimen if isinstance(ele_typ, ArrayType) else [])
-        if isinstance(ele_typ, ArrayType):
-            ele_typ = ele_typ.eletype
-        return ArrayType(dim, ele_typ)
-
-    def visitArrayCell(self, ast, c):
-        name = self.get_name(ast.arr)
-        ast.arr.accept(self, c)
-        tem_arr = self.search(name, [c[0], c[1]])
-        if tem_arr is None:
-            raise Undeclared(Identifier(), name)
-        for x in ast.idx:
-            tem = x.accept(self, c)
-            if isinstance(tem, Unknown):
-                sym = self.search(x.name, [c[0], c[1]])
-                tem = self.infer_type(sym, IntType())
-            if not isinstance(tem, IntType):
-                raise TypeMismatchInExpression(ast)
-        lst = tem_arr.mtype.dimen if isinstance(tem_arr.mtype, ArrayType) else tem_arr.mtype.rtype.dimen
-        typ = tem_arr.mtype if isinstance(tem_arr.mtype, ArrayType) else tem_arr.mtype.rtype
-        if len(lst) != len(ast.idx) or not isinstance(typ, ArrayType):
-            raise TypeMismatchInExpression(ast)
-        return tem_arr.mtype

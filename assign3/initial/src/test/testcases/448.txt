@@ -4,9 +4,9 @@
             Var: x;
             x = x + foo();
         EndBody.
-        
+
         Function: foo
         Body:
-            Return "string"; 
+            Return "string";
         EndBody.
         

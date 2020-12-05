@@ -1,7 +1,1 @@
-
-        Function: main
-        Parameter: x, y ,z
-        Body:
-            y = x || (x>z);
-        EndBody.
-        
+Program([FuncDecl(Id(main)[VarDecl(Id(x)),VarDecl(Id(y)),VarDecl(Id(z),FloatLiteral(3.0))],([][Assign(Id(t),BinaryOp(||,BooleanLiteral(true),BinaryOp(>,IntLiteral(3),Id(z))))]))])

@@ -1,0 +1,17 @@
+
+        Var: a[2][2] = {{1,2},{3,4}};
+        Function: main
+        Body:
+            foo(a[0][1]);
+        EndBody.
+
+        Function: foo
+        Parameter: x
+        Body:
+            Var: ans = 0,i;
+            For(i = x, i < 10, 1) Do
+                ans = ans * 2;
+            EndFor.
+            Return ans;
+        EndBody.
+        
