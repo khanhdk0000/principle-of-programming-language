@@ -1,0 +1,14 @@
+
+        Var: arr[3] = {"game", "play", "witcher"};
+        Function: main
+        Body:
+            Var: res;
+            res = !foo(arr);
+        EndBody.
+        
+        Function: foo
+        Parameter: a[3]
+        Body:
+            a[1] = True;
+        EndBody.
+        

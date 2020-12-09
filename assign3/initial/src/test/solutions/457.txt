@@ -1,1 +1,1 @@
-Type Mismatch In Expression: CallExpr(Id(foo),[FloatLiteral(0.0)])
+Type Cannot Be Inferred: Assign(ArrayCell(CallExpr(Id(foo),[IntLiteral(0)]),[IntLiteral(0)]),ArrayCell(CallExpr(Id(foo),[FloatLiteral(0.0)]),[IntLiteral(0)]))

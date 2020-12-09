@@ -1,0 +1,14 @@
+
+        Var: x;
+
+        Function: main
+        Parameter: x
+        Body:
+            If True Then
+                If True Then
+                    main(10.5);
+                    x = 120;
+                EndIf.
+            EndIf.
+        EndBody.
+        

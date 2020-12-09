@@ -2517,9 +2517,7 @@ class ASTGenSuite(unittest.TestCase):
         input = """
         Function: main
         Body:
-            Do
-                x = 1;
-            While x EndDo.
+            foo();
         EndBody.
         """
 

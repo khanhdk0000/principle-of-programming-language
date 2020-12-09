@@ -1,12 +1,13 @@
 
         Function: main
+        Parameter: a, x
         Body:
-            Var: x = 15;
-            foo(x);
+            Var: y = 1;
+            y = a + foo(x);
         EndBody.
+
         Function: foo
-        Parameter: a[2][3]
+        Parameter: x
         Body:
-            Return True;
         EndBody.
         

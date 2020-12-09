@@ -1,0 +1,8 @@
+
+                Var: a[2];
+                Function: main
+                Parameter: x
+                Body:
+                    If a[a[0]] Then EndIf.
+                EndBody.
+                
