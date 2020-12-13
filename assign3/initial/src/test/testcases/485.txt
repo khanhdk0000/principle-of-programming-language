@@ -1,0 +1,12 @@
+
+        Function: main
+        Body:
+            Var: x, y = 1;
+            Return 2.0 +. float_of_string(foo(x, y));
+        EndBody.
+        
+        Function: foo
+        Parameter: x, y
+        Body:
+            Return string_of_int(100);
+        EndBody.

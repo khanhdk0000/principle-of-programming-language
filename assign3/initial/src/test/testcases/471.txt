@@ -1,0 +1,15 @@
+
+        Function: main
+        Body:
+            Var: i;
+            For(i = 1, i < 100, foo(foo(9.5))) Do
+                printStrLn("correct");
+            EndFor.
+        EndBody.
+        Function: foo
+        Parameter: x
+        Body:
+            print("Cyber");
+            Return 100;
+        EndBody.
+        

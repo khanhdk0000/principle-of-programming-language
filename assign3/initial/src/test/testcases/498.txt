@@ -1,0 +1,16 @@
+
+        Function: foo
+        Body:
+            print("Now or never");
+            Return;
+        EndBody.
+        Function: goo
+        Body:
+            foo();
+        EndBody.
+        Function: main
+        Body:
+            Var: foo;
+            foo();
+        EndBody.
+        

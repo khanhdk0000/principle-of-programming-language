@@ -1,0 +1,12 @@
+
+        Function: main
+        Body:
+            Var: a = 1;
+            If bool_of_string("True") Then
+                Var: a;
+                print(string_of_float(a));
+            EndIf.
+            print(string_of_int(a));
+            print();
+        EndBody.
+        

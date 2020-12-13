@@ -16,7 +16,7 @@
             If x % 2 == 0 Then
                 Return x + 1;
             Else
-                Return x + 2;
+                printLn();
             EndIf.
         EndBody.
         

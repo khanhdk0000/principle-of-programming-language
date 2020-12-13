@@ -1,0 +1,12 @@
+
+        Function: main
+        Body:
+            Var: b = 5,i = "True",res,j;
+            If bool_of_string(i) Then
+                res = b * b;
+            ElseIf j Then
+                While j == 0 Do
+                    res = res + b;
+                EndWhile.
+            EndIf.
+        EndBody.

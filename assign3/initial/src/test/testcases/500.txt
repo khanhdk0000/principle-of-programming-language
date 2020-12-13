@@ -1,12 +1,11 @@
 
         Function: main
+        Parameter: x, y
         Body:
-            Var: x = 15;
-            foo(x);
-        EndBody.
-        Function: foo
-        Parameter: a[2][3]
-        Body:
-            Return True;
+            Var: z;
+            While (True) Do
+                z = main(1, main(x, True));
+            EndWhile.
+            Return y && z;
         EndBody.
         

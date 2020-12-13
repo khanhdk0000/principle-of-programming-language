@@ -1,0 +1,11 @@
+
+        Function: main
+        Body:
+            Var: a[2];
+            Do
+                Var: x;
+                x = a[1] + 5;
+                x = !a[0];
+            While True EndDo.
+        EndBody.
+        

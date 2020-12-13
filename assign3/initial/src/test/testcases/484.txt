@@ -1,0 +1,16 @@
+
+        Function: foo
+        Parameter: a, c, b
+        Body:
+            b = True;
+        EndBody.
+
+        Function: main
+        Body:
+            Var: x = "targeryen", sum;
+            Var: tem;
+            x = foo(x, 30.0e+1, sum);
+            printStrLn(foo("Aegon", tem, True));
+        Return main();
+        EndBody.
+        

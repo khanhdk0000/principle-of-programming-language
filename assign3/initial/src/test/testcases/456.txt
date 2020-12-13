@@ -5,7 +5,13 @@
             Var: x;
             Do
                 x = 1;
-            While x EndDo.
+            While foo(x) EndDo.
         EndBody.
-
+        Function: foo
+        Parameter: x
+        Body:
+            Var: y;
+            y = !x;
+            Return y;
+        EndBody.
         

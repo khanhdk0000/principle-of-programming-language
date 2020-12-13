@@ -1,0 +1,9 @@
+
+        Function: main
+        Parameter: x
+        Body:
+            printLn();
+            print(string_of_bool(True));
+            read();
+        EndBody.
+        

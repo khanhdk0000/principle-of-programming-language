@@ -1,0 +1,16 @@
+
+        Function: main
+        Body:
+            Var: a[2], x, y = 10.5, t = "15.6";
+            x = !(y <. 50.6);
+            If True Then 
+                Var: res, z;
+                res = float_of_string(t) +. foo(z);
+            EndIf.
+        EndBody.
+        Function: foo
+        Parameter: x
+        Body:
+            Return 79.6;
+        EndBody.
+        

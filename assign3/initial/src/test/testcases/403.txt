@@ -9,6 +9,6 @@
             EndBody.
             Function: foo
             Body:
-                Var: x;
+                Var: y;
             EndBody.
             

@@ -1,0 +1,16 @@
+
+        Function: main
+        Body:
+            Var: i;
+            For(i = foo(i), bool_of_string("True"), 1) Do
+                printStrLn("correct");
+            EndFor.
+        EndBody.
+        Function: foo
+        Parameter: x
+        Body:
+            Var: y, z;
+            y = (!z || False) && x;
+            Return 100;
+        EndBody.
+        

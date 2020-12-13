@@ -1,0 +1,16 @@
+
+        Function: main
+        Body:
+            Var: y = 9;
+            foo("TLC", bool_of_string(string_of_int(y)));
+        EndBody.
+
+        Function: foo
+        Parameter: x, y
+        Body:
+            Var: res;
+            print(x);
+            res = !!y;
+            Return True;
+        EndBody.
+        

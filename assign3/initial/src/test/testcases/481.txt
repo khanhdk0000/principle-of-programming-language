@@ -1,0 +1,13 @@
+
+        Function: main
+        Parameter: k
+        Body:
+            Var: a[2], x, y = 10.5, t = "15.6";
+            x = !foo(foo(y));
+        EndBody.
+        Function: foo
+        Parameter: x
+        Body:
+            Return True;
+        EndBody.
+        

@@ -1,0 +1,14 @@
+
+        Function: main
+        Body:
+            Var: y = 9;
+            foo("game of shadow", y);
+        EndBody.
+
+        Function: foo
+        Parameter: x, y
+        Body:
+            print(x);
+            printStrLn(y);
+        EndBody.
+        

@@ -1,0 +1,1 @@
+Type Mismatch In Statement: For(Id(j),IntLiteral(1),CallExpr(Id(string_of_bool),[Id(i)]),Id(j),[],[Assign(Id(x),BinaryOp(+,Id(x),IntLiteral(1)))])

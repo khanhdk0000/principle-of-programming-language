@@ -1,0 +1,14 @@
+
+        Function: main
+        Body:
+            Var: a;
+            foo();
+            a = foo();
+        EndBody.
+
+        Function: foo
+        Body:
+            print("rog");
+            printStrLn("rsa");
+        EndBody.
+        

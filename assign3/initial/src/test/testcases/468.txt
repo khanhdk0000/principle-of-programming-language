@@ -1,0 +1,11 @@
+
+                Function: main
+                Body:
+                    Var: a = 0, i, foo;
+                    i = float_to_int(a) +. foo();
+                EndBody.
+                Function: foo
+                Body:
+                    Return 15.5;
+                EndBody.
+                

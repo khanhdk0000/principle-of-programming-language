@@ -1,0 +1,16 @@
+
+        Function: main
+        Body:
+            Var: a[2] = {True, False};
+            While foo(foo(string_of_bool(a[0]))) Do
+                printStrLn("martel");
+            EndWhile.
+        EndBody.
+        Function: foo
+        Parameter: x
+        Body:
+            Var: y, z;
+            y = (!z || False) && (x > 100);
+            Return 100;
+        EndBody.
+        

@@ -1,0 +1,15 @@
+
+        Function: main
+        Body:
+            Var: y = 8.9;
+            foo(1, int_of_float(y));
+        EndBody.
+        
+        Function: foo
+        Parameter: x, y
+        Body:
+            Var: res, ans;
+            res = x + 100;
+            ans = y +. 1000.59;
+        EndBody.
+        

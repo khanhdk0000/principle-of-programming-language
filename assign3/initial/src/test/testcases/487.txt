@@ -1,0 +1,8 @@
+Var: arr[1][1], brr[1][3], crr[5], drr[5];
+        Function: main
+        Body:
+            crr = {"a", "b", "y", "z", "g"};
+            brr = { {1, 2, 3} };
+            drr = crr;
+            arr = brr;
+        EndBody.

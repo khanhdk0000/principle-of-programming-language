@@ -1,0 +1,14 @@
+
+        Function: main
+        Body:
+            Var: a[2];
+            Do
+                printStrLn("stark");
+            While a[int_of_float(a[1])] EndDo.
+        EndBody.
+        Function: foo
+        Parameter: x
+        Body:
+            Return True;
+        EndBody.
+        

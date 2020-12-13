@@ -1,5 +1,5 @@
 
-        Var: a[2][3] = {{1, 2}, {3, 4}};
+        Var: a[2][2] = {{1, 2}, {3, 4}};
 
         Function: foo
         Body:
@@ -7,7 +7,7 @@
         EndBody.
 
         Function: c
-        Parameter: b[2][3]
+        Parameter: b[2][2]
         Body:
             Return 15.6;
         EndBody.

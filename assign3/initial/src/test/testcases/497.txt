@@ -1,0 +1,10 @@
+
+        Function: main
+        Body:
+            While True Do
+                Var: a;
+                a = "WWE";
+            EndWhile.
+            print(a);
+            Return 1;
+        EndBody.

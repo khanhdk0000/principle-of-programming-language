@@ -1,0 +1,13 @@
+
+        Function: main
+        Body:
+            Var: b = 9.5,i = "True",res,j;
+            If bool_of_string(i) Then
+                res = b *. b;
+            ElseIf j Then
+                Do
+                    res = res +. 1.5;
+                    printStrLn(string_of_float(res));
+                While string_of_bool(j) EndDo.
+            EndIf.
+        EndBody.

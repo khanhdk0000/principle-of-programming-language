@@ -1,0 +1,16 @@
+
+        Function: main
+        Body:
+            Var: i;
+            For(i = 1, foo(foo(False)), 1) Do
+                printStrLn("correct");
+            EndFor.
+        EndBody.
+        Function: foo
+        Parameter: x
+        Body:
+            x = x && True;
+            print("hello");
+            Return 100;
+        EndBody.
+        

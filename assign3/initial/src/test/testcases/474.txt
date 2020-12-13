@@ -1,0 +1,14 @@
+
+        Function: main
+        Body:
+            Var: a[2];
+            While a[int_of_string(a[1])] Do
+                printStrLn("oberyn");
+            EndWhile.
+        EndBody.
+        Function: foo
+        Parameter: x
+        Body:
+            Return 100;
+        EndBody.
+        
