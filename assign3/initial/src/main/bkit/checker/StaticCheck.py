@@ -367,7 +367,13 @@ class StaticChecker(BaseVisitor):
             if isinstance(x[0], (CallExpr, ArrayCell)):
                 name = self.get_name(x[0])
                 sym = self.search(name, [c[0], c[1]])
-                self.infer_type(sym, BoolType())
+                # If Unknown, infer bool, else raise
+                tem_typ = self.get_type(sym.mtype)
+                if isinstance(tem_typ, Unknown):
+                    self.infer_type(sym, BoolType())
+                elif not isinstance(tem_typ, BoolType):
+                    raise TypeMismatchInStatement(ast)
+
             exp = x[0].accept(self, c)
             exp = self.get_type(exp)
             # If exp is unknown, infer type bool
@@ -416,7 +422,13 @@ class StaticChecker(BaseVisitor):
         if isinstance(ast.expr1, (CallExpr, ArrayCell)):
             name = self.get_name(ast.expr1)
             sym = self.search(name, [c[0], c[1]])
-            self.infer_type(sym, IntType())
+            # If Unknown, infer int, else raise
+            tem_typ = self.get_type(sym.mtype)
+            if isinstance(tem_typ, Unknown):
+                self.infer_type(sym, IntType())
+            elif not isinstance(tem_typ, IntType):
+                raise TypeMismatchInStatement(ast)
+
         exp1 = ast.expr1.accept(self, c)
         exp1 = self.get_type(exp1)
         # Check if expression 1 is of int type
@@ -431,7 +443,13 @@ class StaticChecker(BaseVisitor):
         if isinstance(ast.expr2, (CallExpr, ArrayCell)):
             name = self.get_name(ast.expr2)
             sym = self.search(name, [c[0], c[1]])
-            self.infer_type(sym, BoolType())
+            # If Unknown, infer bool, else raise
+            tem_typ = self.get_type(sym.mtype)
+            if isinstance(tem_typ, Unknown):
+                self.infer_type(sym, BoolType())
+            elif not isinstance(tem_typ, BoolType):
+                raise TypeMismatchInStatement(ast)
+
         exp2 = ast.expr2.accept(self, c)
         exp2 = self.get_type(exp2)
         # Check if expression 2 is of bool type
@@ -446,7 +464,13 @@ class StaticChecker(BaseVisitor):
         if isinstance(ast.expr3, (CallExpr, ArrayCell)):
             name = self.get_name(ast.expr3)
             sym = self.search(name, [c[0], c[1]])
-            self.infer_type(sym, IntType())
+            # If Unknown, infer bool, else raise
+            tem_typ = self.get_type(sym.mtype)
+            if isinstance(tem_typ, Unknown):
+                self.infer_type(sym, BoolType())
+            elif not isinstance(tem_typ, BoolType):
+                raise TypeMismatchInStatement(ast)
+
         exp3 = ast.expr3.accept(self, c)
         exp3 = self.get_type(exp3)
         # Check if expression 3 is of int type
@@ -470,7 +494,13 @@ class StaticChecker(BaseVisitor):
         if isinstance(ast.exp, (CallExpr, ArrayCell)):
             name = self.get_name(ast.exp)
             sym = self.search(name, [c[0], c[1]])
-            self.infer_type(sym, BoolType())
+            # If Unknown, infer bool, else raise
+            tem_typ = self.get_type(sym.mtype)
+            if isinstance(tem_typ, Unknown):
+                self.infer_type(sym, BoolType())
+            elif not isinstance(tem_typ, BoolType):
+                raise TypeMismatchInStatement(ast)
+
         exp = ast.exp.accept(self, c)
         exp = self.get_type(exp)
         # Check if the expression is of bool type, if not update otherwise raise
@@ -500,7 +530,13 @@ class StaticChecker(BaseVisitor):
         if isinstance(ast.exp, (CallExpr, ArrayCell)):
             name = self.get_name(ast.exp)
             sym = self.search(name, [c[0], c[1]])
-            self.infer_type(sym, BoolType())
+            # If Unknown, infer bool, else raise
+            tem_typ = self.get_type(sym.mtype)
+            if isinstance(tem_typ, Unknown):
+                self.infer_type(sym, BoolType())
+            elif not isinstance(tem_typ, BoolType):
+                raise TypeMismatchInStatement(ast)
+
         exp = ast.exp.accept(self, c)
         exp = self.get_type(exp)
         # Check if expression of bool type after the stmt list

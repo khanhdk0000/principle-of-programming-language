@@ -2517,7 +2517,7 @@ class ASTGenSuite(unittest.TestCase):
         input = """
         Function: main
         Body:
-z = main(1, main(x, True));
+If foo(foo(5)) Then EndIf.
         EndBody.
         """
 

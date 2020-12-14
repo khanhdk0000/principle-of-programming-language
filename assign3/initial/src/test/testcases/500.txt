@@ -1,11 +1,11 @@
 
-        Function: main
-        Parameter: x, y
+        Function: foo
+        Parameter: x
         Body:
-            Var: z;
-            While (True) Do
-                z = main(1, main(x, True));
-            EndWhile.
-            Return y && z;
+            Return 10;
+        EndBody.
+        Function: main
+        Body:
+            If foo(foo(5)) Then EndIf.
         EndBody.
         
