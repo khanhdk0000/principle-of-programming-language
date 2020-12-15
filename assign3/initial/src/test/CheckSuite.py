@@ -1843,22 +1843,3 @@ class CheckSuite(unittest.TestCase):
             CallStmt(Id('print'), [])))
         self.assertTrue(TestChecker.test(input, expect, 499))
 
-    def test_shit(self):
-        """Check same name variable in different scope"""
-        input = """
-        Function: foo
-        Parameter: x
-        Body:
-            Return 10;
-        EndBody.
-        Function: main
-        Body:
-            If foo(foo(5)) Then EndIf.
-        EndBody.
-        """
-        expect = str(TypeMismatchInStatement(
-            If([(CallExpr(Id("foo"), [CallExpr(Id("foo"), [IntLiteral(5)])]), [], [])], ([], []))))
-        self.assertTrue(TestChecker.test(input, expect, 500))
-
-
-
