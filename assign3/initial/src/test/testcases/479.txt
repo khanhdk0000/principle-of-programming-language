@@ -1,13 +1,19 @@
-
+Var: a;
+        Var: b;
+        Var: c;
         Function: main
         Body:
-            Var: a[2], x, y = 10.5, t = "15.6";
-            x = !(y <. 50.6);
-            If True Then 
-                Var: res, z;
-                For(z = 1, bool_of_string("True"), y) Do
-                    printLn();
-                EndFor.
-            EndIf.
+            While a Do 
+                Var: b;
+                While b Do 
+                    Var: a;
+                    While a > 1 Do 
+                        Var: b;
+                        Return;
+                    EndWhile.
+                EndWhile.
+            Return main();
+        EndWhile.
+        c = b;
+        Return;
         EndBody.
-        

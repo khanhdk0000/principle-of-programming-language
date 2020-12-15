@@ -1,14 +1,5 @@
-
-        Function: main
-        Body:
-            Var: a[2];
-            Do
-                printStrLn("lannister");
-            While foo(foo(int_of_string("5"))) EndDo.
-        EndBody.
-        Function: foo
-        Parameter: x
-        Body:
-            Return True;
-        EndBody.
-        
+Function: main
+		Body:
+		  While True Do main(); EndWhile.
+		  Return;
+		EndBody.

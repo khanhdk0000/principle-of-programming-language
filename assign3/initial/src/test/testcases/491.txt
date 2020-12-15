@@ -1,15 +1,14 @@
 
-        Function: main
-        Body:
-            Var: y = 8.9;
-            foo(1, int_of_float(y));
-        EndBody.
-        
         Function: foo
-        Parameter: x, y
+        Parameter: x, y 
         Body:
-            Var: res, ans;
-            res = x + 100;
-            ans = y +. 1000.59;
+            Var: z;
+            While True Do 
+                z = foo(1, foo(x, True));
+            EndWhile.
+        Return y && z;
         EndBody.
-        
+        Function: main 
+        Body: 
+            Return -1; 
+        EndBody.

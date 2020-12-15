@@ -1,1 +1,1 @@
-Undeclared Identifier: a
+Type Mismatch In Statement: If(Id(t),[VarDecl(Id(u),[1],ArrayLiteral(IntLiteral(2)))],[Return(BinaryOp(&&,Id(t),CallExpr(Id(bool_of_string),[CallExpr(Id(string_of_int),[ArrayCell(Id(u),[IntLiteral(0)])])])))])Else([],[])

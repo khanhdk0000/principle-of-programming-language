@@ -1,9 +1,7 @@
-
-        Function: main
-        Parameter: num
-        Body:
-            Do
-                num = num + 1;
-            While num * 100 EndDo.
-        EndBody.
-        
+Function: main
+		Parameter: a, b, c
+		Body:
+		  a = 1 + (2 * 3);
+		  b = a - (c + 1);
+		  c = False;
+		EndBody.

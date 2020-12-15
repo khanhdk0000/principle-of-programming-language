@@ -1,9 +1,13 @@
+Function: foo 
+		Parameter: x, z 
+		Body:
+		  Var: y;
+		  y = x +. 2e-1;
+		EndBody.
 
-            Var: a = 10;
-            Var: b = 9;
-            Var: c,d;
-            Var: a = 17;
-            Function: main
-            Body:
-            EndBody.
-            
+		Function: main 
+		Parameter: k 
+		Body:
+		  k = True;
+		  k = foo(1.1, k);
+		EndBody.

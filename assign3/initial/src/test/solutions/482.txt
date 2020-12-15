@@ -1,1 +1,1 @@
-Type Mismatch In Statement: CallStmt(Id(read),[])
+Type Mismatch In Statement: Dowhile([VarDecl(Id(x),IntLiteral(1))],[Return(Id(x))],CallExpr(Id(main),[]))

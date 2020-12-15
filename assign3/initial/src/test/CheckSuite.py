@@ -3,7 +3,6 @@ from TestUtils import TestChecker
 from StaticError import *
 from AST import *
 
-
 class CheckSuite(unittest.TestCase):
 
     # 1
@@ -1180,7 +1179,7 @@ class CheckSuite(unittest.TestCase):
             Var: res;
             res = !foo(arr);
         EndBody.
-        
+
         Function: foo
         Parameter: a[3]
         Body:
@@ -1201,7 +1200,7 @@ class CheckSuite(unittest.TestCase):
                 EndBody.
                 Function: foo
                 Body:
-                    Return 1 + 2; 
+                    Return 1 + 2;
                 EndBody.
                 """
         expect = str(Undeclared(Function(), 'foo'))
@@ -1422,7 +1421,7 @@ class CheckSuite(unittest.TestCase):
         Body:
             Var: a[2], x, y = 10.5, t = "15.6";
             x = !(y <. 50.6);
-            If True Then 
+            If True Then
                 Var: res, z;
                 res = float_of_string(t) +. foo(z);
             EndIf.
@@ -1446,7 +1445,7 @@ class CheckSuite(unittest.TestCase):
         Body:
             Var: a[2], x, y = 10.5, t = "15.6";
             x = !(y <. 50.6);
-            If True Then 
+            If True Then
                 Var: res, z;
                 For(z = 1, bool_of_string("True"), y) Do
                     printLn();
@@ -1468,7 +1467,7 @@ class CheckSuite(unittest.TestCase):
         Body:
             Var: a[2], x, y = 10.5, t = "15.6";
             x = !(y <. 50.6);
-            If True Then 
+            If True Then
                 Var: res, z;
                 For(z = 1, bool_of_string("True"), 1) Do
                     printLn();
@@ -1526,9 +1525,9 @@ class CheckSuite(unittest.TestCase):
             Var: x;
             Return 1 + foo(x);
         EndBody.
-        Function: foo 
-        Parameter: x 
-        Body: 
+        Function: foo
+        Parameter: x
+        Body:
         EndBody.
         """
         expect = str(TypeCannotBeInferred(Return(BinaryOp('+', IntLiteral(1), CallExpr(Id('foo'), [Id('x')])))))
@@ -1565,7 +1564,7 @@ class CheckSuite(unittest.TestCase):
             Var: x, y = 1;
             Return 2.0 +. float_of_string(foo(x, y));
         EndBody.
-        
+
         Function: foo
         Parameter: x, y
         Body:
@@ -1670,7 +1669,7 @@ class CheckSuite(unittest.TestCase):
             Var: y = 8.9;
             foo(1, int_of_float(y));
         EndBody.
-        
+
         Function: foo
         Parameter: x, y
         Body:
@@ -1761,9 +1760,7 @@ class CheckSuite(unittest.TestCase):
             EndWhile.
         EndBody.
         """
-        expect = str(TypeCannotBeInferred(
-            Assign(Id("z"),
-                   CallExpr(Id("main"), [IntLiteral(1), CallExpr(Id("main"), [Id("x"), BooleanLiteral(True)])]))))
+        expect = str()
         self.assertTrue(TestChecker.test(input, expect, 495))
 
     # 97
@@ -1862,3 +1859,6 @@ class CheckSuite(unittest.TestCase):
         expect = str(TypeMismatchInStatement(
             If([(CallExpr(Id("foo"), [CallExpr(Id("foo"), [IntLiteral(5)])]), [], [])], ([], []))))
         self.assertTrue(TestChecker.test(input, expect, 500))
+
+
+

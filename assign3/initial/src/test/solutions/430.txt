@@ -1,1 +1,1 @@
-Type Mismatch In Statement: If(BinaryOp(+,Id(b),IntLiteral(10)),[],[Assign(Id(x),IntLiteral(15))])Else([],[])
+Type Mismatch In Expression: ArrayCell(Id(x),[IntLiteral(3)])

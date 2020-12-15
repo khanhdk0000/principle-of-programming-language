@@ -1,7 +1,14 @@
+Function: foo
+		Parameter: a_1, a_2, b 
+		Body:
+		  b = True;
+		EndBody.
 
-        Function: main
-        Parameter: a, b, c, b
-        Body:
-            Var: x;
-        EndBody.
-        
+		Function: main 
+		Body:
+		  Var: x = "str_temp", checksum;
+		  Var: ambiguous;
+		  x = foo(x, 2.0e-1, checksum);
+		  printStrLn(foo("Line", ambiguous, True));
+		  Return main();
+		EndBody.

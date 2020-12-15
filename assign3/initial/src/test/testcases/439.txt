@@ -1,21 +1,11 @@
-
-        Var: a[2][2] = {{1, 2}, {3, 4}};
-
-        Function: foo
-        Body:
-            Return a;
-        EndBody.
-
-        Function: c
-        Parameter: b[2][2]
-        Body:
-            Return 15.6;
-        EndBody.
-
-        Function: main
-        Parameter: p
-        Body:
-            p = 10;
-            p = c(foo());
-        EndBody.
-        
+Function: main 
+		Parameter: p 
+		Body:
+		  Var: b[2];
+		  b[0] = (f() + 1) * (f() + p);
+		  Return p;
+		EndBody.
+		Function: f 
+		Body:
+		  Return main(f());
+		EndBody.

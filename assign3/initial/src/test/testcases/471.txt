@@ -1,15 +1,16 @@
-
-        Function: main
-        Body:
-            Var: i;
-            For(i = 1, i < 100, foo(foo(9.5))) Do
-                printStrLn("correct");
-            EndFor.
-        EndBody.
-        Function: foo
-        Parameter: x
-        Body:
-            print("Cyber");
-            Return 100;
-        EndBody.
-        
+Var: mai, mot;
+		Function: main
+		Body:
+		  If True Then 
+		    If bool_of_string(mot) Then Return mai || (!mai); EndIf.
+		    If False Then printStrLn(string_of_bool(mai || (0 != 0)));
+		      Else printStrLn("Line");
+		    EndIf.
+		  ElseIf True Then 
+		    print(mot);
+		    Return 1e-3 >=. float_to_int(23);
+		  Else 
+		    Var: i;
+		    If i > 0 Then Return True; EndIf.
+		  EndIf.
+		EndBody.

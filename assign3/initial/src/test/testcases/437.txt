@@ -1,13 +1,1 @@
-
-        Var: a = 10;
-        Function: main
-        Parameter: p
-        Body:
-            p = a + foo();
-        EndBody.
-
-        Function: foo
-        Body:
-            Return 12.5;
-        EndBody.
-        
+Function: main Body: Var: x; x = 3e-1 +. 2.445 *. (3e1 \. 1.00); EndBody.

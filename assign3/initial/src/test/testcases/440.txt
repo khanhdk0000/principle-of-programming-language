@@ -1,17 +1,13 @@
+Var: b[2] = {0, 1};
 
-        Var: a[2][3] = {{1, 2, 5}, {3, 4, 6}};
+		Function: ast
+		Body:
+		    Return 10;
+		EndBody.
 
-        Function: foo
-        Body:
-        Var: b[2][3];
-        b[2][3] = 12.5;
-            Return b;
-        EndBody.
-
-        Function: main
-        Parameter: p
-        Body:
-        p = 10;
-        p = 10 + foo()[2][3];
-        EndBody.
-        
+		Function: main
+		Parameter: p[2][3]
+		Body:
+		    b[0] = ast() + p[1][1] + 10 - p[2][1];
+		    p[0][1] = 10.5;
+		EndBody.

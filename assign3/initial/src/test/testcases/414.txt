@@ -1,7 +1,6 @@
-
-        Function: main
-        Body:
-            Var: x = True, y = 9, c;
-            c = x && y;
-        EndBody.
-        
+Function: main
+		Body:
+		  Var: x, y;
+		  y = int_of_string("1.2");
+		  x = y;
+		EndBody.

@@ -1,4 +1,5 @@
-Function: main
-                   Body:
-                        foo();
-                   EndBody.
+Function: main 
+		Parameter: x 
+		Body: 
+		  If x Then Return main(main(False)); EndIf.
+		EndBody.

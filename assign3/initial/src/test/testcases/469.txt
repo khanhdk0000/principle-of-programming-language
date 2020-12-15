@@ -1,14 +1,16 @@
+Function: main
+		Parameter: x 
+		Body:
+		  s = int_of_string(read());
+		  print(checkyear(s));
+		EndBody.
 
-        Function: main
-        Body:
-            Var: i;
-            For(i = foo(foo(15.6)), i < 10, 1) Do
-                printStrLn("correct");
-            EndFor.
-        EndBody.
-        Function: foo
-        Parameter: x
-        Body:
-            print("hello");
-        EndBody.
-        
+		Function: checkyear
+		Parameter: s 
+		Body:
+		  If s % 4 != 0 Then Return "Normal";
+		  ElseIf s % 400 == 0 Then Return "Leap";
+		  ElseIf s % 100 == 0 Then Return "Normal";
+		  Else Return "Leap";
+		  EndIf.
+		EndBody.

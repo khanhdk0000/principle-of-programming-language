@@ -1,1 +1,1 @@
-Type Mismatch In Statement: CallStmt(Id(foo),[Id(x)])
+Type Cannot Be Inferred: Return(BinaryOp(+,IntLiteral(1),CallExpr(Id(foo),[Id(x)])))

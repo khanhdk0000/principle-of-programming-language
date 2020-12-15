@@ -1,7 +1,9 @@
-
-        Function: main
-        Parameter: x
-        Body:
-            If main(main(5)) Then EndIf.
-        EndBody.
-        
+Function: main
+		Body:
+		  While True Do 
+		    Var: tmp;
+		    tmp = "Here";
+		  EndWhile.
+		  print(tmp);
+		  Return 1;
+		EndBody.

@@ -1,1 +1,1 @@
-Type Cannot Be Inferred: Return(BinaryOp(+.,FloatLiteral(2.0),CallExpr(Id(float_of_string),[CallExpr(Id(foo),[Id(x),Id(y)])])))
+Type Mismatch In Statement: Dowhile([],[Assign(Id(x),IntLiteral(1)),Return(Id(a)),Return(Id(z)),Assign(Id(x),ArrayCell(Id(z),[IntLiteral(0),IntLiteral(0)]))],Id(x))

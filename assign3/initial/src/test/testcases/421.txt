@@ -1,1 +1,2 @@
-Program([FuncDecl(Id(main)[],([][CallStmt(Id(printStrLn),[])]))])
+Var: a[3];
+		Function: main Body: Return a; EndBody.

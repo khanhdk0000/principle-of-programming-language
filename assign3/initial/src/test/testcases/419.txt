@@ -1,1 +1,14 @@
-Program([FuncDecl(Id(main)[],([][CallExpr(Id(foo),[])]))])
+Var: global_const;
+        Function: foo 
+        Parameter: z
+        Body:
+            global_const = True;
+            Return 0;
+        EndBody.
+
+        Function: main 
+        Body:
+            Var: x;
+            x = global_const;
+            Return foo(x);
+        EndBody.

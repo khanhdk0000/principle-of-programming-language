@@ -1,13 +1,9 @@
-
-        Function: main
-        Parameter: k
-        Body:
-            Var: a[2], x, y = 10.5, t = "15.6";
-            x = !foo(foo(y));
-        EndBody.
-        Function: foo
-        Parameter: x
-        Body:
-            Return True;
-        EndBody.
-        
+Function: doo
+		Body:
+		  Do 
+		    Var: x;
+		    x = x + 1;
+		    Return x;
+		  While doo() > 0 EndDo.
+		EndBody.
+		Function: main Body: Return 0; EndBody.

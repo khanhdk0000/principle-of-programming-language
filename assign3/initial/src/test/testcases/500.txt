@@ -1,11 +1,2 @@
-
-        Function: foo
-        Parameter: x
-        Body:
-            Return 10;
-        EndBody.
-        Function: main
-        Body:
-            If foo(foo(5)) Then EndIf.
-        EndBody.
-        
+Function: pars Parameter: pars Body: Return pars + 1; Return pars(pars); EndBody.
+		Function: main Body: Return; EndBody.

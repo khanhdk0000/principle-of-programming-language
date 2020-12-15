@@ -1,14 +1,10 @@
-
-        Function: main
-        Body:
-            Var: a[2];
-            Do
-                printStrLn("stark");
-            While a[int_of_float(a[1])] EndDo.
-        EndBody.
-        Function: foo
-        Parameter: x
-        Body:
-            Return True;
-        EndBody.
-        
+Var: a;
+		Function: main 
+		Body:
+		  While a Do 
+		    Var: a;
+		    print(a);
+		    Return a;
+		  EndWhile.
+		  Return a;
+		EndBody.

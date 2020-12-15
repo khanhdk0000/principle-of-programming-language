@@ -1,7 +1,2 @@
-
-            Function: main
-            Body:
-                Var: x,y;
-                Var: y;
-            EndBody.
-            
+Function: barz Parameter: one, two Body: one = 0 + 1; Return one; EndBody.
+		Function: main Parameter: three Body: Var: four; three = barz(2, four); EndBody.

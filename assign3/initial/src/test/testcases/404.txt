@@ -1,7 +1,2 @@
-
-            Function: main
-            Parameter: a, b, a
-            Body:
-                Var: x;
-            EndBody.
-            
+Function: foo Parameter: single Body: EndBody.
+		Function: main Body: Return foo(5); EndBody.

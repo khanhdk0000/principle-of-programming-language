@@ -1,1 +1,0 @@
-Type Mismatch In Statement: Dowhile([],[Assign(Id(res),BinaryOp(+.,Id(res),FloatLiteral(1.5))),CallStmt(Id(printStrLn),[CallExpr(Id(string_of_float),[Id(res)])])],CallExpr(Id(string_of_bool),[Id(j)]))

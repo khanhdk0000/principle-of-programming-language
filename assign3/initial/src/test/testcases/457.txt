@@ -1,14 +1,1 @@
-
-        Var: a[1] = {0};
-
-        Function: main
-        Body:
-            foo(0)[0] = foo(0.0)[0];
-        EndBody.
-
-        Function: foo
-        Parameter: x
-        Body:
-            Return a;
-        EndBody.
-        
+Function: main Body: Var: local; While True Do print(local); EndWhile. EndBody.

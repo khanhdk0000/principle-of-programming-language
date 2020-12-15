@@ -218,11 +218,19 @@ class StaticChecker(BaseVisitor):
         lhs_name = self.get_name(ast.lhs)
         rhs_name = self.get_name(ast.rhs)
         # If the dimension of the two array is wrong, raise
+
         if isinstance(lhs, ArrayType) and isinstance(rhs, ArrayType):
             if lhs.dimen != rhs.dimen:
                 raise TypeMismatchInStatement(ast)
+            if isinstance(lhs.eletype, Unknown) and isinstance(rhs.eletype, Unknown):
+                raise TypeCannotBeInferred(ast)
         if isinstance(lhs, ArrayType) and not isinstance(rhs, ArrayType):
-            raise TypeMismatchInStatement(ast)
+            if isinstance(rhs, FunctionType) and isinstance(rhs.restype, ArrayType):
+                pass
+            elif isinstance(rhs, FunctionType) and isinstance(rhs.restype, Unknown):
+                raise TypeCannotBeInferred(ast)
+            else:
+                raise TypeMismatchInStatement(ast)
         if not isinstance(lhs, ArrayType) and isinstance(rhs, ArrayType):
             raise TypeMismatchInStatement(ast)
 
@@ -288,9 +296,16 @@ class StaticChecker(BaseVisitor):
             arg_typ = arg_exp.accept(self, c)
 
             # if one of the var is of para type, the other must be of para type
+            if isinstance(ptype, ArrayType) and isinstance(arg_typ, ArrayType):
+                if ptype.dimen != arg_typ.dimen:
+                    raise TypeMismatchInStatement(ast)
+                if isinstance(ptype.eletype, Unknown) and isinstance(arg_typ.eletype, Unknown):
+                    raise TypeCannotBeInferred(ast)
             if isinstance(ptype, ArrayType) and not isinstance(arg_typ, ArrayType):
                 raise TypeMismatchInStatement(ast)
             if not isinstance(ptype, ArrayType) and isinstance(arg_typ, ArrayType):
+                if isinstance(ptype, Unknown) and isinstance(arg_typ.eletype, Unknown):
+                    raise TypeCannotBeInferred(ast)
                 raise TypeMismatchInStatement(ast)
 
             ptype = self.get_type(ptype)
@@ -336,13 +351,18 @@ class StaticChecker(BaseVisitor):
                 if isinstance(ptype, Unknown):
                     ptype = self.infer_type(para_sym, arg_typ)
             arg_typ = arg_exp.accept(self, c)
-
+            if isinstance(arg_typ, FunctionType):
+                arg_typ = self.get_type(arg_typ)
             # if one of the var is of para type, the other must be of para type
+            if isinstance(ptype, ArrayType) and isinstance(arg_typ, ArrayType):
+                if ptype.dimen != arg_typ.dimen:
+                    raise TypeMismatchInStatement(ast)
             if isinstance(ptype, ArrayType) and not isinstance(arg_typ, ArrayType):
-                raise TypeMismatchInStatement(c[3])
+                raise TypeMismatchInExpression(ast)
             if not isinstance(ptype, ArrayType) and isinstance(arg_typ, ArrayType):
-                raise TypeMismatchInStatement(c[3])
+                raise TypeMismatchInExpression(ast)
 
+            ptype = para_sym.mtype if not predefine else para_sym
             ptype = self.get_type(ptype)
             arg_typ = self.get_type(arg_typ)
             if isinstance(ptype, Unknown) and isinstance(arg_typ, Unknown):
@@ -467,8 +487,8 @@ class StaticChecker(BaseVisitor):
             # If Unknown, infer bool, else raise
             tem_typ = self.get_type(sym.mtype)
             if isinstance(tem_typ, Unknown):
-                self.infer_type(sym, BoolType())
-            elif not isinstance(tem_typ, BoolType):
+                self.infer_type(sym, IntType())
+            elif not isinstance(tem_typ, IntType):
                 raise TypeMismatchInStatement(ast)
 
         exp3 = ast.expr3.accept(self, c)
@@ -550,7 +570,8 @@ class StaticChecker(BaseVisitor):
     def visitReturn(self, ast, c):
         c = c[:3] + [ast]
         exp = ast.expr.accept(self, c) if ast.expr else VoidType()
-        sym = self.search(c[2], [c[0], c[1]])
+        sym = self.search(c[2], [c[1]])
+
         # If both of the expression and the return type is unknown raise
         if isinstance(exp, ArrayType) and isinstance(exp.eletype, Unknown):
             exp = Unknown()
@@ -558,8 +579,13 @@ class StaticChecker(BaseVisitor):
                 raise TypeCannotBeInferred(ast)
         if isinstance(exp, FunctionType) and isinstance(exp.restype, Unknown):
             exp = Unknown()
-        if isinstance(exp, Unknown) and isinstance(sym.mtype.restype, Unknown):
+        tem_exp = self.get_type(exp)
+        tem_sym_typ = self.get_type(sym.mtype)
+        if isinstance(tem_exp, Unknown) and isinstance(tem_sym_typ, Unknown):
             raise TypeCannotBeInferred(ast)
+
+        if isinstance(exp, FunctionType):
+            exp = self.get_type(exp)
         # Infer the return type for the function if still unknown
         if isinstance(sym.mtype.restype, Unknown):
             self.infer_type(sym, exp)
@@ -567,8 +593,15 @@ class StaticChecker(BaseVisitor):
         if isinstance(exp, Unknown):
             name = self.get_name(ast.expr)
             sym = self.search(name, [c[0], c[1]])
-            exp = self.infer_type(sym, sym.mtype.restype)
-        if type(sym.mtype.restype) != type(exp):
+            sym_typ = self.get_type(sym.mtype)
+            exp = self.infer_type(sym, sym_typ)
+        if isinstance(exp, FunctionType):
+            exp = self.get_type(exp)
+        sym_type = self.get_type(sym.mtype)
+        if isinstance(exp, ArrayType) and isinstance(sym_type, ArrayType):
+            exp = self.get_type(exp)
+            sym_type = self.get_type(sym_type)
+        if type(sym_type) != type(exp):
             raise TypeMismatchInStatement(ast)
 
     def check_if_unknown(self, ast, c):
@@ -590,7 +623,8 @@ class StaticChecker(BaseVisitor):
             self.infer_type(sym, op_type)
         # Check and infer type for the left
         lhs_type = ast.left.accept(self, c)
-        lhs_type = self.get_type(lhs_type)
+        if not isinstance(lhs_type, ArrayType):
+            lhs_type = self.get_type(lhs_type)
         lhs_name = self.get_name(ast.left)
         if isinstance(lhs_type, Unknown):
             sym = self.search(lhs_name, [c[0], c[1]])
@@ -603,7 +637,8 @@ class StaticChecker(BaseVisitor):
             self.infer_type(sym, op_type)
         # Check and infer type for the right
         rhs_type = ast.right.accept(self, c)
-        rhs_type = self.get_type(rhs_type)
+        if not isinstance(rhs_type, ArrayType):
+            rhs_type = self.get_type(rhs_type)
         rhs_name = self.get_name(ast.right)
         if isinstance(rhs_type, Unknown):
             sym = self.search(rhs_name, [c[0], c[1]])
@@ -680,18 +715,30 @@ class StaticChecker(BaseVisitor):
             raise Undeclared(Identifier(), name)
         for x in ast.idx:
             tem = x.accept(self, c)
+            tem = self.get_type(tem)
             if isinstance(tem, Unknown):
                 name = self.get_name(x)
                 sym = self.search(name, [c[0], c[1]])
                 tem = self.infer_type(sym, IntType())
+            # expression inside must be of int type
             if not isinstance(tem, IntType):
                 raise TypeMismatchInExpression(ast)
+
         if isinstance(func_sym.mtype, Unknown):
             raise TypeMismatchInExpression(ast)
         if isinstance(func_sym.mtype, FunctionType):
             if isinstance(func_sym.mtype.restype, Unknown):
                 raise TypeCannotBeInferred(c[3])
-        lst = func_sym.mtype.dimen if isinstance(func_sym.mtype, ArrayType) else func_sym.mtype.restype.dimen
+        # The length of the para list and argument list must be the same
+        lst = []
+        if isinstance(func_sym.mtype, ArrayType):
+            lst = func_sym.mtype.dimen
+        elif isinstance(func_sym.mtype, FunctionType):
+            if not isinstance(func_sym.mtype.restype, ArrayType):
+                raise TypeMismatchInExpression(ast)
+            lst = func_sym.mtype.restype.dimen
+        else:
+            raise TypeMismatchInExpression(ast)
         typ = func_sym.mtype if isinstance(func_sym.mtype, ArrayType) else func_sym.mtype.restype
         if len(lst) != len(ast.idx) or not isinstance(typ, ArrayType):
             raise TypeMismatchInExpression(ast)

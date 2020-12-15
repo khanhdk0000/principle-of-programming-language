@@ -1,14 +1,7 @@
-
-        Function: main
-        Body:
-            Var: y = 9;
-            foo("game of shadow", y);
-        EndBody.
-
-        Function: foo
-        Parameter: x, y
-        Body:
-            print(x);
-            printStrLn(y);
-        EndBody.
-        
+Function: main 
+		Body: 
+		  Var: a[3], b[3], c[3], d[3] = {True, False, False};
+		  c = d;
+		  a = b;
+		  Return c;
+		EndBody.

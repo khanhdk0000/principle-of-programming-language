@@ -1,10 +1,16 @@
-
-            Function: main
-            Body:
-                Var: a;
-            EndBody.
-            Function: foo
-            Body:
-                a = 789;
-            EndBody.
-            
+Function: main 
+		Body:
+		  Var: x = True;
+		  x = test(x || False, string_of_bool(!!x));
+		  Return 0;
+		EndBody.
+		Function: test 
+		Parameter: p, t 
+		Body:
+		  p = True;
+		  If t Then
+		    Var: u[1] = {2};
+		    Return t && bool_of_string(string_of_int(u[0]));
+		  EndIf.
+		  Return 0;
+		EndBody.

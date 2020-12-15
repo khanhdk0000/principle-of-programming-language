@@ -1,1 +1,1 @@
-Type Mismatch In Expression: BinaryOp(>,Id(x),Id(z))
+Redeclared Function: foo

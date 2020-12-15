@@ -1,22 +1,6 @@
-
-        Var: a[2][2] = {{1,2},{3,4}};
-        Function: main
-        Body:
-            Var: r, b;
-            If foo(10) Then
-                r = r + a[1][1];
-            Else
-                Return True;
-            EndIf.
-        EndBody.
-
-        Function: foo
-        Parameter: x
-        Body:
-            If x % 2 == 0 Then
-                Return x + 1;
-            Else
-                printLn();
-            EndIf.
-        EndBody.
-        
+Var: x; 
+		Function: main 
+		Parameter: x 
+		Body: 
+		  Var: y; 
+		EndBody.

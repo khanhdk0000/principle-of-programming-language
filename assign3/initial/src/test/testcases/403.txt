@@ -1,14 +1,8 @@
-
-            Function: main
-            Body:
-                Var: x;
-            EndBody.
-            Function: foo
-            Body:
-                Var: x;
-            EndBody.
-            Function: foo
-            Body:
-                Var: y;
-            EndBody.
-            
+Function: main 
+		Parameter: ara, araa, araara
+		Body:
+		  Var: x = 0x3, z;
+		  z = -x * int_of_float(2.22);
+		  main(x, z, True);
+		  Return;
+		EndBody.

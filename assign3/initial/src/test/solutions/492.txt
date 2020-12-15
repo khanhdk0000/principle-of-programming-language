@@ -1,1 +1,1 @@
-Type Mismatch In Statement: For(Id(x),IntLiteral(1),BinaryOp(<=,Id(x),IntLiteral(100)),Id(y),[],[CallStmt(Id(print),[StringLiteral(There and back again)])])
+Type Mismatch In Statement: Dowhile([],[Assign(Id(x),IntLiteral(1))],Id(x))

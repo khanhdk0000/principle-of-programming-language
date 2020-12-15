@@ -1,8 +1,20 @@
+Function: main 
+		Body:
+		  Var: arr[10], i;
+		  For (i = 2, check(arr), i) Do 
+		    i = arr[i+1];
+		    printLn();
+		  EndFor.
+		  Return i;
+		EndBody.
 
-                Var: a[2];
-                Function: main
-                Parameter: x
-                Body:
-                    If a[a[0]] Then EndIf.
-                EndBody.
-                
+		Function: check 
+		Parameter: a[10]
+		Body:
+		  Var: i;
+		  For (i = 0, i < 10, 1) Do 
+		    If a[i] == 1 Then Return False;
+		    EndIf.
+		  EndFor.
+		  Return True;
+		EndBody.

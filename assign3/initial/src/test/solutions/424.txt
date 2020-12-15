@@ -1,1 +1,1 @@
-No Entry Point
+Type Mismatch In Statement: CallStmt(Id(printStrLn),[BooleanLiteral(true)])

@@ -1,0 +1,1 @@
+Type Mismatch In Statement: Assign(Id(y),CallExpr(Id(main),[Id(x),ArrayLiteral(IntLiteral(1)),ArrayLiteral(IntLiteral(2),IntLiteral(3),IntLiteral(4))]))

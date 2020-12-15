@@ -1,14 +1,16 @@
+Function: iff 
+		Parameter: a, b 
+		Body:
+		  If (a >= b) && (b >= a) Then Return True;
+		  Else Return False;
+		  EndIf.
+		EndBody.
 
-        Function: main
-        Body:
-            Var: a[2];
-            While a[int_of_string(a[1])] Do
-                printStrLn("oberyn");
-            EndWhile.
-        EndBody.
-        Function: foo
-        Parameter: x
-        Body:
-            Return 100;
-        EndBody.
-        
+		Function: main 
+		Body:
+		  Var: s1, s2;
+		  s1 = int_of_string(read());
+		  s2 = int_of_string(read());
+		  print(string_of_bool(iff(s1, s2)));
+		  Return 0;
+		EndBody.

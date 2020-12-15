@@ -1,18 +1,12 @@
-
-        Var: a[2][2] = {{1,2},{3,4}};
-        Function: main
+Var: a;
+        Function: main 
+        Parameter: main 
         Body:
-            Var: i, a, b;
-            For(i = a, i != 100, b) Do
-                printStrLn("correct");
-            EndFor.
-            foo(a,b);
+            Var: a;
+            Do 
+                Var: main, a;
+                a = 1;
+                Return main -. 0.0;
+            While a EndDo.
+            Return main(1.0);
         EndBody.
-
-        Function: foo
-        Parameter: x, y
-        Body:
-            x = x + 1;
-            y = y -. 5.7;
-        EndBody.
-        

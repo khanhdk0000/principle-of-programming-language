@@ -1,14 +1,19 @@
+Function: main 
+		Body:
+		  Var: arr[10], i;
+		  For (i = 2, check(arr), i) Do 
+		    i = arr[i+1];
+		    printLn();
+		  EndFor.
+		  Return i;
+		EndBody.
 
-        Var: arr[3] = {"game", "play", "witcher"};
-        Function: main
-        Body:
-            Var: res;
-            res = !foo(arr);
-        EndBody.
-        
-        Function: foo
-        Parameter: a[3]
-        Body:
-            a[1] = True;
-        EndBody.
-        
+		Function: check 
+		Parameter: a[10]
+		Body:
+		  For (i = 0, i < 10, 1) Do 
+		    If a[i] == 1 Then Return False;
+		    EndIf.
+		  EndFor.
+		  Return True;
+		EndBody.

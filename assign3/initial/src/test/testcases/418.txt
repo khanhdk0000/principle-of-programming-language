@@ -1,4 +1,1 @@
-Function: main
-                    Body:
-                        printStrLn(read(4));
-                    EndBody.
+Var: a, y, x; Function: main Body: y = a + foo(x); EndBody. Function: foo Body: EndBody.

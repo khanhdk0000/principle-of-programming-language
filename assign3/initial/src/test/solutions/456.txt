@@ -1,1 +1,1 @@
-Type Mismatch In Expression: UnaryOp(!,Id(x))
+Type Mismatch In Expression: CallExpr(Id(bool_of_string),[Id(global)])

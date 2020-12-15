@@ -1,1 +1,1 @@
-Type Mismatch In Statement: If(CallExpr(Id(foo),[CallExpr(Id(foo),[IntLiteral(5)])]),[],[])Else([],[])
+Undeclared Function: pars

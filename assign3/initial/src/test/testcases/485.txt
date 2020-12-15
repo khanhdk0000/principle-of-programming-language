@@ -1,12 +1,11 @@
-
+Var: a[2][2] = {{1,2},{3,4}};
         Function: main
         Body:
-            Var: x, y = 1;
-            Return 2.0 +. float_of_string(foo(x, y));
-        EndBody.
-        
-        Function: foo
-        Parameter: x, y
-        Body:
-            Return string_of_int(100);
+            Var: x, z[2][2];
+            Do
+                x = 1;
+                Return a;
+                Return z;
+                x = z[0][0];
+            While x EndDo.
         EndBody.

@@ -1,18 +1,1 @@
-
-        Var: a[2][2] = {{1,2},{3,4}};
-        Function: main
-        Body:
-            Var: i, a, b;
-            For(i = a, b, 1) Do
-                printStrLn("correct");
-            EndFor.
-            foo(a,b);
-        EndBody.
-
-        Function: foo
-        Parameter: x, y
-        Body:
-            y = x == 10;
-            x = False;
-        EndBody.
-        
+Function: main Body: printstr(a); EndBody.

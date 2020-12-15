@@ -1,11 +1,11 @@
-
-                Function: main
-                Body:
-                    Var: foo = 0;
-                    foo = foo + foo();
-                EndBody.
-                Function: foo
-                Body:
-                    Return 1 + 2; 
-                EndBody.
-                
+Var: iter, arr[3] = {"One", "Two", "Three"};
+        Function: main
+        Body:
+            Var: ret[3];
+            For (iter = 10, iter > -1, -1) Do
+            If ret[12 % 4] > 2 Then Return arr;
+            ElseIf ret[iter \ 5] > 1 Then Return arr;
+            EndIf.
+        EndFor.
+        Return ret;
+        EndBody.

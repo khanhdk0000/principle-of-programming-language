@@ -1,12 +1,1 @@
-
-        Function: main
-        Body:
-            f1(2,2.4);
-        EndBody.
-        Function: f1
-        Parameter: a,b
-        Body:
-            f1(a,b);
-            a = b - 5;
-        EndBody.
-        
+Function: main Body: Return 1 + 2.0; EndBody.

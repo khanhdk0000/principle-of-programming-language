@@ -1,1 +1,1 @@
-Type Mismatch In Statement: Return(IntLiteral(100))
+Type Mismatch In Expression: BinaryOp(>=,Id(z),IntLiteral(10))

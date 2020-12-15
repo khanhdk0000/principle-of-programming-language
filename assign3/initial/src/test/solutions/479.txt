@@ -1,1 +1,1 @@
-Type Mismatch In Statement: For(Id(z),IntLiteral(1),CallExpr(Id(bool_of_string),[StringLiteral(True)]),Id(y),[],[CallStmt(Id(printLn),[])])
+Type Cannot Be Inferred: Assign(Id(c),Id(b))

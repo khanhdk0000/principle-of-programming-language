@@ -1,12 +1,8 @@
-
-        Function: main
-        Parameter: x
-        Body:
-            Var: a = 7.9;
-            x = 0;
-            While x - 5 Do
-                Var: a;
-                x = x + a;
-            EndWhile.
-        EndBody.
-        
+Var: x = 1;
+		Function: main
+		Parameter: x, y
+		Body:
+		  x = 1.0;
+		  y = True;
+		  Return 0;
+		EndBody.

@@ -1,1 +1,1 @@
-Redeclared Parameter: a
+Type Cannot Be Inferred: Return(CallExpr(Id(foo),[IntLiteral(5)]))

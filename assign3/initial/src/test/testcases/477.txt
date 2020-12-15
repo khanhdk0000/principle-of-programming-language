@@ -1,11 +1,21 @@
+Function: foo 
+		Parameter: x, y, z[2]
+		Body:
+		  Var: a[2];
+		  If foo(1.0, y+1, {"a", "b"}) && foo(x, int_of_float(x), {"A", "B"}) Then 
+		    print(a[0]);
+		    a = z;
+		    While main() >. 1.0 Do 
+		      printLn();
+		    EndWhile.
+		  EndIf.
+		EndBody.
 
-        Function: main
-        Body:
-            Var: a[2];
-            Do
-                Var: x;
-                x = a[1] + 5;
-                x = !a[0];
-            While True EndDo.
-        EndBody.
-        
+		Function: main 
+		Body:
+		  Var: f, t;
+		  While f Do 
+		    Return t +. 1.1;
+		  EndWhile.
+		  If f Then EndIf.
+		EndBody.

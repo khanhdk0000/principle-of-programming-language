@@ -1,9 +1,7 @@
-
-        Function: main
-        Body:
-            Var: x, z, ans;
-            x = False;
-            z = 9.5;
-            ans = x || z;
-        EndBody.
-        
+Function: foo 
+		Body:
+		  Var: main;
+		  main();
+		  Return;
+		EndBody.
+		Function: main Body: Return; EndBody.

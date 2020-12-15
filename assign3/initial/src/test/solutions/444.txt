@@ -1,1 +1,1 @@
-Type Mismatch In Statement: Return(BooleanLiteral(true))
+Redeclared Function: x

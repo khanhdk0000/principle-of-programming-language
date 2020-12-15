@@ -1,9 +1,11 @@
-
-                Var: x[2] = {True, False};
-                Function: main
-                Parameter: a[2]
-                Body:
-                    main(x);
-                    a[0] = 1;
-                EndBody.
-                
+Var: x;
+		Function: main 
+		Parameter: x
+		Body:
+		  For (x = x, x < 10, 0 - 0) Do 
+		    Var: x;
+		    x = False;
+		    Return x;
+		  EndFor.
+		  Return x;
+		EndBody.

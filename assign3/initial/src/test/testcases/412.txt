@@ -1,12 +1,11 @@
+Function: main 
+		Parameter: a, b, c 
+		Body:
+		  Return main(2, True, main(2, True, 2)) + 2;
+		EndBody.
 
-        Function: foo
-        Parameter: x, y
-        Body:
-            Var: a;
-        EndBody.
-        Function: main
-        Parameter: a, b, c
-        Body:
-            foo(a);
-        EndBody.
-        
+		Function: mains 
+		Parameter: a, b, c 
+		Body:
+		  Return mains(2, True, mains(2, True, 2));
+		EndBody.

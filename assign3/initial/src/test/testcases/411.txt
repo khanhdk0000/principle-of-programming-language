@@ -1,7 +1,10 @@
-
-        Function: main
-        Parameter: a, b, c
-        Body:
-            Var: b;
-        EndBody.
-        
+Function: foo 
+		Parameter: x 
+		Body:
+		  Return {"True", "Tho..."};
+		EndBody.
+		Function: main 
+		Body:
+		  print(foo(2)[1]);
+		  Return;
+		EndBody.

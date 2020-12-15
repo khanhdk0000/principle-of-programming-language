@@ -1,17 +1,22 @@
-
-        Var: a[2][2] = {{1,2},{3,4}};
-        Function: main
+Var: a;
+        Function: ab 
+        Parameter: a 
         Body:
-            foo(a[0][1]);
-        EndBody.
-
-        Function: foo
-        Parameter: x
-        Body:
-            Var: ans = 0,i;
-            For(i = x, i < 10, 1) Do
-                ans = ans * 2;
+            Var: ab;
+            For (ab = 1, a < 1, a) Do 
+                Var: a;
+                If a Then 
+                    Var: ab;
+                    printStrLn(ab);
+                    Return ab;
+                ElseIf !a Then 
+                    Var: a;
+                    Return a + 0;
+                EndIf.
             EndFor.
-            Return ans;
+            Return ab;
         EndBody.
-        
+        Function: main 
+        Body: 
+            Return; 
+        EndBody.

@@ -1,17 +1,12 @@
-
-        Var: a[2][2] = {{1,2},{3,4}};
-        Function: main
-        Body:
-            Var: x;
-            Do
-                x = 1;
-            While foo(x) EndDo.
-        EndBody.
-        Function: foo
-        Parameter: x
-        Body:
-            Var: y;
-            y = !x;
-            Return y;
-        EndBody.
-        
+Var: global;
+		Function: main 
+		Parameter: global
+		Body:
+		  While global Do 
+		    Var: tmp;
+		    global = tmp;
+		  EndWhile.
+		  While (bool_of_string(global)) Do 
+		    Return;
+		  EndWhile.
+		EndBody.

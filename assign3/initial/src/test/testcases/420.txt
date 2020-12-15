@@ -1,1 +1,13 @@
-Program([FuncDecl(Id(main)[],([][CallStmt(Id(printStrLn),[CallExpr(Id(read),[IntLiteral(4)])])]))])
+Var: a[2];
+        Function: foo
+        Body:
+            Return {2, 2};
+        EndBody.
+
+        Function: main
+        Body:
+            foo()[0o77] = int_of_string(read());
+            a = foo();
+            b = foo();
+            Return 0;
+        EndBody.

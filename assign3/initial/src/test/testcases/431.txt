@@ -1,14 +1,1 @@
-
-        Var: a[2][2], b = 8.9;
-        Function: main
-        Parameter: x
-        Body:
-            Var: b = 5;
-            If b < 10 Then
-                x = 15;
-            Else
-                Var: k = 10.8, res;
-                res = k + x;
-            EndIf.
-        EndBody.
-        
+Function: main Body: Var: arr[3][4]; arr[5] = "E"; EndBody.

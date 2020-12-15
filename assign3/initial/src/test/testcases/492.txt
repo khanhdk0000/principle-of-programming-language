@@ -1,15 +1,7 @@
-
-        Function: main
-        Body:
-            Var: y = 9;
-            foo(1, float_to_int(y));
-        EndBody.
-
-        Function: foo
-        Parameter: x, y
-        Body:
-            For (x = 1, x <= 100, y) Do
-                print("There and back again");
-            EndFor.
-        EndBody.
-        
+Function: main
+		    Body:
+		        Var: x;
+		        Do
+		            x = 1;
+		        While x EndDo.
+		    EndBody.

@@ -1,11 +1,8 @@
-
-        Function: main
-        Body:
-            Var: b = 5,i,res,j;
-            If i Then
-                res = b * b;
-            EndIf.
-            For(j = 1, string_of_bool(i), j) Do
-                x = x + 1;
-            EndFor.
-        EndBody.
+Function: main 
+		Body:
+		  Var: continue;
+		  Do 
+		    Continue;
+		    Return continue;
+		  While continue EndDo.
+		EndBody.

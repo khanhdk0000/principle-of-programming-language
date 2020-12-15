@@ -1,1 +1,1 @@
-Type Mismatch In Expression: ArrayCell(Id(a),[ArrayCell(Id(a),[IntLiteral(0)])])
+Type Cannot Be Inferred: For(Id(i),IntLiteral(2),CallExpr(Id(check),[Id(arr)]),Id(i),[],[Assign(Id(i),ArrayCell(Id(arr),[BinaryOp(+,Id(i),IntLiteral(1))])),CallStmt(Id(printLn),[])])

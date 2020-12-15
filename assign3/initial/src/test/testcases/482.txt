@@ -1,9 +1,7 @@
-
-        Function: main
-        Parameter: x
-        Body:
-            printLn();
-            print(string_of_bool(True));
-            read();
-        EndBody.
-        
+Function: main
+		Body:
+		  Do 
+		    Var: x = 1;
+		    Return x;
+		  While main() EndDo.
+		EndBody.

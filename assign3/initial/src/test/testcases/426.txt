@@ -1,16 +1,9 @@
-
-        Var: a[2][2] = {{True, True}, {False, False}};
-        Var: f = 1;
-
-        Function: main
-        Parameter: p
-        Body:
-        Var: x = 1, y;
-        a[2][2] = 10;
-        EndBody.
-
-        Function: c
-        Parameter: p[2][2], a
-        Body:
-        EndBody.
-        
+Function: main 
+		Parameter: x[2][1]
+		Body:
+		  Var: y[2][1];
+		  x = {{True}, {False}};
+		  y[0][0] = 2 < 3; 
+		  y[0][1] = !((1.0 +. 3e-1) <=. float_to_int(5));
+		  x = y;
+		EndBody.
