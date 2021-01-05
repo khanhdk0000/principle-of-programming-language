@@ -1,17 +1,1 @@
-Function: caller 
-		Parameter: init 
-		Body:
-		  If init >=. 0e1 Then Return False;
-		  Else Return True;
-		  EndIf.
-		EndBody.
-		Function: main 
-		Parameter: zeros[10]
-		Body:
-		  Var: i = 0;
-		  For (i = 0, caller(zeros[1]), 1) Do 
-		    Var: z;
-		    z = zeros[i-1];
-		    If z >= 10 Then Return; EndIf.
-		  EndFor.
-		EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(a)),VarDecl(Id(b))],([][For(Id(a),IntLiteral(5),BinaryOp(>,Id(a),IntLiteral(0)),UnaryOp(-,IntLiteral(1)),[],[Continue()]),Assign(Id(b),UnaryOp(!,Id(a)))]))])

@@ -1,14 +1,1 @@
-
-        Function: foo
-        Parameter: x, y 
-        Body:
-            Var: z;
-            While True Do 
-                z = foo(1, foo(x, True));
-            EndWhile.
-        Return y && z;
-        EndBody.
-        Function: main 
-        Body: 
-            Return -1; 
-        EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(a)),VarDecl(Id(b))],([][For(Id(a),Id(b),BinaryOp(>,IntLiteral(1),IntLiteral(2)),IntLiteral(3),[],[CallStmt(Id(main),[IntLiteral(1),FloatLiteral(1.4)])])]))])

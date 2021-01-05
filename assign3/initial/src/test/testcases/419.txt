@@ -1,14 +1,1 @@
-Var: global_const;
-        Function: foo 
-        Parameter: z
-        Body:
-            global_const = True;
-            Return 0;
-        EndBody.
-
-        Function: main 
-        Body:
-            Var: x;
-            x = global_const;
-            Return foo(x);
-        EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(x)),VarDecl(Id(y)),VarDecl(Id(z))],([][Assign(Id(x),UnaryOp(!,UnaryOp(-,IntLiteral(2))))]))])

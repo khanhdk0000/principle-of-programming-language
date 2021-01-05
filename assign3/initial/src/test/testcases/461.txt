@@ -1,10 +1,13 @@
-Function: undeclare 
-		Body:
-		  undeclare();
-		EndBody.
-		Function: main 
-		Body:
-		  undeclare();
-		  main = 0;
-		  Return main;
-		EndBody.
+
+        Function: main
+        Parameter: a, x
+        Body:
+            Var: y = 1;
+            y = a + foo(x);
+        EndBody.
+
+        Function: foo
+        Parameter: x
+        Body:
+        EndBody.
+        

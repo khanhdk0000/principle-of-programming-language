@@ -1,15 +1,1 @@
-
-        Function: main 
-        Parameter: m
-        Body:
-            If foo(5e5) || main(foo(3.0)) && True Then 
-                Return 1 >= 0; 
-            EndIf.
-        EndBody.
-
-        Function: foo 
-        Parameter: float 
-        Body:
-            Return main(bool_of_string(string_of_float(float)));
-            Return 0;
-        EndBody.
+Program([FuncDecl(Id(main)[],([VarDecl(Id(arr),ArrayLiteral(IntLiteral(1),IntLiteral(3),IntLiteral(2)))][Return(ArrayCell(Id(arr),[CallExpr(Id(main),[])]))])),FuncDecl(Id(test)[],([][CallStmt(Id(main),[])]))])

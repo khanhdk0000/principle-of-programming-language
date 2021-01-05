@@ -1,8 +1,1 @@
-Var: a[2][3] = {{1, 2, 3}, {3, 4, 5}};
-		Var: b[2];
-		Function: main
-		Parameter: p
-		Body:
-		  a[1][2] = b[0];
-		  Return 12.5 + b[0];
-		EndBody.
+Program([VarDecl(Id(a)),VarDecl(Id(b)),VarDecl(Id(c)),VarDecl(Id(d)),VarDecl(Id(e)),VarDecl(Id(f)),FuncDecl(Id(main)[],([][If(BinaryOp(==,Id(a),IntLiteral(5)),[],[Assign(Id(a),BinaryOp(-,BinaryOp(*,Id(b),Id(c)),IntLiteral(7)))])ElseIf(BinaryOp(>,BinaryOp(+,Id(a),BinaryOp(%,BinaryOp(%,BinaryOp(*,Id(b),Id(c)),IntLiteral(4)),BinaryOp(-,BinaryOp(+,BinaryOp(+,BinaryOp(-,BinaryOp(*,IntLiteral(6),Id(b)),IntLiteral(2)),IntLiteral(3)),Id(c)),UnaryOp(-,IntLiteral(6))))),Id(a)),[],[Assign(Id(a),CallExpr(Id(testf),[]))])Else([],[])])),FuncDecl(Id(testf)[],([][Return()]))])

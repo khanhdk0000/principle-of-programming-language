@@ -1,2 +1,1 @@
-Function: baz Parameter: one, two Body: one = 0 + 1; Return one; EndBody.
-		Function: main Parameter: three Body: three = baz(2); EndBody.
+Program([FuncDecl(Id(main)[],([][])),FuncDecl(Id(printLn)[],([][]))])

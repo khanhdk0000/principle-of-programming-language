@@ -1,1 +1,1 @@
-Type Mismatch In Expression: BinaryOp(>.,Id(x),FloatLiteral(0.0))
+Type Cannot Be Inferred: If(CallExpr(Id(main),[Id(b),IntLiteral(5)]),[],[])Else([],[])

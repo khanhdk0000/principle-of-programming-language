@@ -1,9 +1,1 @@
-Function: main 
-		Body:
-		  Var: x = 1;
-		  Do 
-		    Var: x = 1.1;
-		    x = x +. float_to_int(2);
-		  While x > 0 EndDo.
-		  Return;
-		EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(x))],([VarDecl(Id(a)),VarDecl(Id(b)),VarDecl(Id(c))][Assign(Id(x),BinaryOp(==,BinaryOp(+,Id(a),Id(b)),CallExpr(Id(int_of_string),[CallExpr(Id(main),[])])))]))])

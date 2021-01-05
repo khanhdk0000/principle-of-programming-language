@@ -1,2 +1,1 @@
-Function: barz Parameter: one, two Body: one = 0 + 1; Return one; EndBody.
-		Function: main Parameter: three Body: Var: four; three = barz(2, four); EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(n)),VarDecl(Id(a),[2,3])],([][Assign(Id(i),IntLiteral(5))])),FuncDecl(Id(main)[VarDecl(Id(n)),VarDecl(Id(a),[2,3])],([][Assign(Id(i),IntLiteral(5))]))])

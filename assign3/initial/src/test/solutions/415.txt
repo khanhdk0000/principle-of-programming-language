@@ -1,1 +1,1 @@
-Type Cannot Be Inferred: Return(BinaryOp(+,IntLiteral(1),CallExpr(Id(foo),[Id(x)])))
+Type Mismatch In Expression: BinaryOp(+,StringLiteral(Str),StringLiteral(ing))

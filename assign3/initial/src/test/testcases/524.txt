@@ -1,13 +1,13 @@
 
-        Function: f 
-        Parameter: x 
-        Body: 
-            Return {1,2,3}; 
-        EndBody. 
-        Function: main 
-        Parameter: a[3] 
-        Body: 
-            Var: x; 
-            x = main(f(3)) + 6; 
-            main({1,2,3})[5] = f(6); 
-        EndBody.
+                Function: f 
+                Parameter: x 
+                Body: 
+                    Return {1,2,3}; 
+                EndBody. 
+                Function: main 
+                Parameter: a[3] 
+                Body: 
+                    Var: x; 
+                    x = main(f(3)) + 6; 
+                    main({1,2,3})[5] = f(6); 
+                EndBody.

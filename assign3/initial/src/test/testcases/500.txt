@@ -1,2 +1,1 @@
-Function: pars Parameter: pars Body: Return pars + 1; Return pars(pars); EndBody.
-		Function: main Body: Return; EndBody.
+Program([FuncDecl(Id(main)[],([VarDecl(Id(a),[2,3])][Assign(Id(a),ArrayLiteral(IntLiteral(1)))]))])

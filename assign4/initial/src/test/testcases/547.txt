@@ -1,0 +1,11 @@
+Var: a=1,b=2,c=3; 
+        Function: main 
+        Body: 
+            Var: x=5,y=6,z=7; 
+            While (y+z > x) Do 
+                print(string_of_int(y+z)); 
+                y=y-a; 
+                z=z-a; 
+            EndWhile. 
+            print("?"); 
+        EndBody.

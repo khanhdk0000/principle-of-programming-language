@@ -1,0 +1,6 @@
+Var: a=5;
+        Function: main
+        Body:
+            Var: b= "inner_string";
+            print(b);
+        EndBody.

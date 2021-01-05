@@ -1,1 +1,1 @@
-Type Mismatch In Expression: CallExpr(Id(bool_of_string),[Id(global)])
+Type Mismatch In Statement: Return(ArrayLiteral(IntLiteral(1)))

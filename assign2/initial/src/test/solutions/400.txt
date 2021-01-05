@@ -1,1 +1,1 @@
-Program([FuncDecl(Id("main"),[],([],[Assign(Id("x"),IntLiteral(16777216))]))])
+Program([VarDecl(Id("a"),[],IntLiteral(1)),FuncDecl(Id("main"),[],([],[Assign(Id("a"),IntLiteral(1)),Assign(ArrayCell(Id("a"),[IntLiteral(1)]),IntLiteral(1)),CallStmt(Id("print"),[CallExpr(Id("string_of_int"),[CallExpr(Id("fact"),[IntLiteral(5)])])])])),FuncDecl(Id("fact"),[VarDecl(Id("n"),[], None)],([],[If([(BinaryOp("==",Id("n"),IntLiteral(0)),[],[Return(IntLiteral(1))]),(BinaryOp("<",Id("n"),IntLiteral(0)),[],[Return(IntLiteral(0))])],([],[]))]))])

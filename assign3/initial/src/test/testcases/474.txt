@@ -1,16 +1,1 @@
-Function: iff 
-		Parameter: a, b 
-		Body:
-		  If (a >= b) && (b >= a) Then Return True;
-		  Else Return False;
-		  EndIf.
-		EndBody.
-
-		Function: main 
-		Body:
-		  Var: s1, s2;
-		  s1 = int_of_string(read());
-		  s2 = int_of_string(read());
-		  print(string_of_bool(iff(s1, s2)));
-		  Return 0;
-		EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(a)),VarDecl(Id(b))],([VarDecl(Id(arr),ArrayLiteral(ArrayLiteral(IntLiteral(1),IntLiteral(2),IntLiteral(3)),ArrayLiteral(IntLiteral(4),IntLiteral(5),IntLiteral(6))))][Assign(ArrayCell(Id(arr),[IntLiteral(1),IntLiteral(2)]),BinaryOp(+,ArrayCell(Id(arr),[Id(a),CallExpr(Id(int_of_float),[Id(b)])]),ArrayCell(Id(arr),[IntLiteral(5),BinaryOp(*,Id(a),Id(b))])))]))])

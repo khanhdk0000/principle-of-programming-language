@@ -1,7 +1,1 @@
-Function: main
-		Body:
-		  Do 
-		    Var: x = 1;
-		    Return x;
-		  While main() EndDo.
-		EndBody.
+Program([FuncDecl(Id(main)[],([VarDecl(Id(arr),ArrayLiteral(IntLiteral(6),IntLiteral(5)))][Assign(ArrayCell(Id(a),[Id(main)]),IntLiteral(5))]))])

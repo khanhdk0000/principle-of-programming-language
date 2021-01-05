@@ -1,16 +1,1 @@
-Function: main
-		Parameter: x 
-		Body:
-		  s = int_of_string(read());
-		  print(checkyear(s));
-		EndBody.
-
-		Function: checkyear
-		Parameter: s 
-		Body:
-		  If s % 4 != 0 Then Return "Normal";
-		  ElseIf s % 400 == 0 Then Return "Leap";
-		  ElseIf s % 100 == 0 Then Return "Normal";
-		  Else Return "Leap";
-		  EndIf.
-		EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(a)),VarDecl(Id(b))],([][For(Id(a),FloatLiteral(1.2),BinaryOp(>,Id(a),Id(b)),IntLiteral(5),[],[Return()])]))])

@@ -1,0 +1,11 @@
+Var: a=5,b="string";
+        Function: main
+        Body:
+            Var: b= "inner_string";
+            print(f1(a));
+        EndBody.
+        Function: f1
+        Parameter: x
+        Body:
+            Return string_of_int(x);
+        EndBody.

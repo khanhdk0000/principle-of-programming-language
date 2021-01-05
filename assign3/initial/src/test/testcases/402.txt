@@ -1,13 +1,1 @@
-Function: foo 
-		Parameter: x, z 
-		Body:
-		  Var: y;
-		  y = x +. 2e-1;
-		EndBody.
-
-		Function: main 
-		Parameter: k 
-		Body:
-		  k = True;
-		  k = foo(1.1, k);
-		EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(n))],([VarDecl(Id(i),IntLiteral(0))][Assign(Id(assign),IntLiteral(10))]))])

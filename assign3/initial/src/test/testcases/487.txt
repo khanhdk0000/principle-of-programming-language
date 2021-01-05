@@ -1,8 +1,1 @@
-Function: main 
-		Body:
-		  Var: continue;
-		  Do 
-		    Continue;
-		  While continue EndDo.
-		  Return continue;
-		EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(x))],([][Assign(Id(x),CallExpr(Id(printLn),[]))]))])

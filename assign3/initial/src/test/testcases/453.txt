@@ -1,12 +1,1 @@
-Var: a;
-        Function: main 
-        Parameter: main 
-        Body:
-            Var: a;
-            Do 
-                Var: main, a;
-                a = 1;
-                Return main -. 0.0;
-            While a EndDo.
-            Return main(1.0);
-        EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(a))],([VarDecl(Id(b),FloatLiteral(7.0))][Assign(Id(a),IntLiteral(5)),CallStmt(Id(main),[Id(b)])]))])

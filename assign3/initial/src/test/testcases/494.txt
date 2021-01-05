@@ -1,6 +1,1 @@
-Function: foo 
-		Parameter: a[2], b[2], c[2] 
-		Body:
-		  a[a[0]] = a[1] \ 2 + 0x34A;
-		  Return b[c[0]] +. float_to_int(a[c[1]]);
-		EndBody. 
+Program([FuncDecl(Id(main)[VarDecl(Id(x)),VarDecl(Id(y))],([][Assign(Id(y),IntLiteral(5)),Assign(Id(y),CallExpr(Id(main),[Id(x),Id(y)]))]))])

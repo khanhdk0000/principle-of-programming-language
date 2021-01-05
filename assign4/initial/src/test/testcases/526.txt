@@ -1,0 +1,12 @@
+Var: a=5,b="string",c=5.6;
+        Function: main
+        Body:
+            If (a >= 5) && (a <= 10 )Then
+                a = 6;
+            ElseIf a == 7 Then
+                a = 7;
+            Else
+                a=10;
+            EndIf.
+            print(string_of_int(a));
+        EndBody.

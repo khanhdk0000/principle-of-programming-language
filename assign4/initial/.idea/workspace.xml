@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1bfe4c5a-fd4d-4bb1-b8b3-25e10ce44749" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/initial.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BKITClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MCClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/solutions/500/BKITClass.j" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/solutions/501/BKITClass.j" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/solutions/502.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/solutions/502/BKITClass.j" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/solutions/503.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/solutions/503/BKITClass.j" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testcases/502.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testcases/503.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/BKIT.interp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/BKIT.tokens" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/BKITLexer.interp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/BKITLexer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/BKITLexer.tokens" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/BKITParser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/BKITVisitor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/341.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/341.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/342.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/342.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/344.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/344.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/346.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/346.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/347.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/347.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/353.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/353.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/354.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/354.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/355.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/355.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/356.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/356.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/357.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/357.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/358.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/358.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/359.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/359.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/360.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/360.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/361.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/361.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/362.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/362.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/363.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/363.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/364.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/364.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/365.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/365.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/366.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/366.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/367.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/367.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/368.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/368.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/370.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/370.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/371.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/371.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/372.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/372.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/379.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/379.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/380.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/380.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/381.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/381.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/382.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/382.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/383.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/383.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/384.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/384.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/385.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/385.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/386.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/386.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/387.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/387.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/388.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/388.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/389.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/389.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/390.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/390.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/391.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/391.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/392.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/392.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/393.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/393.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/394.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/394.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/395.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/395.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/396.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/396.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/397.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/397.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/399.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign2/initial/src/test/solutions/399.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/main/bkit/checker/StaticCheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/main/bkit/checker/StaticCheck.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/400.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/400.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/401.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/401.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/402.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/402.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/403.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/403.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/404.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/404.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/405.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/405.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/406.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/406.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/407.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/407.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/408.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/408.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/409.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/409.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/410.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/410.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/411.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/411.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/412.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/412.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/413.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/413.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/414.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/414.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/415.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/415.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/416.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/416.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/417.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/417.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/418.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/418.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/419.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/419.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/420.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/420.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/421.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/421.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/422.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/422.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/423.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/423.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/424.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/424.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/425.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/425.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/427.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/427.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/428.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/428.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/429.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/429.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/430.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/430.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/431.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/431.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/432.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/432.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/433.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/433.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/434.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/434.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/435.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/435.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/436.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/436.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/437.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/437.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/438.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/438.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/439.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/439.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/440.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/440.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/441.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/441.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/442.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/442.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/443.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/443.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/444.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/444.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/445.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/445.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/446.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/446.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/447.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/447.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/448.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/448.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/449.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/449.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/450.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/450.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/451.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/451.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/452.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/452.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/453.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/453.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/454.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/454.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/455.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/455.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/456.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/456.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/457.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/457.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/458.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/458.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/459.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/459.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/460.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/460.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/461.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/461.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/462.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/462.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/463.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/463.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/464.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/464.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/465.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/465.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/466.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/466.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/467.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/467.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/468.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/468.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/469.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/469.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/470.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/470.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/471.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/471.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/472.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/472.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/473.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/473.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/474.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/474.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/475.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/475.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/476.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/476.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/477.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/477.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/478.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/478.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/479.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/479.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/480.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/480.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/481.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/481.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/482.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/482.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/483.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/483.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/484.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/484.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/485.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/485.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/486.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/486.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/487.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/487.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/488.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/488.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/489.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/489.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/490.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/490.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/491.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/491.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/492.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/492.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/493.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/493.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/494.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/494.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/495.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/495.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/496.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/496.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/497.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/497.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/498.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/498.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/499.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/499.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/500.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/solutions/500.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/400.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/400.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/401.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/401.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/402.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/402.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/403.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/403.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/404.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/404.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/405.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/405.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/406.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/406.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/407.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/407.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/408.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/408.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/409.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/409.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/410.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/410.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/411.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/411.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/412.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/412.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/413.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/413.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/414.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/414.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/415.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/415.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/416.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/416.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/417.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/417.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/418.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/418.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/419.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/419.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/420.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/420.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/421.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/421.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/422.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/422.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/423.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/423.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/424.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/424.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/425.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/425.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/426.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/426.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/427.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/427.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/428.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/428.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/429.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/429.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/430.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/430.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/431.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/431.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/432.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/432.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/433.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/433.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/434.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/434.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/435.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/435.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/436.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/436.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/437.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/437.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/438.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/438.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/439.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/439.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/440.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/440.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/441.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/441.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/442.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/442.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/443.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/443.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/444.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/444.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/445.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/445.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/446.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/446.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/447.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/447.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/448.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/448.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/449.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/449.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/450.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/450.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/451.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/451.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/452.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/452.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/453.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/453.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/454.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/454.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/455.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/455.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/456.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/456.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/457.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/457.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/458.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/458.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/459.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/459.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/460.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/460.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/461.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/461.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/462.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/462.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/463.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/463.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/464.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/464.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/465.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/465.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/466.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/466.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/467.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/467.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/468.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/468.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/469.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/469.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/470.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/470.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/471.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/471.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/472.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/472.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/473.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/473.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/474.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/474.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/475.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/475.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/476.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/476.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/477.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/477.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/478.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/478.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/479.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/479.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/480.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/480.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/481.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/481.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/482.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/482.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/483.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/483.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/484.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/484.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/485.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/485.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/486.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/486.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/487.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/487.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/488.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/488.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/489.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/489.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/490.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/490.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/491.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/491.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/492.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/492.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/493.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/493.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/494.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/494.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/495.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/495.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/496.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/496.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/497.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/497.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/498.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/498.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/499.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/499.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/500.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/500.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/519.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/519.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/524.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/524.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/529.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../assign3/initial/src/test/testcases/529.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1mS19slzQdD2pcA9wv5TQkysqoQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1bfe4c5a-fd4d-4bb1-b8b3-25e10ce44749" name="Default Changelist" comment="" />
+      <created>1609472030134</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609472030134</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

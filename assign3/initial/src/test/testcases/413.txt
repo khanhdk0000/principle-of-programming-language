@@ -1,5 +1,1 @@
-Var: x;
-		Function: main Parameter: y 
-		Body:
-		  x = y;
-		EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(x)),VarDecl(Id(y)),VarDecl(Id(z))],([][Assign(Id(x),UnaryOp(!,BinaryOp(%,IntLiteral(2),IntLiteral(3))))]))])

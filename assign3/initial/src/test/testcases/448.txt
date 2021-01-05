@@ -1,1 +1,1 @@
-Var: f; Function: foo Body: EndBody. Function: foo Body: EndBody. Function: main Body: EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(x))],([][If(BooleanLiteral(true),[VarDecl(Id(x))],[If(BooleanLiteral(false),[VarDecl(Id(y))],[Assign(Id(x),BinaryOp(+,Id(y),Id(x)))])Else([],[]),Assign(Id(x),FloatLiteral(1.2))])Else([],[]),Assign(Id(x),IntLiteral(5))]))])

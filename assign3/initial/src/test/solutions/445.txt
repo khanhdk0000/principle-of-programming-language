@@ -1,1 +1,1 @@
-Redeclared Variable: x
+Type Mismatch In Expression: ArrayCell(Id(h),[IntLiteral(2)])

@@ -1,1 +1,1 @@
-Var: x = 3, y = { { {2, 1} }, { {1, 0} }}, z = True; Function: main Body: Return; EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(a)),VarDecl(Id(b)),VarDecl(Id(e))],([][While(BinaryOp(<.,Id(a),FloatLiteral(5.5)),[],[Assign(Id(e),IntLiteral(1)),Assign(Id(e),Id(b))]),While(Id(b),[],[Return()])]))])

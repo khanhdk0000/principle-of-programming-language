@@ -1,0 +1,15 @@
+Var:a=1,b=2,c=3;
+        Function: main
+        Body:
+            f1(4,5);
+        EndBody.
+        Function: f1
+        Parameter: a,b
+        Body:
+            If a>b Then
+                print(string_of_int(a));
+            Else
+                print(string_of_int(b));
+            EndIf.
+            Return;
+        EndBody.

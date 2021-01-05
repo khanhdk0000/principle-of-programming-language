@@ -1,0 +1,8 @@
+Var:a=1,b=2,c=3; 
+        Function: main 
+        Body: 
+            Var: a = 15;  
+            For(a=1, a <5, 1) Do 
+                print(string_of_int(a)); 
+            EndFor. 
+        EndBody.

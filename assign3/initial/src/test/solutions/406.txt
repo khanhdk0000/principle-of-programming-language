@@ -1,1 +1,1 @@
-Type Mismatch In Expression: CallExpr(Id(baz),[IntLiteral(2)])
+Redeclared Function: printLn

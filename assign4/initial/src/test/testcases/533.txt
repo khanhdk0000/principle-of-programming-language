@@ -1,0 +1,15 @@
+Var:a=1,b=2,c=3;
+        Function: main
+        Body:
+            f1(a,b);
+        EndBody.
+        Function: f1
+        Parameter: a,b
+        Body:
+            If a>b Then
+                print("a");
+            Else
+                print("b");
+            EndIf.
+            Return;
+        EndBody.

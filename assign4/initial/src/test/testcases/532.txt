@@ -1,0 +1,13 @@
+Var:a=1,b=2,c=3;
+        Function: main
+        Body:
+            f1(b);
+        EndBody.
+        Function: f1
+        Parameter: a
+        Body:
+            If a>1 Then
+                print("yes");
+            EndIf.
+                Return;
+        EndBody.

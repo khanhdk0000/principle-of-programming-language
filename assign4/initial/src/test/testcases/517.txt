@@ -1,0 +1,16 @@
+Var: a=1.6, b= 0.4;
+        Function: main
+        Body:
+            Var: t= True;
+            f(a>.b);
+            f(a<.b);
+            f(a=/=b);
+            f(a>=.b);
+            f(a<=.b);
+        EndBody.
+        Function: f
+        Parameter: x
+        Body:
+            print(string_of_bool(x));
+            Return;
+        EndBody.

@@ -1,13 +1,1 @@
-Var: a[2];
-        Function: foo
-        Body:
-            Return {2, 2};
-        EndBody.
-
-        Function: main
-        Body:
-            foo()[0o77] = int_of_string(read());
-            a = foo();
-            b = foo();
-            Return 0;
-        EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(x)),VarDecl(Id(y)),VarDecl(Id(z))],([][Assign(Id(x),BinaryOp(-,BinaryOp(*,Id(y),Id(x)),UnaryOp(-,BinaryOp(>.,Id(z),FloatLiteral(1.5)))))]))])

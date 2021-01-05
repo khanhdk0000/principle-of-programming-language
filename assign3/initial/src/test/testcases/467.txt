@@ -1,11 +1,1 @@
-Var: iter, arr[3] = {"One", "Two", "Three"};
-        Function: main
-        Body:
-            Var: ret[3];
-            For (iter = 10, iter > -1, -1) Do
-            If ret[12 % 4] > 2 Then Return arr;
-            ElseIf ret[iter \ 5] > 1 Then Return arr;
-            EndIf.
-        EndFor.
-        Return ret;
-        EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(a)),VarDecl(Id(b))],([][Dowhile([],[Assign(Id(a),IntLiteral(5))],Id(a))]))])

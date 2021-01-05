@@ -1,1 +1,1 @@
-Var: x; Function: x Body: EndBody. Function: main Body: Return; EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(a)),VarDecl(Id(b)),VarDecl(Id(c))],([][Dowhile([],[Assign(Id(a),BinaryOp(==,BinaryOp(+,Id(a),BinaryOp(*,IntLiteral(1),Id(b))),Id(c)))],Id(b))]))])

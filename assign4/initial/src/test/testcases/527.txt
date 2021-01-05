@@ -1,0 +1,12 @@
+Var: a=5,b="string",c=5.6;
+        Function: main
+        Body:
+            If c >. 5.6 Then
+                c = c +. 1.0;
+            EndIf.
+            print(string_of_float(c));
+            If c <. 6e0 Then
+                print("yes");
+            Else print("No");
+            EndIf.
+        EndBody.

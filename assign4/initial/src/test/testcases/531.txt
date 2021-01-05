@@ -1,0 +1,15 @@
+Function: main
+        Body:
+            Var: a=1,b=2,c=3;
+            If a +b +c > 3 Then
+                If a+b>2 Then
+                    If a>1 Then
+                        print("a");
+                    ElseIf b>1 Then
+                        print("b");
+                    Else
+                        print("nei");
+                    EndIf.
+                EndIf.
+            EndIf.
+        EndBody.

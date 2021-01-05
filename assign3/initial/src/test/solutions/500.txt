@@ -1,1 +1,1 @@
-Undeclared Function: pars
+Type Mismatch In Statement: Assign(Id(a),ArrayLiteral(IntLiteral(1)))

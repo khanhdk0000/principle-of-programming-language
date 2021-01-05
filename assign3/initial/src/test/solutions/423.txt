@@ -1,1 +1,1 @@
-Type Mismatch In Expression: BinaryOp(+,IntLiteral(1),FloatLiteral(2.0))
+Type Mismatch In Statement: CallStmt(Id(main),[FloatLiteral(1.2),IntLiteral(5)])

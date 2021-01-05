@@ -1,10 +1,8 @@
-Var: a;
-		Function: main 
-		Body:
-		  While a Do 
-		    Var: a;
-		    print(a);
-		    Return a;
-		  EndWhile.
-		  Return a;
-		EndBody.
+
+                Function: main 
+                Parameter: x 
+                Body: 
+                    Var: arr = {{"a","b","c"},{"d","e","f"}}; 
+                    arr[x][main(x)] = ""; 
+                    Return arr[2][x+1]; 
+                EndBody.

@@ -1,9 +1,1 @@
-Function: main
-		Body:
-		  While True Do 
-		    Var: tmp;
-		    tmp = "Here";
-		  EndWhile.
-		  print(tmp);
-		  Return 1;
-		EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(x))],([][Assign(Id(x),BinaryOp(=/=,CallExpr(Id(main),[FloatLiteral(6.5)]),CallExpr(Id(main),[Id(x)])))]))])

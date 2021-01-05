@@ -1,1 +1,1 @@
-Type Mismatch In Statement: For(Id(i),IntLiteral(0),IntLiteral(10),IntLiteral(1),[],[CallStmt(Id(print),[CallExpr(Id(string_of_int),[CallExpr(Id(condition),[BinaryOp(+.,CallExpr(Id(float_to_int),[Id(i)]),FloatLiteral(1.0)),Id(z)])])])])
+Type Mismatch In Statement: Assign(ArrayCell(Id(a),[IntLiteral(2),IntLiteral(1)]),FloatLiteral(1.2))

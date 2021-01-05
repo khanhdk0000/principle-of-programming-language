@@ -1,2 +1,1 @@
-Function: foo Parameter: a, b, c Body: a = 5; Return 6; EndBody.
-		Function: main Body: Return foo(3, 4.2, True); EndBody.
+Program([FuncDecl(Id(main)[],([][CallStmt(Id(printStrLn),[CallExpr(Id(read),[IntLiteral(4)])])]))])

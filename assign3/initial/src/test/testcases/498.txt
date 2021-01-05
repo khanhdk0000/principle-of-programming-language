@@ -1,16 +1,1 @@
-
-        Function: foo
-        Body:
-            print("Now or never");
-            Return;
-        EndBody.
-        Function: goo
-        Body:
-            foo();
-        EndBody.
-        Function: main
-        Body:
-            Var: foo;
-            foo();
-        EndBody.
-        
+Program([FuncDecl(Id(main)[VarDecl(Id(main))],([][Assign(Id(main),BinaryOp(*,BinaryOp(*,CallExpr(Id(main),[BinaryOp(+,Id(main),IntLiteral(5))]),IntLiteral(2)),Id(main)))]))])

@@ -1,1 +1,1 @@
-Function: main Body: Return; EndBody. Function: foo Body: Var: main; Return main(); EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(x))],([VarDecl(Id(arr),ArrayLiteral(IntLiteral(1),IntLiteral(2),IntLiteral(3)))][Return(ArrayCell(Id(arr),[CallExpr(Id(main),[Id(x)])]))]))])

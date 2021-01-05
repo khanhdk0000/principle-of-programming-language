@@ -1,6 +1,1 @@
-Function: main 
-		Body:
-		  Var: x;
-		  Return 1 + foo(x);
-		EndBody.
-		Function: foo Parameter: x Body: EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(x)),VarDecl(Id(y)),VarDecl(Id(z))],([][Assign(Id(x),BinaryOp(+,StringLiteral(Str),StringLiteral(ing)))]))])

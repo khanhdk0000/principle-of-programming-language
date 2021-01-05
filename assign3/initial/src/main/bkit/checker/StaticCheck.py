@@ -7,7 +7,6 @@ from typing import List, Tuple
 from AST import *
 from Visitor import *
 from StaticError import *
-from functools import *
 
 
 class Type(ABC):
@@ -54,7 +53,7 @@ class ArrayType(Type):
 
 
 @dataclass
-class MType:
+class MType(Type):
     intype: List[Type]
     restype: Type
 
@@ -618,6 +617,8 @@ class StaticChecker(BaseVisitor):
 
         # infer the type for lhs before visiting it if it is function or array
         if isinstance(ast.left, (CallExpr, ArrayCell)) and self.check_if_unknown(ast.left, c):
+            if isinstance(ast.left, ArrayCell) and isinstance(ast.left.arr, CallExpr):
+                raise TypeCannotBeInferred(c[3])
             name = self.get_name(ast.left)
             sym = self.search(name, [c[0], c[1]])
             self.infer_type(sym, op_type)
@@ -632,6 +633,8 @@ class StaticChecker(BaseVisitor):
 
         # infer the type for lhs before visiting it if it is function or array
         if isinstance(ast.right, (CallExpr, ArrayCell)) and self.check_if_unknown(ast.right, c):
+            if isinstance(ast.right, ArrayCell) and isinstance(ast.right.arr, CallExpr):
+                raise TypeCannotBeInferred(c[3])
             name = self.get_name(ast.right)
             sym = self.search(name, [c[0], c[1]])
             self.infer_type(sym, op_type)
@@ -675,6 +678,8 @@ class StaticChecker(BaseVisitor):
 
         # infer the type for lhs before visiting it if it is function or array
         if isinstance(ast.body, (CallExpr, ArrayCell)) and self.check_if_unknown(ast.body, c):
+            if isinstance(ast.body, ArrayCell) and isinstance(ast.body.arr, FunctionType):
+                raise TypeCannotBeInferred(c[3])
             name = self.get_name(ast.body)
             sym = self.search(name, [c[0], c[1]])
             self.infer_type(sym, op_type)
@@ -734,10 +739,13 @@ class StaticChecker(BaseVisitor):
         if isinstance(func_sym.mtype, ArrayType):
             lst = func_sym.mtype.dimen
         elif isinstance(func_sym.mtype, FunctionType):
+            if isinstance(func_sym.mtype.restype, Unknown):
+                raise TypeCannotBeInferred(c[3])
             if not isinstance(func_sym.mtype.restype, ArrayType):
                 raise TypeMismatchInExpression(ast)
             lst = func_sym.mtype.restype.dimen
         else:
+
             raise TypeMismatchInExpression(ast)
         typ = func_sym.mtype if isinstance(func_sym.mtype, ArrayType) else func_sym.mtype.restype
         if len(lst) != len(ast.idx) or not isinstance(typ, ArrayType):

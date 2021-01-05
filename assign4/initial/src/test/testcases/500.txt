@@ -1,0 +1,1 @@
+Var: a=5, b=11.2; Function: main Body: print(string_of_int(a)); EndBody.

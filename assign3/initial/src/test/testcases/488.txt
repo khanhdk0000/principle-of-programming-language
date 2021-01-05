@@ -1,8 +1,1 @@
-Function: main 
-		Body:
-		  Var: continue;
-		  Do 
-		    Continue;
-		    Return continue;
-		  While continue EndDo.
-		EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(x))],([][Assign(Id(x),BinaryOp(||,CallExpr(Id(bool_of_string),[StringLiteral()]),CallExpr(Id(printStrLn),[CallExpr(Id(string_of_bool),[BinaryOp(>,IntLiteral(1),IntLiteral(2))])])))]))])

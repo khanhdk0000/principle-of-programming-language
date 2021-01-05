@@ -1,6 +1,1 @@
-Var: a;
-		Function: foo 
-		Body:
-		  Return;
-		EndBody.
-		Function: main Body: foo();foo();foo();main();foo(); EndBody.
+Program([FuncDecl(Id(main)[],([VarDecl(Id(a),[2,3]),VarDecl(Id(b),[5,6,7]),VarDecl(Id(c),[1])][Assign(ArrayCell(Id(a),[IntLiteral(1),IntLiteral(2)]),IntLiteral(5)),Assign(ArrayCell(Id(a),[IntLiteral(3),IntLiteral(4)]),FloatLiteral(1.2))]))])

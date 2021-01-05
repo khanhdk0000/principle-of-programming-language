@@ -1,1 +1,1 @@
-Type Mismatch In Statement: Assign(ArrayCell(Id(a),[IntLiteral(1)]),BinaryOp(+,IntLiteral(3),IntLiteral(5)))
+Type Cannot Be Inferred: Return(CallExpr(Id(nani),[]))

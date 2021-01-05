@@ -1,1 +1,1 @@
-Type Mismatch In Statement: Dowhile([],[Assign(Id(x),IntLiteral(1)),Return(Id(a)),Return(Id(z)),Assign(Id(x),ArrayCell(Id(z),[IntLiteral(0),IntLiteral(0)]))],Id(x))
+Type Cannot Be Inferred: For(Id(a),IntLiteral(5),BinaryOp(>,Id(a),CallExpr(Id(main),[Id(a),Id(b)])),Id(a),[],[])

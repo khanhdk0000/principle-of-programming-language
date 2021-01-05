@@ -1,1 +1,1 @@
-Function: main Body: Var: arr[3][4]; arr[5] = "E"; EndBody.
+Program([FuncDecl(Id(wow)[VarDecl(Id(x)),VarDecl(Id(y))],([][Assign(Id(y),FloatLiteral(5000.0))])),FuncDecl(Id(main)[VarDecl(Id(a)),VarDecl(Id(b))],([][CallStmt(Id(wow),[IntLiteral(5),Id(a)]),CallStmt(Id(wow),[Id(a),IntLiteral(5)])]))])

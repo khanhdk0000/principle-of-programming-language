@@ -1,10 +1,1 @@
-Function: foo 
-		Parameter: x 
-		Body:
-		  Return {"True", "Tho..."};
-		EndBody.
-		Function: main 
-		Body:
-		  print(foo(2)[1]);
-		  Return;
-		EndBody.
+Program([FuncDecl(Id(main)[],([VarDecl(Id(x)),VarDecl(Id(y)),VarDecl(Id(z))][If(Id(x),[],[Assign(Id(x),UnaryOp(!,UnaryOp(!,BinaryOp(>,IntLiteral(1),BinaryOp(+,Id(y),IntLiteral(5))))))])ElseIf(Id(z),[],[Assign(Id(y),Id(z))])Else([],[])]))])

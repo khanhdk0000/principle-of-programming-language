@@ -1,1 +1,1 @@
-Function: main Body: Var: x; x = 3e-1 +. 2.445 *. (3e1 \. 1.00); EndBody.
+Program([FuncDecl(Id(main)[],([][CallStmt(Id(f1),[]),CallStmt(Id(f2),[Id(b)])])),FuncDecl(Id(f1)[],([][]))])

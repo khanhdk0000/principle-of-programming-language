@@ -1,1 +1,1 @@
-Function: main Body: Return 1 + 2.0; EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(x)),VarDecl(Id(y))],([][Assign(Id(x),IntLiteral(5))])),FuncDecl(Id(main2)[],([][CallStmt(Id(main),[FloatLiteral(1.2),IntLiteral(5)])]))])

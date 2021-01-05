@@ -1,12 +1,1 @@
-Function: main 
-		Body:
-		  Var: x, y = 1;
-		  Return 2.0 +. float_of_string(foo(x, y));
-		EndBody.
-
-		Function: foo
-		Parameter: x, y
-		Body:
-		  x = 2; y = 3;
-		  Return "2.3";
-		EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(x)),VarDecl(Id(y)),VarDecl(Id(z))],([][Assign(Id(x),StringLiteral(StringTypeVar))]))])

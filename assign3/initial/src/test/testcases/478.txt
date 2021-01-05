@@ -1,8 +1,10 @@
-Function: main 
-        Body:
-            Var: f, t;
-            While f Do 
-                Return t + 1;
-                EndWhile.
-            If f Then Return int_of_float(t) + 1; EndIf.
-        EndBody.
+
+                Function: main 
+                Body: 
+                    Var: a = {1,2,3,4,5}, b; 
+                    For ( b = a[2], a[3] > a[4], a[0]) Do 
+                        If a Then 
+                            Return; 
+                        EndIf. 
+                    EndFor. 
+                EndBody.

@@ -1,0 +1,17 @@
+Function: main
+        Body:
+            Var: i = 1;
+            If i == 1 Then
+                print("1");
+            ElseIf i==2 Then
+                print("2");
+            ElseIf i==3 Then
+                print("3");
+            ElseIf i==4 Then
+                print("4");
+            ElseIf i==7 Then
+                print("7");
+            Else
+                print("greater");
+            EndIf.
+        EndBody.

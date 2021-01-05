@@ -1,9 +1,1 @@
-Function: main 
-		Parameter: x[2][1]
-		Body:
-		  Var: y[2][1];
-		  x = {{True}, {False}};
-		  y[0][0] = 2 < 3; 
-		  y[0][1] = !((1.0 +. 3e-1) <=. float_to_int(5));
-		  x = y;
-		EndBody.
+Program([FuncDecl(Id(recur)[VarDecl(Id(x)),VarDecl(Id(y))],([][Assign(Id(x),FloatLiteral(2.2)),CallStmt(Id(recur),[Id(y),Id(x)])])),FuncDecl(Id(main)[],([][]))])

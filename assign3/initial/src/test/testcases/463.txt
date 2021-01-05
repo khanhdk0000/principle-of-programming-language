@@ -1,13 +1,1 @@
-
-        Function: main
-        Body:
-            Var: a;
-            a = foo;
-        EndBody.
-
-        Function: foo
-        Parameter: x
-        Body:
-            Return x + 10;
-        EndBody.
-        
+Program([FuncDecl(Id(main)[VarDecl(Id(a)),VarDecl(Id(b))],([][CallStmt(Id(main),[CallExpr(Id(main),[IntLiteral(2),IntLiteral(3)]),IntLiteral(5)])]))])

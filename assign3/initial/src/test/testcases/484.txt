@@ -1,9 +1,1 @@
-Function: main 
-		Body:
-		  Var: x = 1;
-		  Do 
-		    Var: x = 1.1;
-		    x = x +. float_to_int(2);
-		  While x >. 0.0 EndDo.
-		  Return;
-		EndBody.  
+Program([FuncDecl(Id(main)[VarDecl(Id(a)),VarDecl(Id(b))],([][If(CallExpr(Id(main),[Id(b),IntLiteral(5)]),[],[])Else([],[])]))])

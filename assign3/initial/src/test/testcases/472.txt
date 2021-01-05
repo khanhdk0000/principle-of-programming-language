@@ -1,4 +1,1 @@
-Function: main 
-		Body:
-		  If main() Then Return main(); EndIf.
-		EndBody.
+Program([FuncDecl(Id(main)[],([VarDecl(Id(a))][For(Id(a),IntLiteral(1),Id(a),IntLiteral(1),[],[])]))])

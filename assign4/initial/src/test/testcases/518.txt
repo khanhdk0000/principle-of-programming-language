@@ -1,0 +1,18 @@
+Var: a=4, b= 5;
+        Function: main
+        Body:
+            Var: t= True;
+            f(a>b);
+            f(a<b);
+            f(a==b);
+            f(a!=b);
+            f(a>=b);
+            f(a<=b);
+        EndBody.
+
+        Function: f
+        Parameter: x
+        Body:
+            print(string_of_bool(x));
+            Return;
+        EndBody.

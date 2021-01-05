@@ -1,0 +1,6 @@
+Var: a=5,b="string",c=5.6;
+        Function: main
+        Body:
+            Var: x=7,y="x",z=2,k = 1.5; k = c +. k *.k -. float_to_int(z);
+            print(string_of_float(k));
+        EndBody.

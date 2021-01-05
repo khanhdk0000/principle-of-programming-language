@@ -1,11 +1,1 @@
-Function: main 
-		Parameter: a, b, c 
-		Body:
-		  Return main(2, True, main(2, True, 2)) + 2;
-		EndBody.
-
-		Function: mains 
-		Parameter: a, b, c 
-		Body:
-		  Return mains(2, True, mains(2, True, 2));
-		EndBody.
+Program([FuncDecl(Id(main)[],([VarDecl(Id(a)),VarDecl(Id(b)),VarDecl(Id(c))][If(BinaryOp(>,BinaryOp(*,Id(a),Id(b)),Id(c)),[],[Assign(Id(a),BinaryOp(-,Id(b),Id(c)))])Else([],[Assign(Id(a),BooleanLiteral(true))])]))])

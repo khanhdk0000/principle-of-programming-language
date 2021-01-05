@@ -1,7 +1,1 @@
-Function: main
-		Parameter: a, b, c
-		Body:
-		  a = 1 + (2 * 3);
-		  b = a - (c + 1);
-		  c = False;
-		EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(a)),VarDecl(Id(b)),VarDecl(Id(x)),VarDecl(Id(x))],([][]))])

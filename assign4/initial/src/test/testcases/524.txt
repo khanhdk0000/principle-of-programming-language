@@ -1,0 +1,9 @@
+Var: a=5,b="string",c=5.6;
+        Function: main
+        Body:
+            If True Then
+                print("True");
+            Else
+                print("false");
+            EndIf.
+        EndBody.

@@ -1,0 +1,1 @@
+Var:a=1,b=2,c=3; Function:main Body: Var: a = 5,b=5,c=15;  Var: i=0,j=0; For(i=a-5, j<b, c-14) Do print(string_of_int(i)); j=j+2; EndFor. EndBody. 

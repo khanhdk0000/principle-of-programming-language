@@ -1,6 +1,1 @@
-Function: main
-		Body:
-		  Var: x, y;
-		  y = int_of_string("1.2");
-		  x = y;
-		EndBody.
+Program([FuncDecl(Id(main)[VarDecl(Id(x)),VarDecl(Id(y)),VarDecl(Id(z))],([][Assign(Id(x),UnaryOp(-,BinaryOp(>,IntLiteral(1),IntLiteral(2))))]))])

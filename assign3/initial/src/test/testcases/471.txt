@@ -1,16 +1,1 @@
-Var: mai, mot;
-		Function: main
-		Body:
-		  If True Then 
-		    If bool_of_string(mot) Then Return mai || (!mai); EndIf.
-		    If False Then printStrLn(string_of_bool(mai || (0 != 0)));
-		      Else printStrLn("Line");
-		    EndIf.
-		  ElseIf True Then 
-		    print(mot);
-		    Return 1e-3 >=. float_to_int(23);
-		  Else 
-		    Var: i;
-		    If i > 0 Then Return True; EndIf.
-		  EndIf.
-		EndBody.
+Program([FuncDecl(Id(main)[],([VarDecl(Id(a),StringLiteral(String))][For(Id(a),IntLiteral(1),BinaryOp(==,IntLiteral(5),IntLiteral(6)),IntLiteral(18),[],[Return()])]))])

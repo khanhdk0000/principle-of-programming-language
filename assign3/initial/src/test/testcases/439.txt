@@ -1,11 +1,1 @@
-Function: main 
-		Parameter: p 
-		Body:
-		  Var: b[2];
-		  b[0] = (f() + 1) * (f() + p);
-		  Return p;
-		EndBody.
-		Function: f 
-		Body:
-		  Return main(f());
-		EndBody.
+Program([VarDecl(Id(a)),VarDecl(Id(b)),VarDecl(Id(c)),VarDecl(Id(d)),VarDecl(Id(e)),VarDecl(Id(f)),FuncDecl(Id(main)[],([][If(BinaryOp(>.,Id(a),FloatLiteral(5.3)),[],[Assign(Id(a),BinaryOp(-.,BinaryOp(*.,Id(b),Id(c)),FloatLiteral(9.5)))])ElseIf(BinaryOp(>,BinaryOp(-.,BinaryOp(+.,Id(a),BinaryOp(*.,Id(b),Id(c))),BinaryOp(%,UnaryOp(-.,IntLiteral(4)),BinaryOp(-.,BinaryOp(+.,BinaryOp(+.,BinaryOp(-.,BinaryOp(*.,FloatLiteral(6000.0),Id(b)),FloatLiteral(2.0)),FloatLiteral(0.5)),Id(c)),UnaryOp(-.,FloatLiteral(0.0006))))),Id(a)),[],[Return()])Else([],[])]))])

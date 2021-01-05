@@ -1,7 +1,1 @@
-Function: foo 
-		Body:
-		  Var: main;
-		  main();
-		  Return;
-		EndBody.
-		Function: main Body: Return; EndBody.
+Program([FuncDecl(Id(main)[],([][]))])

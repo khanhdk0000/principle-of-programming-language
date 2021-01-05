@@ -1,0 +1,7 @@
+Var: a=5,b="string",c=5.6;
+        Function: main
+        Body:
+            If a == 5
+            Then print("a==5");
+        EndIf.
+        EndBody.

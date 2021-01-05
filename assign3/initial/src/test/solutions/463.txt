@@ -1,1 +1,1 @@
-Undeclared Identifier: foo
+Type Mismatch In Statement: CallStmt(Id(main),[CallExpr(Id(main),[IntLiteral(2),IntLiteral(3)]),IntLiteral(5)])
