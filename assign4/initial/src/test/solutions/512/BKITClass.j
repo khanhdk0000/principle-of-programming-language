@@ -41,8 +41,6 @@ Label0:
 	iconst_2
 	imul
 	iadd
-	iconst_1
-	isub
 	istore_3
 	iload_3
 	invokestatic io/string_of_int(I)Ljava/lang/String;

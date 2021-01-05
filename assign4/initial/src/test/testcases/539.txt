@@ -1,12 +1,12 @@
-Var:a=1,b=2,c=3; 
-        Function: main 
-        Body: 
-            Var: a = 15; 
-            For(c=1,c<=5, 1) Do  
-                print("start:"); 
-                print(string_of_int( c)); 
-                For(b=c-1,b>=-1,-1) Do 
+Var:a=1,b=2,c=3;
+        Function: main
+        Body:
+            Var: a = 15;
+            For(c=1,c<=5, 1) Do
+                print("start:");
+                print(string_of_int( c));
+                For(b=c-1,b>=-1,-1) Do
                     print(string_of_int(b));
-                EndFor. 
-            EndFor. 
+                EndFor.
+            EndFor.
         EndBody.

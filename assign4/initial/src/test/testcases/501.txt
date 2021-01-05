@@ -1,1 +1,1 @@
-Var: a=5, b=0x12; Function: main Body: print(string_of_int(a+b)); EndBody.
+Var: a=10, b=0x12; Function: main Body: print(string_of_int(a+b)); EndBody.

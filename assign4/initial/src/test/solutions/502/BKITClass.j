@@ -2,16 +2,16 @@
 .class public BKITClass
 .super java.lang.Object
 .field static a I
-.field static b F
+.field static x F
 
 .method public static main([Ljava/lang/String;)V
-	iconst_5
+	bipush 10
 	putstatic BKITClass/a I
-	ldc 11.2
-	putstatic BKITClass/b F
+	ldc 97.2
+	putstatic BKITClass/x F
 .var 0 is args [Ljava/lang/String; from Label0 to Label1
 Label0:
-	getstatic BKITClass/b F
+	getstatic BKITClass/x F
 	invokestatic io/string_of_float(F)Ljava/lang/String;
 	invokestatic io/print(Ljava/lang/String;)V
 Label1:

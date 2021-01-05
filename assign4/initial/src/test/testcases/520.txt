@@ -1,1 +1,1 @@
-Var: a=5,b="string",c=5.6;  Function: main Body: print(b);  EndBody.
+Var: a=5,b="hey",c=5.6;  Function: main Body: print(b);  EndBody.

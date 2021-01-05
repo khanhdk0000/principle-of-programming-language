@@ -1,1 +1,11 @@
-Var:a=1,b=2,c=3; Function:main Body: Var: a = 15;   For(a=0,a<5,1) Do Var: i=0,j=0; i=b+a; j=c+a;  print(string_of_int(i+j));   EndFor. EndBody. 
+Var:a=1,b=2,c=3;
+        Function:main
+        Body:
+            Var: a = 15;
+            For(a=0,a<5,1) Do
+                Var: i=0,j=0;
+                i=b+a;
+                j=c+a;
+                print(string_of_int(i+j));
+                EndFor.
+        EndBody. 

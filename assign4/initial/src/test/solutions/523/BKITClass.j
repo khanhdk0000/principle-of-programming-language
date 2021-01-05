@@ -25,7 +25,7 @@ Label3:
 Label4:
 	ifle Label6
 Label7:
-	ldc "not 6.0"
+	ldc "no"
 	invokestatic io/print(Ljava/lang/String;)V
 Label8:
 	goto Label2

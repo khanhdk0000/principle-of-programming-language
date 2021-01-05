@@ -1,10 +1,10 @@
 Var: a=5,b="string";
         Function: main
         Body:
-            Var: b= "inner_string";
-            print(f1(a));
+            Var: b= "deathstroke";
+            print(f(a));
         EndBody.
-        Function: f1
+        Function: f
         Parameter: x
         Body:
             Return string_of_int(x);

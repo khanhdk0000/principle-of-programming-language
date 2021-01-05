@@ -2,9 +2,9 @@ Var: a=5,b="string";
         Function: main
         Body:
             Var: x=7,y="x",z=1.5;
-            print(f1(z));
+            print(f(z));
             EndBody.
-        Function: f1
+        Function: f
         Parameter: x
         Body:
             Return string_of_float(x);

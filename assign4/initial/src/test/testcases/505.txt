@@ -1,10 +1,10 @@
-Var: a=5,b="string";
+Var: a = 10,b = "string";
         Function: main
         Body:
-            Var: b= "inner_string";
-            print(f1(b));
+            Var: b= "last of us";
+            print(f(b));
         EndBody.
-        Function: f1
+        Function: f
         Parameter: x
             Body:
                 Return x;

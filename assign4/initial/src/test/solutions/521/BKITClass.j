@@ -6,11 +6,11 @@
 .field static c F
 
 .method public static main([Ljava/lang/String;)V
-	iconst_5
+	bipush 10
 	putstatic BKITClass/a I
 	ldc "string"
 	putstatic BKITClass/b Ljava/lang/String;
-	ldc 5.6
+	ldc 7.8
 	putstatic BKITClass/c F
 .var 0 is args [Ljava/lang/String; from Label0 to Label1
 Label0:
@@ -25,7 +25,7 @@ Label1:
 .method public static f1(Ljava/lang/String;)V
 .var 0 is x Ljava/lang/String; from Label0 to Label1
 Label0:
-	ldc "yea"
+	ldc "yeah"
 	invokestatic io/print(Ljava/lang/String;)V
 	return
 Label1:

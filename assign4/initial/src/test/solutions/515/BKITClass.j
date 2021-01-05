@@ -26,7 +26,7 @@ Label0:
 	istore_3
 	ldc 1.5
 	fstore 4
-	ldc "changed"
+	ldc "undo"
 	putstatic BKITClass/b Ljava/lang/String;
 	getstatic BKITClass/b Ljava/lang/String;
 	invokestatic io/print(Ljava/lang/String;)V

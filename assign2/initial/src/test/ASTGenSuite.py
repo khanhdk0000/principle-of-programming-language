@@ -2515,22 +2515,11 @@ class ASTGenSuite(unittest.TestCase):
     def test_shit(self):
         """Simple program: int main() {} """
         input = """
-        Var: a = 1;
-        Function: main
-            Body:
-                a = 1;
-                a[1] = 1;
-                print(string_of_int(fact(5)));
-            EndBody.
-        Function: fact
-            Parameter: n
-            Body:
-                If n == 0 Then
-                    Return 1;
-                ElseIf n < 0 Then
-                    Return 0;
-            EndBody.
-        """
+        Function: main 
+        Body: 
+        a[1] = 2;
+        a = 1;
+        EndBody."""
 
         expect = Program([VarDecl(Id("x"), [], None)])
         self.assertTrue(TestAST.checkASTGen(input, expect, 400))

@@ -5,17 +5,17 @@
 .field static b Ljava/lang/String;
 
 .method public static main([Ljava/lang/String;)V
-	iconst_5
+	bipush 10
 	putstatic BKITClass/a I
 	ldc "string"
 	putstatic BKITClass/b Ljava/lang/String;
 .var 0 is args [Ljava/lang/String; from Label0 to Label1
 .var 1 is b Ljava/lang/String; from Label0 to Label1
 Label0:
-	ldc "inner_string"
+	ldc "last of us"
 	astore_1
 	aload_1
-	invokestatic BKITClass/f1(Ljava/lang/String;)Ljava/lang/String;
+	invokestatic BKITClass/f(Ljava/lang/String;)Ljava/lang/String;
 	invokestatic io/print(Ljava/lang/String;)V
 Label1:
 	return
@@ -23,7 +23,7 @@ Label1:
 .limit locals 2
 .end method
 
-.method public static f1(Ljava/lang/String;)Ljava/lang/String;
+.method public static f(Ljava/lang/String;)Ljava/lang/String;
 .var 0 is x Ljava/lang/String; from Label0 to Label1
 Label0:
 	aload_0

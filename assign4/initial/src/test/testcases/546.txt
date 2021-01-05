@@ -1,10 +1,10 @@
-Var: a=1,b=2,c=3; 
-        Function: main 
-        Body: 
-            Var: x=5,y=6,z=7; 
-            While (x>0) Do 
-                print("x"); 
-                x=x-b; 
-            EndWhile. 
-            print("?"); 
+Var: a=1,b=2,c=3;
+        Function: main
+        Body:
+            Var: x=5,y=6,z=7;
+            While (x>0) Do
+                print("x");
+                x=x-b;
+            EndWhile.
+            print("?");
         EndBody.

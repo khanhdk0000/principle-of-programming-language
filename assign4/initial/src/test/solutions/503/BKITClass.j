@@ -9,7 +9,7 @@
 .var 0 is args [Ljava/lang/String; from Label0 to Label1
 .var 1 is b Ljava/lang/String; from Label0 to Label1
 Label0:
-	ldc "inner_string"
+	ldc "game"
 	astore_1
 	aload_1
 	invokestatic io/print(Ljava/lang/String;)V

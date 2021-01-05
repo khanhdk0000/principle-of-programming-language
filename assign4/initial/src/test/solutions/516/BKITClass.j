@@ -8,7 +8,7 @@
 .method public static main([Ljava/lang/String;)V
 	iconst_5
 	putstatic BKITClass/a I
-	ldc "string"
+	ldc "lmao"
 	putstatic BKITClass/b Ljava/lang/String;
 	ldc 5.6
 	putstatic BKITClass/c F

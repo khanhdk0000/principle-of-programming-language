@@ -5,7 +5,7 @@
 .field static b I
 
 .method public static main([Ljava/lang/String;)V
-	iconst_5
+	bipush 10
 	putstatic BKITClass/a I
 	bipush 18
 	putstatic BKITClass/b I

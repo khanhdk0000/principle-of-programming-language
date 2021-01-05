@@ -2,10 +2,10 @@ Var: a=5,b="string";
         Function: main
         Body:
             Var: x=7,y="x",z=1.5;
-            print(string_of_int(f1(x)));
+            print(string_of_int(f(x)));
         EndBody.
-        Function: f1
+        Function: f
         Parameter: x
         Body:
-            Return x+1--x;
+            Return x+5--x;
         EndBody.

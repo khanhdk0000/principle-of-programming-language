@@ -12,10 +12,10 @@
 .var 0 is args [Ljava/lang/String; from Label0 to Label1
 .var 1 is b Ljava/lang/String; from Label0 to Label1
 Label0:
-	ldc "inner_string"
+	ldc "deathstroke"
 	astore_1
 	getstatic BKITClass/a I
-	invokestatic BKITClass/f1(I)Ljava/lang/String;
+	invokestatic BKITClass/f(I)Ljava/lang/String;
 	invokestatic io/print(Ljava/lang/String;)V
 Label1:
 	return
@@ -23,7 +23,7 @@ Label1:
 .limit locals 2
 .end method
 
-.method public static f1(I)Ljava/lang/String;
+.method public static f(I)Ljava/lang/String;
 .var 0 is x I from Label0 to Label1
 Label0:
 	iload_0

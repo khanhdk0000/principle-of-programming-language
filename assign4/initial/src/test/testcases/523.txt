@@ -2,6 +2,6 @@ Var: a=5,b="string",c=5.6;
         Function: main
         Body:
             If c =/= 6.0 Then
-                print("not 6.0");
+                print("no");
             EndIf.
         EndBody.

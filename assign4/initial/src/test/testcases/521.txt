@@ -1,4 +1,4 @@
-Var: a=5,b="string",c=5.6;
+Var: a=10,b="string",c=7.8;
         Function: main
         Body:
             f1("random");
@@ -6,6 +6,6 @@ Var: a=5,b="string",c=5.6;
         Function: f1
         Parameter: x
         Body:
-            print("yea");
+            print("yeah");
             Return;
         EndBody.

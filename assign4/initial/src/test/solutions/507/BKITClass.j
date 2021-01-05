@@ -21,7 +21,7 @@ Label0:
 	ldc 1.5
 	fstore_3
 	fload_3
-	invokestatic BKITClass/f1(F)Ljava/lang/String;
+	invokestatic BKITClass/f(F)Ljava/lang/String;
 	invokestatic io/print(Ljava/lang/String;)V
 Label1:
 	return
@@ -29,10 +29,10 @@ Label1:
 .limit locals 4
 .end method
 
-.method public static f1(F)Ljava/lang/String;
+.method public static f(F)Ljava/lang/String;
 .var 0 is x F from Label0 to Label1
 Label0:
-	ldc "fixed string"
+	ldc "unlock"
 	areturn
 Label1:
 .limit stack 1

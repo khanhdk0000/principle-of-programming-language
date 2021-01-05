@@ -99,7 +99,6 @@ class Emitter():
             frame.push()
             return self.jvm.emitLDC('"' + in_ + '"')
         else:
-            print('here')
             raise IllegalOperandException(in_)
 
     ##############################################################
@@ -119,7 +118,6 @@ class Emitter():
         elif type(in_) is cgen.ArrayType or type(in_) is cgen.ClassType or type(in_) is cgen.StringType:
             return self.jvm.emitAALOAD()
         else:
-            print('here1')
             raise IllegalOperandException(str(in_))
 
     def emitASTORE(self, in_, frame):
@@ -139,7 +137,6 @@ class Emitter():
         elif type(in_) is cgen.ArrayType or type(in_) is cgen.ClassType or type(in_) is cgen.StringType:
             return self.jvm.emitAASTORE()
         else:
-            print('here2')
             raise IllegalOperandException(str(in_))
 
     '''    generate the var directive for a local variable.
@@ -177,7 +174,6 @@ class Emitter():
         elif type(inType) is cgen.ArrayType or type(inType) is cgen.ClassType or type(inType) is cgen.StringType:
             return self.jvm.emitALOAD(index)
         else:
-            print('here3')
             raise IllegalOperandException(name)
 
     ''' generate the second instruction for array cell access
@@ -191,7 +187,6 @@ class Emitter():
         # ... -> ..., value
 
         # frame.push()
-        print('here4')
         raise IllegalOperandException(name)
 
     '''
@@ -217,7 +212,6 @@ class Emitter():
         elif type(inType) is cgen.ArrayType or type(inType) is cgen.ClassType or type(inType) is cgen.StringType:
             return self.jvm.emitASTORE(index)
         else:
-            print('here5')
             raise IllegalOperandException(name)
 
     ''' generate the second instruction for array cell access
@@ -231,7 +225,6 @@ class Emitter():
         # ..., value -> ...
 
         # frame.push()
-        print('here6')
         raise IllegalOperandException(name)
 
     ''' generate the field (static) directive for a class mutable or immutable attribute.
@@ -564,38 +557,6 @@ class Emitter():
     *   @param in the type of the local array variable.
     '''
 
-    def emitInitNewStaticArray(self, name, size, eleType, frame):
-        result = []
-        result.append(self.emitPUSHICONST(size, frame))
-        frame.pop()
-        if type(eleType) is cgen.StringType:
-            result.append(self.jvm.emitANEWARRAY(self.getFullType(eleType)))
-        else:
-            result.append(self.jvm.emitNEWARRAY(self.getFullType(eleType)))
-        result.append(self.jvm.emitPUTSTATIC(name, self.getJVMType(cgen.ArrayType(eleType))))
-        return ''.join(result)
-
-    def emitInitNewLocalArray(self, addressIndex, size, eleType, frame):
-        result = []
-        result.append(self.emitPUSHICONST(size, frame))
-        frame.pop()
-        if type(eleType) is cgen.StringType:
-            result.append(self.jvm.emitANEWARRAY(self.getFullType(eleType)))
-        else:
-            result.append(self.jvm.emitNEWARRAY(self.getFullType(eleType)))
-        result.append(self.jvm.emitASTORE(addressIndex))
-        return ''.join(result)
-
-    def emitCloneArray(self, addressIndex, eleType, frame):
-        result = []
-        result.append(self.emitREADVAR("", cgen.ArrayType(eleType), addressIndex, frame))
-        result.append(JasminCode.INDENT + "invokevirtual " + "[" + self.getJVMType(
-            eleType) + "/clone()Ljava/lang/Object;" + JasminCode.END)
-        result.append(JasminCode.INDENT + "checkcast [" + self.getJVMType(eleType) + JasminCode.END)
-        result.append(self.jvm.emitASTORE(addressIndex))
-        frame.pop()
-        return ''.join(result)
-
     '''   generate code to initialize local array variables.
     *   @param in the list of symbol entries corresponding to local array variable.    
     '''
@@ -753,3 +714,4 @@ class Emitter():
 
     def clearBuff(self):
         self.buff.clear()
+

@@ -5,9 +5,9 @@
 .field static b F
 
 .method public static main([Ljava/lang/String;)V
-	iconst_5
+	bipush 9
 	putstatic BKITClass/a I
-	ldc 11.2
+	ldc 15.7
 	putstatic BKITClass/b F
 .var 0 is args [Ljava/lang/String; from Label0 to Label1
 Label0:

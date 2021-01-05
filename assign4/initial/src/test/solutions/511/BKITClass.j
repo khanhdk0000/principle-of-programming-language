@@ -21,7 +21,7 @@ Label0:
 	ldc 1.5
 	fstore_3
 	iload_1
-	invokestatic BKITClass/f1(I)I
+	invokestatic BKITClass/f(I)I
 	invokestatic io/string_of_int(I)Ljava/lang/String;
 	invokestatic io/print(Ljava/lang/String;)V
 Label1:
@@ -30,11 +30,11 @@ Label1:
 .limit locals 4
 .end method
 
-.method public static f1(I)I
+.method public static f(I)I
 .var 0 is x I from Label0 to Label1
 Label0:
 	iload_0
-	iconst_1
+	iconst_5
 	iadd
 	iload_0
 	ineg

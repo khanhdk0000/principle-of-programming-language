@@ -14,14 +14,14 @@
 .var 2 is y Ljava/lang/String; from Label0 to Label1
 .var 3 is z F from Label0 to Label1
 Label0:
-	bipush 7
+	bipush 15
 	istore_1
-	ldc "x"
+	ldc "new"
 	astore_2
-	ldc 1.5
+	ldc 8.5
 	fstore_3
 	iload_1
-	invokestatic BKITClass/f1(I)I
+	invokestatic BKITClass/f(I)I
 	invokestatic io/string_of_int(I)Ljava/lang/String;
 	invokestatic io/print(Ljava/lang/String;)V
 Label1:
@@ -30,7 +30,7 @@ Label1:
 .limit locals 4
 .end method
 
-.method public static f1(I)I
+.method public static f(I)I
 .var 0 is x I from Label0 to Label1
 Label0:
 	iload_0

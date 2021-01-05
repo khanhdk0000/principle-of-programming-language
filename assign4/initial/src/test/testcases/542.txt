@@ -1,1 +1,7 @@
-Var:a=1,b=2,c=3; Function:main Body: Var: a = 15,b=10,c=15;   For(a=0,a<10,1)  Do EndFor. print(string_of_int(a)); EndBody. 
+Var:a=1,b=2,c=3;
+        Function:main
+        Body:
+            Var: a = 15,b=10,c=15;
+            For(a=0,a<10,1)  Do EndFor.
+            print(string_of_int(a)); EndBody.
+        

@@ -24,7 +24,7 @@ Label3:
 Label4:
 	ifle Label6
 Label7:
-	ldc "a==5"
+	ldc "yes"
 	invokestatic io/print(Ljava/lang/String;)V
 Label8:
 	goto Label2
